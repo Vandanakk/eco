@@ -1,0 +1,88 @@
+/* reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #444;
+    font-size: 18px;
+  }
+  
+  /*Navbar*/
+  
+  #nav {
+    background-color: #fff;
+    color: #6c63ff;
+  }
+  
+  #nav ul {
+    display: flex;
+  }
+  #nav li {
+    margin: 15px;
+    padding: 10px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+  }
+  .logo {
+    font-family: cursive;
+  }
+  .links li {
+    border-bottom: 2px solid transparent;
+    font-weight: bold;
+  }
+  .links li:hover {
+    border-color: #6C63FF;
+  }
+  
+  .btn{
+      color:#fff;
+      background-color: #6C63FF;
+      padding:8px;
+      border:none;
+      outline:none;
+      cursor:pointer;
+      border:2px solid transparent;
+  }
+  .btn:hover{
+      border-color: #6C63FF;
+      color: #6C63FF;
+      background-color: #fff;
+      outline:none;
+  }
+  .btn:focus{
+      outline:none;
+  }
+  
+  @media (max-width:767px){
+      *{
+          padding:0;
+          margin:0;
+          box-sizing: border-box;
+      }
+      .container {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          height:27vh;
+          margin-bottom:5px;
+          
+        }
+        .links li:hover{
+            border:none;
+        }
+  }
+   

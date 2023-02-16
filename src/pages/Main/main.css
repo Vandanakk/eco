@@ -1,0 +1,8 @@
+.carousel-indicators [data-bs-target]
+{
+	background-color: black !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #8064A2 !important;
+}
