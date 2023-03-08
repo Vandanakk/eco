@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <>
       <Main/>
-      {/* <Featured />
+      <Featured />
       <Services />
-      <Blog />
-      <Footer /> */}
+      {/* <Blog /> */}
+      <Footer />
     </>
   );
 }

@@ -1,30 +1,59 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
 import "./footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,   
+    faGithub,
+    faFacebook,
+    faYoutube
+} from "@fortawesome/free-brands-svg-icons";
+import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+import PrivacyModal from "../Policy/policy"
 
-export default function Footer() {
-  // Get current year
-  var year = new Date().getFullYear();
-  return (
-    <footer className="footer bg-dark">
-      <div className="social">
-        <Router>
-          <Link to="/">
-            <i className="fa fa-facebook fa-2x"></i>
-          </Link>
+const Footer = () => {
+    return (
+        <footer className="footer">
+            <div className="footer-container">
+                <div className="item1">
+                    <PrivacyModal />
+                </div>
 
-          <Link to="/">
-            <i className="fa fa-linkedin fa-2x"></i>
-          </Link>
-          <Link to="/">
-            <i className="fa fa-twitter fa-2x"></i>
-          </Link>
-          <Link to="/">
-            <i className="fa fa-youtube fa-2x"></i>
-          </Link>
-        </Router>
-      </div>
-      <p>copyright &copy; {year}</p>
-    </footer>
-  );
-}
+                <div className="item2">
+                    <span style={{ paddingRight: 5 }}>Copyright </span>
+                    <FontAwesomeIcon icon={faCopyright} />{" "}
+                    <span style={{ paddingLeft: 5 }}>
+                        {new Date().getFullYear()} Ecowoodies. All Rights
+                        Reserved.
+                    </span>
+                </div>
+                <a
+                    href="https://www.facebook.com/ecowoodies/"
+                    target="_blank"
+                    className="item4"
+                >
+                    <FontAwesomeIcon icon={faFacebook} />
+                </a>
+                <a
+                    href="https://www.youtube.com/@ecowoodies6760"
+                    target="_blank"
+                    className="item5"
+                >
+                    <FontAwesomeIcon icon={faYoutube} />
+                </a>
+                <a
+                    href="https://twitter.com/ecowoodies"
+                    target="_blank"
+                    className="item3"
+                >
+                    <FontAwesomeIcon icon={faTwitter} />
+                </a>
+               
+              
+
+                {false && <PrivacyModal />}
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;
