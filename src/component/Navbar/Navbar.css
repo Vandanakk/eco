@@ -20,7 +20,7 @@
   
   #nav {
     background-color: #fff;
-    color: #6c63ff;
+    color: rgb(51, 144, 51);
   }
   
   #nav ul {
@@ -40,16 +40,28 @@
     font-family: cursive;
   }
   .links li {
-    border-bottom: 2px solid transparent;
-    font-weight: bold;
+    color:#fff;
+    background-color:rgb(51, 144, 51);
+    padding:8px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius: 5px;
+    border:2px solid transparent;
   }
   .links li:hover {
-    border-color: #6C63FF;
+    border-color: rgb(51, 144, 51);
+    color: rgb(51, 144, 51);
+    background-color: #fff;
+    outline:none;
   }
   
+  .links li:focus{
+    outline:none;
+}
   .btn{
       color:#fff;
-      background-color: #6C63FF;
+      background-color: rgb(51, 144, 51);
       padding:8px;
       border:none;
       outline:none;
@@ -57,8 +69,8 @@
       border:2px solid transparent;
   }
   .btn:hover{
-      border-color: #6C63FF;
-      color: #6C63FF;
+      border-color: rgb(51, 144, 51);
+      color: rgb(51, 144, 51);
       background-color: #fff;
       outline:none;
   }
@@ -82,7 +94,10 @@
           
         }
         .links li:hover{
-            border:none;
+          border-color: rgb(51, 144, 51);
+          color: rgb(51, 144, 51);
+          background-color: #fff;
+          outline:none;
         }
   }
    

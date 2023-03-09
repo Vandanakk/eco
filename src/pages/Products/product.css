@@ -54,6 +54,7 @@ Variables
   }
   p {
     margin-bottom: 1.25rem;
+    margin-left: 20rem;
   }
   ul {
     list-style-type: none;
@@ -72,7 +73,7 @@ Variables
   .about-section {
     width: var(--smallWidth);
     max-width: var(--maxWidth);
-    margin: 0 auto;
+    margin-left: 100px !important;
   }
   .about-section p {
     line-height: 2rem;

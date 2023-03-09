@@ -37,9 +37,7 @@ The ultimate mission of our organization is creating an online presence of India
 
 
 </p>
-          <Link to="/products">
-            <button className="btn">Browse Products</button>
-          </Link>
+          
         </section>
       </div>
       <Footer />

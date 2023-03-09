@@ -1,44 +1,42 @@
-import React, {useState} from 'react'
-const contactus = () => {
-  // const [formStatus, setFormStatus] = useState<IState>('Send')
-  // const onSubmit = (e) => {
-  //   e.preventDefault()
-  //   setFormStatus('Submitting...')
-  //   const { name, email, message } = e.target.elements
-  //   let conFom = {
-  //     name: name.value,
-  //     email: email.value,
-  //     message: message.value,
-  //   }
-  //   console.log(conFom)
-  // }
+import "./contactus.css";
+function Contact() {
   return (
-    <div className="container mt-5">
-      <h2 className="mb-3">React Contact Form Component Example</h2>
-      <form >
-        <div className="mb-3">
-          <label className="form-label" htmlFor="name">
-            Name
-          </label>
-          <input className="form-control" type="text" id="name" required />
+    <div className="container contact">
+      <h2 className="main-title text-center">CONTACT</h2>
+      <div className="col-md-12">
+        <div className="row">
+          <div className="col-md-4 mb-1">
+            <input name="name" placeholder="Name" className="contact-input" />
+          </div>
+
+          <div className="col-md-4 mb-1">
+            <input name="email" placeholder="Email" className="contact-input" />
+          </div>
+          <div className="col-md-4 mb-1">
+            <input
+              name="subject"
+              placeholder="Subject"
+              className="contact-input"
+            />
+          </div>
         </div>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="email">
-            Email
-          </label>
-          <input className="form-control" type="email" id="email" required />
+      </div>
+      <br />
+      <div className="col-md-12">
+      <textarea
+            name="message"
+            placeholder="Message"
+            className="contact-textarea"
+          />
+      </div>
+
+      <br></br>
+      <div className="row">
+        <div className="col-md-12">
+          <input className="form-btn" type="submit" value="Send Message" />
         </div>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="message">
-            Message
-          </label>
-          <textarea className="form-control" id="message" required />
-        </div>
-        <button className="btn btn-danger" type="submit">
-          
-        </button>
-      </form>
+      </div>
     </div>
-  )
+  );
 }
-export default contactus
+export default Contact;

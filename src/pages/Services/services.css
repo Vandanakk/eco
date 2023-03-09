@@ -129,9 +129,14 @@ element.style{
     padding-right: 50px;;
 }
 
+section.content-prod{
+    margin-left: 30px !important;
+padding:40px;
+   }
 /* Mobile */
 @media(max-width: 768px) {
    .content-prod{
+    margin-left: 100px !important;
 padding:40px;
    }
    .description p{

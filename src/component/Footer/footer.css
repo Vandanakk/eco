@@ -4,7 +4,7 @@ a {
 .item1 {
   border: none;
   background-color: inherit;
-  color: #6bd1f0;
+  color: #ffffff;
   padding-left: 10px;
   font-size: 20px;
   display: flex;
@@ -76,7 +76,7 @@ a {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .item1 {
-      font-size: 12px;
+    font-size: 7px;
       padding-left: 3px;
   }
   .item2 {
@@ -92,7 +92,7 @@ a {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .item1 {
-      font-size: 14px;
+    font-size: 9px;
       padding-left: 5px;
   }
   .item2 {
@@ -108,7 +108,7 @@ a {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .item1 {
-      font-size: 16px;
+    font-size: 11px;
       padding-left: 6px;
   }
   .item2 {
@@ -124,7 +124,7 @@ a {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .item1 {
-      font-size: 18px;
+    font-size: 13px;
       padding-left: 8px;
   }
   .item2 {
@@ -140,7 +140,7 @@ a {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .item1 {
-      font-size: 20px;
+    font-size: 15px;
       padding-left: 10px;
   }
   .item2 {
