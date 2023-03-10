@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Main/>
       <Featured />
-      <Services />
+      {/* <Services /> */}
       {/* <Blog /> */}
       <Footer />
     </>

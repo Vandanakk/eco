@@ -1,42 +1,223 @@
-import "./contactus.css";
-function Contact() {
+import React, { useState } from "react";
+import Footer from "../../component/Footer/footer";
+import "./contactus.css"
+const ContactUs = () => {
+  const [userData, setUserData] = useState({
+    firstName: "",
+    lastName: "",
+    phone: "",
+    email: "",
+    address: "",
+    message: "",
+  });
+
+  let name, value;
+  const postUserData = (event:any) => {
+    name = event.target.name
+    value =event.target.value;
+
+    setUserData({ ...userData, [name]: value });
+  };
+
+  // connect with firebase
+  const submitData = async (event :any) => {
+    event.preventDefault();
+    const { firstName, lastName, phone, email, address, message } = userData;
+
+    if (firstName && lastName && phone && email && address && message) {
+      const res = fetch(
+        "https://baseio.com/userDataRecords.json",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            firstName,
+            lastName,
+            phone,
+            email,
+            address,
+            message,
+          }),
+        }
+      );
+
+      if (true) {
+        setUserData({
+          firstName: "",
+          lastName: "",
+          phone: "",
+          email: "",
+          address: "",
+          message: "",
+        });
+        alert("Thank you for contacting us!  We have received your message and appreciate your interest in our bamboo and cane furniture. A member of our team will review your inquiry and respond to you as soon as possible. Please allow up to 24-48 hours for a response, although we usually respond much sooner.");
+      } else {
+        alert("plz fill the data");
+      }
+    } else {
+      alert("plz fill all the required information in contact us form");
+    }
+  };
+
   return (
-    <div className="container contact">
-      <h2 className="main-title text-center">CONTACT</h2>
-      <div className="col-md-12">
-        <div className="row">
-          <div className="col-md-4 mb-1">
-            <input name="name" placeholder="Name" className="contact-input" />
-          </div>
+ <>
+      <section className="contactus-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-lg-12 mx-auto">
+              <div className="row">
+                <div className="contact-leftside col-12 col-lg-7">
+                  <h2 className="main-heading fw-bold">
+                    Connect With Our <br /> Sales Team.
+                  </h2>
+                  <p className="main-hero-para">
+                 Welcome to Ecowoodies, your one-stop-shop for high-quality bamboo and cane furniture.                
+                 We understand that furniture is an important investment and we are committed to providing you with
+                 exceptional customer service. Our sales team will guide you through the entire process, from selecting
+                 the right pieces to arranging delivery and installation, ensuring a hassle-free experience.
+                 <br />               
 
-          <div className="col-md-4 mb-1">
-            <input name="email" placeholder="Email" className="contact-input" />
-          </div>
-          <div className="col-md-4 mb-1">
-            <input
-              name="subject"
-              placeholder="Subject"
-              className="contact-input"
-            />
-          </div>
-        </div>
-      </div>
-      <br />
-      <div className="col-md-12">
-      <textarea
-            name="message"
-            placeholder="Message"
-            className="contact-textarea"
-          />
-      </div>
+                To connect with our sales team, simply fill out the form on our website, call us, or visit our showroom
+                located in Uttar Pradesh, India. We  are always happy to help and answer any questions you may have.
+                At Ecowoodies, we are passionate about promoting sustainable living and our bamboo and 
+                cane furniture reflects our commitment to eco-friendly practices. Our sales team can share with you
+                the many benefits of choosing bamboo and cane furniture, including its durability, low maintenance, 
+                and eco-friendliness.
+              <br />
+              <br />
+                So why wait? Connect with our sales team today and discover the many benefits of our beautiful and
+                sustainable bamboo and cane furniture. We look forward to hearing from you!
 
-      <br></br>
-      <div className="row">
-        <div className="col-md-12">
-          <input className="form-btn" type="submit" value="Send Message" />
-        </div>
-      </div>
-    </div>
+                  </p>
+                  {/* <figure>
+                    <img
+                      src="./images/hero1.jpg"
+                      alt="contatUsImg"
+                      className="img-fluid"
+                    />
+                  </figure> */}
+                </div>
+
+                {/* right side contact form  */}
+                <div className="contact-rightside col-12 col-lg-5">
+                <h2 className="main-heading fw-bold">
+                     <br />    
+                     <br />                      
+
+                  </h2>
+                  <form method="POST">
+                    <div className="row">
+                      <div className="col-12 col-lg-6 contact-input-feild">
+                        <input
+                          type="text"
+                          name="firstName"
+                          id=""
+                          className="form-control"
+                          placeholder="First Name"
+                          value={userData.firstName}
+                          onChange={postUserData}
+                        />
+                      </div>
+                      <div className="col-12 col-lg-6 contact-input-feild">
+                        <input
+                          type="text"
+                          name="lastName"
+                          id=""
+                          className="form-control"
+                          placeholder="Last Name"
+                          value={userData.lastName}
+                          onChange={postUserData}
+                        />
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col-12 col-lg-6 contact-input-feild">
+                        <input
+                          type="text"
+                          name="phone"
+                          id=""
+                          className="form-control"
+                          placeholder="Phone Number "
+                          value={userData.phone}
+                          onChange={postUserData}
+                        />
+                      </div>
+                      <div className="col-12 col-lg-6 contact-input-feild">
+                        <input
+                          type="text"
+                          name="email"
+                          id=""
+                          className="form-control"
+                          placeholder="Email ID"
+                          value={userData.email}
+                          onChange={postUserData}
+                        />
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col-12 contact-input-feild">
+                        <input
+                          type="text"
+                          name="address"
+                          id=""
+                          className="form-control"
+                          placeholder="Add Address"
+                          value={userData.address}
+                          onChange={postUserData}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="row">
+                      <div className="col-12 ">
+                        <input
+                          type="text"
+                          name="message"
+                          id=""
+                          className="form-control"
+                          placeholder="Enter Your Message"
+                          value={userData.message}
+                          onChange={postUserData}
+                        />
+                      </div>
+                    </div>
+                    <div className="form-check form-checkbox-style">
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                      />
+                      <label
+                        className="form-check-label">
+                        I agree that the thapatechnicalpay may contact me at the
+                        email address or phone number above
+                      </label>
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="btn btn-style w-100"
+                      onClick={submitData}>
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>      
+      </section>   
+      <Footer/> 
+      </>
+      
+      
+     
+    
   );
-}
-export default Contact;
+};
+
+export default ContactUs;

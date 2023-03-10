@@ -1,7 +1,13 @@
-.descriptionabout p{
-    line-height:2rem;
-    padding-left: 50px;;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-right: 50px;;
-}
+section.content-prod{
+     margin-left: 30px !important; 
+    padding:40px;
+   }
+
+   .main-hero-para {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 1rem 0 2rem 0;
+    font-weight: lighter;
+    width: 90%;
+    text-align: justify;
+  }

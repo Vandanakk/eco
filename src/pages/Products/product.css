@@ -53,8 +53,7 @@ Variables
     letter-spacing: var(--mainSpacing);
   }
   p {
-    margin-bottom: 1.25rem;
-    margin-left: 20rem;
+    margin-bottom: 1.25rem;    
   }
   ul {
     list-style-type: none;
