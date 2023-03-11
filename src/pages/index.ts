@@ -1,7 +1,9 @@
 import About from "./About/about";
 import Home from "./Home/home";
-import ProductList from "./Products/productList";
+import OldProductList from "./Products/productList"
 import Services from "./Services/service";
 import ContactUs from "./ContactSection/ContactSection";
+import Category from "./Category/category";
+import ProductListing from "./ProductList/productlist";
 
-export { About, Home, ProductList, Services,ContactUs };
+export { About, Home,  Services,ContactUs,Category,ProductListing, OldProductList };

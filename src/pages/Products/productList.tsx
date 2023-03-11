@@ -6,7 +6,7 @@ import Footer from "../../component/Footer/footer";
 const ProductList = () => {
   return (
     <>
-      <h1 className="product-title center">Products</h1>
+      {/* <h1 className="product-title center">Products</h1> */}
       <div className="cocktails-center">
         {data.map((product) => {
           const { id, image, name, price } = product;

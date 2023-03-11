@@ -9,8 +9,7 @@ const About = () => {
       <div className="product-center">
        
         <section className="content-prod">
-          <h1> About Us</h1>
-
+         
           <p className="main-hero-para">
           Ecowoodies is a pioneer manufacturer of outdoor furniture and accessories . 
           Enter the world of Ecowoodies’ outdoor furniture and discover the latest products that are designed by the topmost designers of our company.You can avail a wide range of Outdoor furniture, Wicker Furniture, Rattan Wicker Furniture, Patio Furniture, Garden furniture, Poolside Furniture, Terrace Furniture, Hotel Furniture, Restaurant Furniture, Resort Furniture, Villas Outdoor Furniture and many more luxury outdoor furniture at our website that is made with high-quality materials under expert supervision. 

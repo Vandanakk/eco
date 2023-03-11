@@ -43,7 +43,10 @@ const Navbar = () => {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/products">Products</Link>
+              <Link to="/category">Products Category</Link>
+            </li>
+            <li>
+              <Link to="/oldproductList">Product List</Link>
             </li>
             <li>
               <Link to="/services">Services</Link>
@@ -54,7 +57,7 @@ const Navbar = () => {
 
           </ul>
 
-          {firstName ? (
+          {/* {firstName ? (
             <Link
               to="/"
               onClick={() => {
@@ -69,7 +72,7 @@ const Navbar = () => {
             <button className="btn">
               Sign Up
             </button>
-          )}
+          )} */}
         </div>
       </nav>
     </header>
