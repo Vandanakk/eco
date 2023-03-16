@@ -1,0 +1,28 @@
+1. Copy category Image from any locaiton
+2. Set the path of category image in category.ts file
+
+import petCategory from "./images/category/petCategory.png" 
+import bamboosofaCategory from "./images/category/bambooSofas.png" 
+
+3. copy any json tags
+
+,
+    {
+      id: "recZkNf2kwmdBcqd0",
+      name: "Bamboo Sofas",
+      price: 25,
+      image:
+      bamboosofaCategory,
+      colors: ["#ff0000", "#00ff00", "#0000ff"],
+      company: "Ecowoodies",
+      featured: false,
+      description:
+        "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore.",
+      category: "BambooSofas",
+      shipping: true,
+      amount: 1,
+      stock: 4,
+    },
+
+4. SEt hte path of category in image tag
+5. Change the name and Category

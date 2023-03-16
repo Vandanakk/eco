@@ -4,6 +4,7 @@ import sofaCategory from "./images//category/sofaset.jpg"
 import newBornBasket from "./images/category/newBornbasket.png"
 import hangingLight from "./images/category/lighting.png"
 import petCategory from "./images/category/petCategory.png" 
+import bamboosofaCategory from "./images/category/bambooSofas.png" 
 
 const categories = [
     {
@@ -99,7 +100,23 @@ const categories = [
       shipping: true,
       amount: 1,
       stock: 4,
-    }
+    },
+    {
+      id: "recZkNf2kwmdBcqd0",
+      name: "Bamboo Sofas",
+      price: 25,
+      image:
+      bamboosofaCategory,
+      colors: ["#ff0000", "#00ff00", "#0000ff"],
+      company: "Ecowoodies",
+      featured: false,
+      description:
+        "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore.",
+      category: "BambooSofas",
+      shipping: true,
+      amount: 1,
+      stock: 4,
+    },
 
   ];
   export default categories;

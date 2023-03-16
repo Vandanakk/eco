@@ -1,0 +1,35 @@
+1. Copy product Image from any locaiton
+2. Set the path of product image in data.ts file
+
+import bambooSofa from "./images/bambooSofa.png" 
+
+
+3. copy any json tags
+
+,   
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Bamboo Cane Sofa", //
+      price: 155, //
+      lastPrice :185, //
+      image:
+      bambooCaneSofa, //
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 30, //
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo",
+      feature4:"100% Recycle", //
+      feature5:"Customized Packaging", //
+      feature6:"Usage - Hotel, Restaurants", //
+      description:
+        "Introducing our exquisite Bamboo Cane Sofa, a true masterpiece that blends natural elegance with modern design. Handmade by skilled artisans in the serene hills of Assam, Tripura, and Nagaland, each sofa is crafted using the finest quality bamboo cane. Our sustainable and eco-friendly production process ensures that every sofa is not only stunning, but also fully recyclable.  Our Bamboo Cane Sofa is the perfect addition to any home, office or outdoor space, providing a comfortable and stylish seating option that will make a statement. The unique design incorporates traditional weaving techniques with contemporary shapes, creating a versatile and timeless piece that will impress for years to come. We take pride in our commitment to supporting local communities and preserving traditional crafts. By purchasing our Bamboo Cane Sofa, you are not only making an environmentally conscious choice, but also supporting the livelihoods of skilled artisans who have honed their craft for generations. xperience the natural beauty and exceptional quality of our Bamboo Cane Sofa, and add a touch of elegance to your space that will be admired for its beauty and admired for its eco-friendliness.",
+      category: "BambooSofas", //
+      amount: 1,
+      stock: 4,
+    },
+
+4. Set tte path of category in image tag
+5. Change the name,price, lastprice,image,reviews, feature, description and Category

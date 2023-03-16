@@ -10,6 +10,8 @@ import tray from "./images/tray.jpg"
 import RexineChair from "./images/RexineChair.png"
 import hangingLight from "./images/hangingLight.jpg"
 import petbedchair from "./images/puppybed.jpg"
+import bambooCaneSofa from "./images/bambooCaneSofa.jpg"
+
 
 
 
@@ -266,7 +268,7 @@ const data = [
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
       reviews: 230,
-      featured: true,
+      featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
       feature3:"Material - Bamboo",
@@ -276,6 +278,29 @@ const data = [
       description:
         "If you're looking for a cozy and eco-friendly bed for your furry friend, our handmade pet beds are just what you need. Crafted by skilled artisans in North India, these beds are not only stylish but also sustainable as they are made from natural and renewable bamboo materials. Our pet beds come in a variety of sizes and designs to fit your pet's unique needs and personality. The soft cushioning ensures maximum comfort and support for your pet, allowing them to rest peacefully after a long day of playing and exploring. Not only are these beds great for your pet, but they are also great for the environment. Bamboo is one of the most sustainable materials available, and our commitment to eco-friendliness means that we use only eco-friendly, recyclable materials in our products. Investing in our pet beds means that you're not only getting a high-quality product but also contributing to a better future for our planet. So give your pet the gift of comfort and sustainability with our handmade bamboo pet beds.",
       category: "PetBeds",
+      amount: 1,
+      stock: 4,
+    },   
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Bamboo Cane Sofa",
+      price: 155,
+      lastPrice :185,
+      image:
+      bambooCaneSofa,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 30,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage - Hotel, Restaurants",
+      description:
+        "Introducing our exquisite Bamboo Cane Sofa, a true masterpiece that blends natural elegance with modern design. Handmade by skilled artisans in the serene hills of Assam, Tripura, and Nagaland, each sofa is crafted using the finest quality bamboo cane. Our sustainable and eco-friendly production process ensures that every sofa is not only stunning, but also fully recyclable.  Our Bamboo Cane Sofa is the perfect addition to any home, office or outdoor space, providing a comfortable and stylish seating option that will make a statement. The unique design incorporates traditional weaving techniques with contemporary shapes, creating a versatile and timeless piece that will impress for years to come. We take pride in our commitment to supporting local communities and preserving traditional crafts. By purchasing our Bamboo Cane Sofa, you are not only making an environmentally conscious choice, but also supporting the livelihoods of skilled artisans who have honed their craft for generations. xperience the natural beauty and exceptional quality of our Bamboo Cane Sofa, and add a touch of elegance to your space that will be admired for its beauty and admired for its eco-friendliness.",
+      category: "BambooSofas",
       amount: 1,
       stock: 4,
     },
