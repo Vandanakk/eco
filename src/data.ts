@@ -9,6 +9,7 @@ import bambooSofa from "./images/bambooSofa.jpg"
 import tray from "./images/tray.jpg"
 import RexineChair from "./images/RexineChair.png"
 import hangingLight from "./images/hangingLight.jpg"
+import petbedchair from "./images/puppybed.jpg"
 
 
 
@@ -252,6 +253,29 @@ const data = [
       description:
         "Introducing our stunning collection of Cane Ottomans, crafted by local artisans of North India using eco-friendly and recyclable materials. Each ottoman is unique and handmade, adding a touch of natural beauty to any living space. Our Cane Ottomans are the perfect addition to your home decor, providing a stylish and sustainable seating option. Made from high-quality cane, they are durable and sturdy, ensuring long-lasting use. The natural texture and color of the cane add a warm and cozy feeling to your living space. With its versatile design, our Cane Ottomans can be used as a footrest, extra seating or even as a small table. Its lightweight and compact design make it easy to move around and store when not in use. We take pride in our commitment to sustainability, and each of our Cane Ottomans is crafted using eco-friendly and recyclable materials. By choosing our handmade products, you are not only adding a unique and stylish piece to your home decor, but also contributing to a greener and more sustainable future. Add a touch of elegance and sustainability to your home with our beautiful collection of Cane Ottomans. Choose from our variety of sizes and designs to find the perfect fit for your home.",
       category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Pet Bed",
+      price: 26,
+      lastPrice :35,
+      image:
+      petbedchair,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 230,
+      featured: true,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage - Dogs, Kitty, Cats",
+      description:
+        "If you're looking for a cozy and eco-friendly bed for your furry friend, our handmade pet beds are just what you need. Crafted by skilled artisans in North India, these beds are not only stylish but also sustainable as they are made from natural and renewable bamboo materials. Our pet beds come in a variety of sizes and designs to fit your pet's unique needs and personality. The soft cushioning ensures maximum comfort and support for your pet, allowing them to rest peacefully after a long day of playing and exploring. Not only are these beds great for your pet, but they are also great for the environment. Bamboo is one of the most sustainable materials available, and our commitment to eco-friendliness means that we use only eco-friendly, recyclable materials in our products. Investing in our pet beds means that you're not only getting a high-quality product but also contributing to a better future for our planet. So give your pet the gift of comfort and sustainability with our handmade bamboo pet beds.",
+      category: "PetBeds",
       amount: 1,
       stock: 4,
     },

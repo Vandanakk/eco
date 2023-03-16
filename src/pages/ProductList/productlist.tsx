@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from 'react-router-dom'
 import {
   MDBContainer,
   MDBRow,
@@ -13,12 +14,19 @@ import {
 import "./productlist.css";
 import data from "../../data";
 
-function Filtered(element:any, index:any, array:any) { 
-  return (element.category=="NewBorns"); 
-}
-const fiteredData = data.filter(Filtered);
+
+
   
 const productlist = (props:any) => {
+  const category = props.match.params.category;
+
+  const Filtered =(element:any) => { 
+    return (element.category==category); 
+  } 
+  
+  const fiteredData = data.filter(Filtered);
+  
+
   return (
     <MDBContainer fluid>
       <MDBRow className="justify-content-center mb-0">
@@ -103,9 +111,9 @@ const productlist = (props:any) => {
                     <MDBBtn color="primary" size="sm">
                       Details
                     </MDBBtn>
-                    <MDBBtn outline color="primary" size="sm" className="mt-2">
+                    {/* <MDBBtn outline color="primary" size="sm" className="mt-2">
                       Add to wish list
-                    </MDBBtn>
+                    </MDBBtn> */}
                   </div>
                 </MDBCol>
               </MDBRow>

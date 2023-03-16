@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import { MDBContainer, MDBRow, MDBCol, MDBRipple } from "mdb-react-ui-kit";
 import categories from "../../categories";
 import Footer from "../../component/Footer/footer";
@@ -24,7 +25,8 @@ function category() {
                   src={image}            
                   className="w-100"
                 />
-                <a href='/productlist'>
+                <Link to={`/productlist/${category}`}>
+                {/* <a href='/productlist'> */}
                   <div
                     className="mask"
                     style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
@@ -43,7 +45,7 @@ function category() {
                       style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}
                     ></div>
                   </div>
-                </a>
+                  </Link>
               </MDBRipple>
             </MDBCol>          
         
