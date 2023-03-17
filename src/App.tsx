@@ -1,7 +1,7 @@
 import React, {useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router,Switch, Route } from "react-router-dom";
-import { About, Home, Category,Services,ContactUs,ProductListing,OldProductList } from "./pages/index";
+import { About, Home, Category,Services,ContactUs,ProductListing,BlogList } from "./pages/index";
 import Navbar from "./component/Navbar/Navbar";
 
 import ReactGA from 'react-ga';
@@ -23,7 +23,7 @@ export default function App() {
       <Route exact path="/" component={Home}></Route>
           <Route exact path="/category" component={Category}></Route>
           <Route exact path="/productlist/:category" component={ProductListing}></Route>
-          {/* <Route exact path="/oldproductList" component={OldProductList}></Route>    */}
+          <Route exact path="/blogList" component={BlogList}></Route>   
 
           <Route exact path="/about" component={About}></Route>
           <Route exact path="/services" component={Services}></Route>  
