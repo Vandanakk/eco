@@ -11,6 +11,28 @@ import RexineChair from "./images/RexineChair.png"
 import hangingLight from "./images/hangingLight.jpg"
 import petbedchair from "./images/puppybed.jpg"
 import bambooCaneSofa from "./images/bambooCaneSofa.jpg"
+import Bamboo6seater from "./images/Bamboo6seater.jpg"
+import roundbasket from "./images/roundbasket.png"
+import hangingChair from "./images/hangingChair.jpg"
+import rockingChair from "./images/rockingChair.jpg"
+import bambooAmplifier from "./images/bambooAmplifier.png"
+import babydollStroller from "./images/babydollStroller.png"
+import kidChairs from "./images/kidChairs.jpg"
+import storageBox from "./images/storageBox.jpg"
+import servingTray from "./images/tray.jpg"
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -304,5 +326,213 @@ const data = [
       amount: 1,
       stock: 4,
     },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Bamboo Patio 6 Seater Dining Set",
+      price: 245,
+      lastPrice :278,
+      image:
+      Bamboo6seater,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 28,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage - Hotel, Restaurants, Garden, Dining Room",
+      description:
+        " If you are looking for a high-quality dining set that is as beautiful as it is sustainable, look no further than our Bamboo six sitting dining table set. With its handmade craftsmanship, eco-friendly materials, and timeless design, it is the perfect choice for anyone who values both style and sustainability.",
+      category: "Bamboodiningsets",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Rattan Round Baskets",
+      price: 14,
+      lastPrice :19,
+      image:
+      roundbasket,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 25,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Bread Fruits Flower Storage,Indoor Outdoor Carrying Basket",
+      description:
+        " These baskets are perfect for any room in your home, from the living room to the bathroom. They can be used for storage, decoration, or even as a planter for your favorite indoor plants. And because they are made from rattan, they are strong, durable and built to last.Each basket is carefully woven by hand, ensuring the highest quality and attention to detail.",
+      category: "baskets",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Stylish White Hanging Chair",
+      price: 156,
+      lastPrice :167,
+      image:
+      hangingChair,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 38,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage - Garden, Couryard, Hotel, Restaurant ",
+      description:
+        " Perfect for any room in your home, our hanging chairs provide a cozy and relaxing seating option that will add a touch of natural beauty to your decor. They are great for indoor or outdoor use and can be easily hung from a sturdy beam or ceiling hook.",
+      category: "Hangingchairs",
+      amount: 1,
+      stock: 4,
+    },
+     {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Vintage Rocking Chair",
+      price: 52,
+      lastPrice :67,
+      image:
+      rockingChair,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 48,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        "  Bamboo cane rocking chairs are great for outdoor living spaces such as patios, decks, or gardens. They are lightweight and easy to move, making them perfect for enjoying the sunshine or relaxing in the shade.",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Bamboo Sound Amplifier",
+      price: 9,
+      lastPrice :11,
+      image:
+      bambooAmplifier,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 48,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Parties Events, Hotel, Restaurant",
+      description:
+        "  Perfect for any music lover, our bamboo amplifiers are compatible with most smartphones and music players, providing a portable and convenient way to listen to your favorite tunes. They are great for indoor or outdoor use, and can be easily transported to your next outdoor adventure or picnic.",
+      category: "Bambooamplifier",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Wicker Baby Doll Stroller",
+      price: 95,
+      lastPrice :137,
+      image:
+      babydollStroller,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 37,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Playroom, Bedroom",
+      description:
+        "  Baby doll rattan stroller is a classic and timeless toy that can provide hours of imaginative play for children. Its lightweight, eco-friendly, and stylish design makes it a great choice for parents who want to encourage their children's creativity and sustainability. ",
+      category: "Babydollstrollers",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Eco-freindly Rattan Kids Chair",
+      price: 22,
+      lastPrice :28,
+      image:
+      kidChairs,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 42,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Playroom, Studyroom, Bedroom, Hotel, School, Restaurant",
+      description:
+        "  Bamboo rattan kids chairs are lightweight and easy to move, making them perfect for children to use both indoors and outdoors. They are also durable and sturdy, ensuring they will last through years of play. ",
+      category: "Kidchairs",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Closet Designer Wicker Storage Boxs",
+      price: 30,
+      lastPrice :38,
+      image:
+      storageBox,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 28,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Bedroom, Office, Hotel, Restaurant",
+      description:
+        " Bamboo rattan large storage boxes have a spacious interior that can hold a variety of items, including blankets, toys, clothes, and more. It can be used for a variety of purposes, including as a coffee table, storage ottoman, or as a decorative accent in any room of the house. ",
+      category: "storagebox",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Handwoven Serving Tray",
+      price: 7,
+      lastPrice :9,
+      image:
+      servingTray,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 49,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Bar, Pubs, Hotel, Restaurant",
+      description:
+        " Handwoven serving trays are lightweight made from natural rattan and seagrass, which are durable and sturdy enough to withstand daily use and easy to carry, making them perfect for serving food and drinks both indoors and outdoors. ",
+      category: "trays",
+      amount: 1,
+      stock: 4,
+    },
+
   ];
   export default data;
