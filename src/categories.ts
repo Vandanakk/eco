@@ -17,6 +17,7 @@ import BambooamplifierCategory from "./images/category/Bambooamplifier.png"
 import Chairs2Category from "./images/category/Chairs2.png"
 import ShelvesCategory from "./images/category/Shelves.png"
 import TablesCategory from "./images/category/Tables.png"
+import Bench from "./images/category/Bench.jpg"
 
 
 const categories = [
@@ -321,6 +322,22 @@ const categories = [
       description:
         "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
       category: "Lighting",
+      shipping: true,
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recotY5Nh00DQFdkm",
+      name: "Bamboo Patio Collection",
+      price: 15,
+      image:
+      Bench,
+      colors: ["#00ff00", "#0000ff", "#ff0000"],
+      company: "Ecowoodies",
+      featured: false,
+      description:
+        "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+      category: "Bench",
       shipping: true,
       amount: 1,
       stock: 4,

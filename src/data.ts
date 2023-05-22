@@ -350,20 +350,74 @@ import chair36 from "./images/chair36.png"
 import chair37 from "./images/chair37.jpg"
 import chair38 from "./images/chair38.jpg"
 import chair39 from "./images/chair39.jpg"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import hangingChair8 from "./images/hangingChair8.jpg"
+import hangingChair9 from "./images/hangingChair9.jpg"
+import hangingChair10 from "./images/hangingChair10.jpg"
+import hangingChair11 from "./images/hangingChair11.jpg"
+import hangingChair12 from "./images/hangingChair12.jpg"
+import hangingChair13 from "./images/hangingChair13.jpg"
+import hangingChair14 from "./images/hangingChair14.jpg"
+import hangingChair15 from "./images/hangingChair15.jpg"
+import hangingChair16 from "./images/hangingChair16.jpg"
+import rockingChair1 from "./images/rockingChair1.jpg"
+import rockingChair2 from "./images/rockingChair2.jpg"
+import rockingChair3 from "./images/rockingChair3.jpg"
+import rockingChair4 from "./images/rockingChair4.jpeg"
+import rockingChair5 from "./images/rockingChair5.jpg"
+import rockingChair6 from "./images/rockingChair6.jpg"
+import rockingChair7 from "./images/rockingChair7.jpg"
+import rockingChair8 from "./images/rockingChair8.jpg"
+import rockingChair9 from "./images/rockingChair9.jpg"
+import rockingChair10 from "./images/rockingChair10.jpg"
+import rockingChair11 from "./images/rockingChair11.jpg"
+import rockingChair12 from "./images/rockingChair12.jpg"
+import rockingChair13 from "./images/rockingChair13.jpg"
+import rockingChair14 from "./images/rockingChair14.jpg"
+import rockingChair15 from "./images/rockingChair15.jpg"
+import storageBox8 from "./images/storageBox8.jpg"
+import storageBox9 from "./images/storageBox9.jpg"
+import storageBox10 from "./images/storageBox10.jpg"
+import storageBox11 from "./images/storageBox11.jpg"
+import storageBox12 from "./images/storageBox12.jpg"
+import storageBox13 from "./images/storageBox13.jpg"
+import storageBox14 from "./images/storageBox14.jpg"
+import petBed20 from "./images/petBed20.png"
+import mudhaSet1 from "./images/mudhaSet1.jpg"
+import mudhaSet2 from "./images/mudhaSet2.jpg"
+import mudhaSet3 from "./images/mudhaSet3.jpg"
+import mudhaSet4 from "./images/mudhaSet4.jpg"
+import mudhaSet5 from "./images/mudhaSet5.jpg"
+import mudhaSet6 from "./images/mudhaSet6.jpg"
+import mudhaSet7 from "./images/mudhaSet7.jpg"
+import mudhaSet8 from "./images/mudhaSet8.jpg"
+import mudhaSet9 from "./images/mudhaSet9.jpg"
+import mudhaSetl0 from "./images/mudhaSet10.jpg"
+import mudhaSetl1 from "./images/mudhaSet11.jpg"
+import mudhaSetl2 from "./images/mudhaSet12.jpg"
+import mudhaSetl3 from "./images/mudhaSet13.jpg"
+import mudhaSetl4 from "./images/mudhaSet14.jpg"
+import mudhaSetl5 from "./images/mudhaSet15.jpg"
+import bench1 from "./images/bench1.jpg"
+import bench2 from "./images/bench2.jpg"
+import bench3 from "./images/bench3.jpg"
+import charpai1 from "./images/charpai1.jpg"
+import charpai2 from "./images/charpai2.jpg"
+import charpai3 from "./images/charpai3.jpg"
+import charpai4 from "./images/charpai4.jpg"
+import charpai5 from "./images/charpai5.jpg"
+import charpai6 from "./images/charpai6.jpg"
+import charpai7 from "./images/charpai7.jpg"
+import charpai8 from "./images/charpai8.jpg"
+import charpai9 from "./images/charpai9.jpg"
+import charpai10 from "./images/charpai10.jpg"
+import charpai11 from "./images/charpai11.jpg"
+import charpai12 from "./images/charpai12.jpg"
+import charpai13 from "./images/charpai13.jpg"
+import charpai14 from "./images/charpai14.jpg"
+import peedi1 from "./images/peedi1.jpg"
+import peedi2 from "./images/peedi2.jpg"
+import peedi3 from "./images/peedi3.jpg"
+import peedi4 from "./images/peedi4.jpg"
 
 
 
@@ -427,7 +481,7 @@ const data = [
     },
     {
       id: "rec5NBwZ5zCD9nfF0",
-      name: "Newborn Photography Prop Cradle",
+      name: "Newborn Photography Prop Rattan Cradle",
       price: 24,
       lastPrice :35,
       image:
@@ -872,7 +926,7 @@ const data = [
     },
     {
       id: "recoW8ecgjtKx2Sj2",
-      name: "Handwoven Serving Tray",
+      name: "Handmade Bamboo Serving Trays",
       price: 9,
       lastPrice :12,
       image:    tray1,
@@ -963,7 +1017,7 @@ const data = [
     },
     {
       id: "recoW8ecgjtKx2Sj2",
-      name: "Handwoven Rattan Tray",
+      name: "Handmade Bamboo Tray",
       price: 8,
       lastPrice :11,
       image:
@@ -1223,7 +1277,7 @@ const data = [
       stool1,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 57,
+      reviews: 157,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1246,7 +1300,7 @@ const data = [
       stool2,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 57,
+      reviews: 105,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1269,7 +1323,7 @@ const data = [
       stool3,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 47,
+      reviews: 97,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1292,7 +1346,7 @@ const data = [
       stool4,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 35,
+      reviews: 135,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1315,7 +1369,7 @@ const data = [
       stool5,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 35,
+      reviews: 165,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1338,7 +1392,7 @@ const data = [
       stool6,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 24,
+      reviews: 124,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1361,7 +1415,7 @@ const data = [
       stool7,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 28,
+      reviews: 128,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1384,7 +1438,7 @@ const data = [
       stool8,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 38,
+      reviews: 138,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1394,7 +1448,7 @@ const data = [
       feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant, Coffee Home ",
       description:
         " The unique texture and natural color of cane give them a rustic and organic aesthetic that complements a variety of interior design styles. These are lightweight and easy to move around, making them a practical choice for small spaces or outdoor settings. ",
-      category: "Ottoman",
+      category: "Tables",
       amount: 1,
       stock: 4,
     },
@@ -1407,7 +1461,7 @@ const data = [
       stool9,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 48,
+      reviews: 148,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1430,7 +1484,7 @@ const data = [
       stool10,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 38,
+      reviews: 108,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1446,14 +1500,14 @@ const data = [
     },
     {
       id: "recoW8ecgjtKx2Sj2",
-      name: "Handcrafted Wicker Multicolor Pouf",
+      name: "Handcrafted Wicker Multicolor Iron Stool",
       price: 48,
       lastPrice :67,
       image:
       stool11,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 28,
+      reviews: 128,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1471,12 +1525,12 @@ const data = [
       id: "recoW8ecgjtKx2Sj2",
       name: " Set of 2 Foot Stool Iron",
       price: 45,
-      lastPrice :75,
+      lastPrice :65,
       image:
       stool12,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 28,
+      reviews: 128,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1499,7 +1553,7 @@ const data = [
       stool13,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 36,
+      reviews: 136,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1522,7 +1576,7 @@ const data = [
       stool14,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 26,
+      reviews: 96,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1545,7 +1599,7 @@ const data = [
       stool15,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 26,
+      reviews: 126,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1568,7 +1622,7 @@ const data = [
       stool16,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 46,
+      reviews: 146,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1591,7 +1645,7 @@ const data = [
       stool17,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 46,
+      reviews: 116,
       featured: "Set of 4 Ottomans",
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1614,7 +1668,7 @@ const data = [
       stool18,
       colors: ["#ff0000", "#ffb900", "#00ff00"],
       company: "Ecowoodies",
-      reviews: 56,
+      reviews: 156,
       featured: false,
       feature1:"Eco-friendly",
       feature2:"Customized",
@@ -1669,7 +1723,7 @@ const data = [
       feature5:"Recliner, Decorative, Patio",
       feature6:"Usage -Home, Garden, Farmhouse, Balcony, Terrace, Courtyard, Lounge, Hotel, Restaurant, Resorts ",
       description:
-        " Ecowoodies bamboo cane hanging chairs have a unique and stylish appearance that can add a natural and organic element to any room or outdoor space. ",
+        " This handmade rattan hanging chair is  unique and stylish in  appearance that gives a natural and organic element to any room or outdoor space. ",
       category: "Hangingchairs",
       amount: 1,
       stock: 4,
@@ -1814,7 +1868,7 @@ const data = [
     },
     {
       id: "recoW8ecgjtKx2Sj2",
-      name: "Handwoven Rattan Wicker Basket",
+      name: "Rattan Webbing Wicker Basket",
       price: 9,
       lastPrice : 13,
       image:
@@ -2218,7 +2272,7 @@ const data = [
       feature5:"Keeping , carrying and Storing Dolls , Teddies and Soft Toys of your little ones ",
       feature6:"Usage -Baby doll strollers are versatile toys that can be used in a variety of settings, both indoors and outdoors. ",
       description:
-        "Ecowoodies rattan strollers are both sturdy and lightweight, making them easy to handle for kids of all ages by encouraging children to engage in imaginative play and social interactions with their peers. ",
+        "These rattan baby doll prams can be used both indoors and outdoors, making them a great toy for children to take on adventures.",
       category: "Babydollstrollers",
       stock: 4,
     },
@@ -2290,7 +2344,7 @@ const data = [
     },
     {
       id: "recoW8ecgjtKx2Sj2",
-      name: "Mianiature Baby Doll Carriage",
+      name: "Mianiature Baby Doll Bed",
       price: 28,
       lastPrice : 37,
       image:
@@ -2570,7 +2624,7 @@ const data = [
       feature5:"They are easy to clean and maintain, and their sturdy construction ensures that they will last for many years.",
       feature6:"Usage -Home, Garden, Kitchen , Bathroom, Hotel, Restaurant ",
       description:
-        " Ecowoodies Rattan Bamboo Storage Boxes come in a variety of sizes and shapes, making it easy to find a box that fits your specific storage needs. ",
+        "These handmade rattan bamboo storage boxes come in a variety of sizes and shapes, making it easy to find a box that fits your specific storage needs. ",
       category: "storagebox",
       stock: 4,
     },
@@ -2727,29 +2781,7 @@ const data = [
         " Bamboo amplifiers are designed to enhance the natural tones of music, producing a crisp and clear sound. Bamboo is also lightweight and portable, making bamboo amplifiers easy to carry around. ",
       category: "Bambooamplifier",
       stock: 4,
-    },
-    {
-      id: "recoW8ecgjtKx2Sj2",
-      name: "Bamboobeat Sound Amplifier",
-      price: 7,
-      lastPrice : 8,
-      image:
-      bambooAmplifier8,
-      colors: ["#ff0000", "#ffb900", "#00ff00"],
-      company: "Ecowoodies",
-      reviews: 49,
-      featured: " Clean with a duster or a damp cloth when dirty. ",
-      feature1:"Eco-friendly",
-      feature2:"Customized",
-      feature3:"Material - Bamboo",
-      feature4:"100% Recycle",
-      feature5:"Bamboo Amplifiers offer several benefits to music lovers who are looking for an eco-friendly, durable, and cost-effective way to amplify their music. ",
-      feature6:"Usage -Home, Garden, Hotel, Restaurant, Office ",
-      description:
-        "Ecowoodies bamboo amplifiers are designed with this in mind, they can produce a natural and high-quality sound that is pleasing to the ear. ",
-      category: "Bambooamplifier",
-      stock: 4,
-    },
+    },  
     {
       id: "recoW8ecgjtKx2Sj2",
       name: "Bamboobeat Sound Amplifier",
@@ -2774,7 +2806,7 @@ const data = [
     },
     {
       id: "recoW8ecgjtKx2Sj2",
-      name: "Bambo0 Sound-Amplifier",
+      name: "Bamboo Sound-Amplifier",
       price: 6,
       lastPrice : 7,
       image:
@@ -2903,29 +2935,7 @@ const data = [
         "Ecowoodies Rattan Bamboo Sofa Chairs are 100 % Eco-freindly . The durability, lightweight nature, and unique aesthetic appeal make them a versatile choice for any living space. ",
       category: "Sofaset",
       stock: 4,
-    },
-    {
-      id: "recoW8ecgjtKx2Sj2",
-      name: "Vintage Handcrafted Round Dining Table Chair Set ",
-      price: 260,
-      lastPrice : 320,
-      image:
-      bambooDiningset1,
-      colors: ["#ff0000", "#ffb900", "#00ff00"],
-      company: "Ecowoodies",
-      reviews: 48,
-      featured: false,
-      feature1:"Eco-friendly",
-      feature2:"Customized",
-      feature3:"Material - Bamboo",
-      feature4:"100% Recycle",
-      feature5:" A bamboo dining table set is an excellent investment for those looking for a sustainable and stylish addition to their dining room",
-      feature6:"Usage -Home, Garden, Hotel, Restaurant, Office, Terrace, Farmhouse, Resorts, Living Room, Bar, Pubs  ",
-      description:
-        "Four Bamboo Chairs with round  dining table sets have a unique and natural look that adds warmth and texture to any dining room, balcony , garden. They come in a variety of styles and finishes, from sleek and modern to rustic and traditional. ",
-      category: "Bamboodiningsets",
-      stock: 4,
-    },
+    }, 
     {
       id: "recoW8ecgjtKx2Sj2",
       name: "Bamboo Bistro Round Dining Table Chair Set ",
@@ -2989,6 +2999,28 @@ const data = [
       feature6:"Usage -Home, Garden, Hotel, Restaurant, Resorts, Dining Area ",
       description:
         "Ecowoodies use traditional techniques to create unique and stylish designs that reflect the rich culture and heritage of their respective regions. Each piece is handcrafted with attention to detail, ensuring that every Bamboo Dining Set is truly one-of-a-kind.",
+      category: "Bamboodiningsets",
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Vintage Handcrafted Round Dining Table Chair Set ",
+      price: 260,
+      lastPrice : 320,
+      image:
+      bambooDiningset1,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 48,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo",
+      feature4:"100% Recycle",
+      feature5:" A bamboo dining table set is an excellent investment for those looking for a sustainable and stylish addition to their dining room",
+      feature6:"Usage -Home, Garden, Hotel, Restaurant, Office, Terrace, Farmhouse, Resorts, Living Room, Bar, Pubs  ",
+      description:
+        "Four Bamboo Chairs with round  dining table sets have a unique and natural look that adds warmth and texture to any dining room, balcony , garden. They come in a variety of styles and finishes, from sleek and modern to rustic and traditional. ",
       category: "Bamboodiningsets",
       stock: 4,
     },
@@ -3120,7 +3152,7 @@ const data = [
       feature5:" A bamboo dining table set is an excellent investment for those looking for a sustainable and stylish addition to their dining room, dining area. ",
       feature6:"Usage -Home, Garden, Hotel, Restaurant, Resorts, Dining Area ",
       description:
-        "Ecowoodies exquisite and eco-friendly Bamboo Dining Sets come in a variety of styles and finishes, from sleek and modern to rustic and traditional.  Each piece is handcrafted with attention to detail, ensuring that every Bamboo Dining Set is truly one-of-a-kind. ",
+        "This natural bamboo dining set is stylish and eco-freindly and also come in a variety of styles and finishes, from sleek and modern to rustic and traditional.  Each piece is handcrafted with attention to detail, ensuring that every Bamboo Dining Set is truly one-of-a-kind. ",
       category: "Bamboodiningsets",
       stock: 4,
     },
@@ -3164,7 +3196,7 @@ const data = [
       feature5:" A Canae Bamboo dining table set is an excellent investment for those looking for a sustainable and stylish addition to their dining room, dining area. ",
       feature6:"Usage -Home, Garden, Hotel, Restaurant, Resorts, Dining Area ",
       description:
-        " Ecowoodies use traditional techniques to create eco-friendly ,  unique and stylish designs that reflect the rich culture and heritage of their respective regions. It's designed to last for years and can withstand everyday wear and tear, making it an ideal addition to any dining room. ",
+        " These handmade unique and stylish designs reflect the rich culture and heritage of their respective regions. It's designed to last for years and can withstand everyday wear and tear, making it an ideal addition to any dining room. ",
       category: "Bamboodiningsets",
       stock: 4,
      },
@@ -4187,7 +4219,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Traditional",
       description:
-        " These Sunbath Chairs are also lightweight, adjustable and easy to move, making them a great option for camping or beach trips. Whether you're lounging by the pool or soaking up the sun in your backyard, cane rattan sunbath chairs and sun loungers are the perfect choice for stylish and sustainable outdoor relaxation.",
+        " These Sunbath Chairs are lightweight, adjustable and easy to move, making them a great option for camping or beach trips. Whether you're lounging by the pool or soaking up the sun in your backyard, cane rattan sunbath chairs and sun loungers are the perfect choice for stylish and sustainable outdoor relaxation.",
       category: "BambooLoungeChair",
       shipping: true,
       amount: 1,
@@ -4233,7 +4265,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Traditional",
       description:
-        " These Sunbath Chairs are also lightweight and easy to move, making them a great option for camping or beach trips. Whether you're lounging by the pool or soaking up the sun in your backyard, cane rattan sunbath chairs and sun loungers are the perfect choice for stylish and sustainable outdoor relaxation.",
+        " Our rattan and bamboo lounge chairs can be used both indoors and outdoors. They are lightweight and easy to move, which makes them ideal for use on patios, decks, or in the garden. Whether you're lounging by the pool or soaking up the sun in your backyard, cane rattan sunbath chairs and sun loungers are the perfect choice for stylish and sustainable outdoor relaxation.",
       category: "BambooLoungeChair",
       shipping: true,
       amount: 1,
@@ -4279,7 +4311,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Traditional",
       description:
-        " Bamboo sunbed and sun loungers are a stylish and sustainable alternative to traditional outdoor furniture.They are sturdy and durable, withstanding wear and tear over time. ",
+        "These chairs typically have a longer, reclined design and are great for sunbathing. They can often be adjusted to different positions for optimal comfort.They are sturdy and durable, withstanding wear and tear over time. ",
       category: "BambooLoungeChair",
       shipping: true,
       amount: 1,
@@ -4287,7 +4319,7 @@ const data = [
     },
     {
       id: "recd1jIVIEChmiwhe",
-      name: "Outdoor Sunbath Bamboo Beach Lounger",
+      name: "Outdoor Sunbed Bamboo Beach Lounger",
       price: 98,
       lastPrice :125,
       image: sunLounger9,
@@ -4325,7 +4357,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Traditional",
       description:
-        " Theses are lightweight and easy to move around, making them perfect for outdoor use. Adjustable backrests provide customizable comfort for all users. ",
+        " These rattan and bamboo lounge chairs can also be used in bedrooms as reading chairs or as a stylish alternative to traditional seating. Adjustable backrests provide customizable comfort for all users. ",
       category: "BambooLoungeChair",
       shipping: true,
       amount: 1,
@@ -4333,7 +4365,7 @@ const data = [
     },
     {
       id: "recd1jIVIEChmiwhe",
-      name: " Handmade Rattan Black Lounger",
+      name: " Handmade Rattan Rustic Lounger",
       price: 42,
       lastPrice :55,
       image: sunLounger11,
@@ -4348,7 +4380,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Traditional",
       description:
-        " Theses are lightweight and easy to move around, making them perfect for outdoor use. Adjustable backrests provide customizable comfort for all users. ",
+        " These are lightweight and easy to move around, making them perfect for outdoor use. Adjustable backrests provide customizable comfort for all users. ",
       category: "BambooLoungeChair",
       shipping: true,
       amount: 1,
@@ -4371,7 +4403,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Traditional",
       description:
-        " These are lightweight and easy to move around, making them perfect outdoor areas such as patios, decks, and gardens. These can be used in both residential and commercial settings, such as resorts and hotels.",
+        "This set of  rattan and bamboo lounge chairs can add a touch of natural style to your living room, garden or pool . They can be paired with cushions or throws to create a cozy and inviting space.",
       category: "BambooLoungeChair",
       shipping: true,
       amount: 1,
@@ -4448,7 +4480,7 @@ const data = [
     },
     {
       id: "recd1jIVIEChmiwhe",
-      name: " Canevibe Rustic Lounger Chair",
+      name: " Canevibe Rustic Lounge Chair",
       price: 45,
       lastPrice :52,
       image: sunLounger16,
@@ -4463,7 +4495,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Traditional",
       description:
-        " This is designed to provide maximum comfort and relaxation. The sturdy bamboo and rattan construction ensures long-lasting durability and resistance to the elements, while the lightweight design makes them easy to move and store.",
+        " These rattan and bamboo lounge chairs can be used both indoors and outdoors. They are lightweight and easy to move, which makes them ideal for use on patios, decks, or in the garden. The sturdy bamboo and rattan construction ensures long-lasting durability and resistance to the elements, while the lightweight design makes them easy to move and store.",
       category: "BambooLoungeChair",
       shipping: true,
       amount: 1,
@@ -4486,7 +4518,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Traditional",
       description:
-        " Our bamboo and rattan lounge chairs are fully recyclable and biodegradable, making them an environmentally responsible choice for your outdoor furniture.Their sturdy bamboo and cane construction ensures long-lasting durability and resistance to the elements, while the lightweight design makes them easy to move and store.",
+        " These rattan and bamboo have a natural, organic look that is both timeless and stylish. They can add a touch of warmth and texture to any room or outdoor space.",
       category: "BambooLoungeChair",
       shipping: true,
       amount: 1,
@@ -4494,7 +4526,7 @@ const data = [
     },
     {
       id: "recd1jIVIEChmiwhe",
-      name: " Handmade Outdoor Reclining Lounge Chair ",
+      name: " Handcrafted Outdoor Reclining Sunlounger ",
       price: 48,
       lastPrice :60,
       image: sunLounger18,
@@ -4558,14 +4590,14 @@ const data = [
       feature6:"Kidchairs",
       description:
         " This Rattan kids' chair and baby chair is a sustainable and stylish alternative to traditional children's furniture. ",
-      category: "NewBorns",
+      category: "Kidchairs",
       shipping: true,
       amount: 1,
       stock: 4,
     },
     {
       id: "recoM2MyHJGHLVi5l",
-      name: "Sustainable Bamboo Rattan Kids Armchair",
+      name: "Sustainable Bamboo Rattan Armchair",
       price: 28,
       lastPrice :40,
       image:
@@ -4582,7 +4614,7 @@ const data = [
       feature6:"Baby Chair",
       description:
         " Ecowoodies bamboo rattan  kids' armchairs are perfect for use in playrooms, bedrooms, or as a part of outdoor furniture sets.",
-      category: "Kidchairs",
+      category: "Chairs2",
       shipping: true,
       amount: 1,
       stock: 4,
@@ -4685,7 +4717,7 @@ const data = [
     },
     {
       id: "recoM2MyHJGHLVi5l",
-      name: "Organic Oasis Kids Chair",
+      name: "Organic Oasis Rattan Wicker Chair",
       price: 28,
       lastPrice :38,
       image:
@@ -4702,7 +4734,7 @@ const data = [
       feature6:"Baby Chair",
       description:
         "Our Bamboo Rattan  kids' armchairs are perfect for use in playrooms, bedrooms, or as a part of outdoor furniture sets. ",
-      category: "Kidchairs",
+      category: "Chairs2",
       shipping: true,
       amount: 1,
       stock: 4,
@@ -5069,7 +5101,7 @@ const data = [
     },
     {
       id: "recoM2MyHJGHLVi5l",
-      name: "Sustainable Sprout Seat Red Kids Chair",
+      name: "Sustainable Sprout Seat Red Rattan Chair",
       price: 28	,
       lastPrice :38,
       image:
@@ -5086,7 +5118,7 @@ const data = [
       feature6:"Baby Chair",
       description:
         "This red elegant chair is not only stylish but also very durable, making it ideal for your child's everyday use. It is  lightweight and easy to move, allowing your child to move it around and play comfortably.",
-      category: "Kidchairs",
+      category: "Chairs2",
       shipping: true,
       amount: 1,
       stock: 4,
@@ -5277,7 +5309,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Modern",
       description:
-        " Transform your home into a sustainable oasis with our handmade bamboo rattan floor lamps and table lamps, crafted with care by local artisans from Assam, Tripura, and Nagaland. Made from eco-friendly and recyclable bamboo and rattan, these lamps are the perfect choice for those seeking an environmentally conscious lighting solution. ",
+        "These are made  from eco-friendly and recyclable bamboo and rattan, these lamps are the perfect choice for those seeking an environmentally conscious lighting solution. Transform your home into a sustainable oasis with our handmade bamboo rattan floor lamps and table lamps, crafted with care by local artisans from Assam, Tripura, and Nagaland.  ",
       category: "Lighting",
       shipping: true,
       amount: 1,
@@ -5325,7 +5357,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Modern",
       description:
-        " If you're looking to brighten up your living space, bedroom, or office, our range of handcrafted lighting options will bring a touch of rustic charm and elegance to your decor. Choose our bamboo rattan table lamps for a sustainable and stylish addition to your home or business. ",
+        " The natural look of this rattan bamboo lamp adds a warm and cozy touch to any space.It can be used to add a natural touch to outdoor spaces like patios, gardens, or balconies. ",
       category: "Lighting",
       shipping: true,
       amount: 1,
@@ -5661,7 +5693,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Modern",
       description:
-        "If you are looking for classic bamboo lantern lamp , this lamp is antique , lovingly handmade by local artisans from Assam, Tripura, and Nagaland, showcasing the unique craftsmanship and skill of these talented individuals.",
+        "These rattan bamboo lamps are heat-resistant and do not become hot to the touch, making them safe to use in any room.The warm glow of rattan bamboo lamps creates a relaxing and comfortable atmosphere in any room. ",
       category: "Lighting",
       shipping: true,
       amount: 1,
@@ -6276,7 +6308,7 @@ const data = [
     },
     {
       id: "recoW8ecgjtKx2Sj2",
-      name: "Closet Designer Wicker Storage Boxes",
+      name: "Bamboo Rattan Wicker Storage Boxes",
       price: 82,
       lastPrice :108,
       image:
@@ -6798,7 +6830,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Usage - Lounge, Garden, Study Room, Bedroom, Office, Hotel, Restaurant ",
       description:
-        " These beige bamboo rattan tabels are lightweight, making them easy to move around and reposition. These are handmade by skilled artisans, giving them a unique and artisanal touch. ",
+        " These beige bamboo rattan tables are lightweight, making them easy to move around and reposition. These are handmade by skilled artisans, giving them a unique and artisanal touch. ",
       category: "Tables",
       amount: 1,
       stock: 4,
@@ -6844,7 +6876,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Usage - Lounge, Garden, Study Room, Bedroom, Office, Hotel, Restaurant ",
       description:
-        " This Bamboo is handmade sustainable and eco-freindly , these can also be used to display decorative items such as flowers, candles, or art pieces. This can add visual interest and personality to the room.",
+        " They are handmade sustainable and eco-freindly , these can also be used to display decorative items such as flowers, candles, or art pieces. This can add visual interest and personality to the room.",
       category: "Tables",
       amount: 1,
       stock: 4,
@@ -6936,7 +6968,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Usage - Lounge, Garden, Study Room, Bedroom, Office, Hotel, Restaurant ",
       description:
-        " These are typically low-height tables that are designed to be used for serving tea, snacks, or other small items.he compact size of these tables means they take up very little space, making them ideal for smaller rooms or apartments. ",
+        " It is  low-height table which is designed to be used for serving tea, snacks, or other small items.The compact size of these tables means they take up very little space, making them ideal for smaller rooms or apartments. ",
       category: "Tables",
       amount: 1,
       stock: 4,
@@ -7902,7 +7934,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Usage - Lounge, Home, Living Room, Garden, Terrace, Courtyard, Beach, Pubs, Farmhouse, Office, Hotel, Restaurant  ",
       description:
-        " These  rattan bamboo chair set  is lightweight and easy to move around, making it a versatile choice for any living space.These chairs have a natural, organic look that can add warmth and texture to a room or garden ",
+        " This rattan bamboo chair set  is lightweight and easy to move around, making it a versatile choice for any living space.These chairs have a natural, organic look that can add warmth and texture to a room or garden ",
       category: "Chairs2",
       amount: 1,
       stock: 4,
@@ -7994,7 +8026,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Usage - Lounge, Home, Living Room, Garden, Terrace, Courtyard, Beach, Pubs, Farmhouse, Office, Hotel, Restaurant  ",
       description:
-        " These  rattan bamboo table ottoman set  is lightweight and easy to move around, making it a versatile choice for any living space.These large rattan tables have a natural, organic look that can add warmth and texture to a room and can be used for a variety of purposes, such as serving as a dining table, a coffee table, or even a work table. ",
+        " This bamboo chair is lightweight and easy to move around, making it a versatile choice for any living space.These have a natural, organic look that can add warmth and texture to a room and can be used for a variety of purposes. ",
       category: "Chairs2",
       amount: 1,
       stock: 4,
@@ -8017,7 +8049,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Usage - Lounge, Home, Living Room, Garden, Terrace, Courtyard, Beach, Pubs, Farmhouse, Office, Hotel, Restaurant  ",
       description:
-        " These bamboo wooden chair is durable , lightweight and easy to move around, making it a versatile choice for any living space.Lightweight and easy to move around, making them ideal for offices with changing layouts. ",
+        " This bamboo wooden chair is durable , lightweight and easy to move around, making it a versatile choice for any living space.Lightweight and easy to move around, making them ideal for offices with changing layouts. ",
       category: "Chairs2",
       amount: 1,
       stock: 4,
@@ -8155,7 +8187,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Usage - Lounge, Home, Living Room, Garden, Terrace, Courtyard, Beach, Pubs, Farmhouse, Office, Hotel, Restaurant  ",
       description:
-        " These  rattan bamboo chair set  is lightweight and easy to move around, making it a versatile choice for any living space.They are suitable for use in living rooms, bedrooms, patios, and outdoor spaces.",
+        " This rattan bamboo chair set  is lightweight and easy to move around, making it a versatile choice for any living space.They are suitable for use in living rooms, bedrooms, patios, and outdoor spaces.",
       category: "Chairs2",
       amount: 1,
       stock: 4,
@@ -8201,7 +8233,7 @@ const data = [
       feature5:"Customized Packaging",
       feature6:"Usage - Lounge, Home, Living Room, Garden, Terrace, Courtyard, Beach, Pubs, Farmhouse, Office, Hotel, Restaurant  ",
       description:
-        "These chair are  lightweight and easy to move around, making them ideal for outdoor and indoor spaces.The woven rattan and cane seats provide a comfortable and supportive surface that conforms to the body's shape. ",
+        "These chairs are  lightweight and easy to move around, making them ideal for outdoor and indoor spaces.The woven rattan and cane seats provide a comfortable and supportive surface that conforms to the body's shape. ",
       category: "Chairs2",
       amount: 1,
       stock: 4,
@@ -8346,7 +8378,7 @@ const data = [
     },
     {
       id: "recoW8ecgjtKx2Sj2",
-      name: "Bistro Patio Cafe  Chair",
+      name: "Bistro Patio Cafe Chair",
       price:46,
       lastPrice :62,
       image:
@@ -8461,7 +8493,7 @@ const data = [
     },
     {
       id: "recoW8ecgjtKx2Sj2",
-      name: "Bamboo Rattan Chair Ottoman Set",
+      name: "Vintage Handcrafted Rattan Chair Ottoman Set",
       price:118,
       lastPrice :140,
       image:
@@ -8482,62 +8514,1567 @@ const data = [
       amount: 1,
       stock: 4,
     },
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Indoor/Outdoor Generic Rattan Hanging chair",
+      price: 110,
+      lastPrice :147,
+      image:
+      hangingChair8,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 74,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage - Garden, Couryard, Hotel, Restaurant ",
+      description:
+        " It gives a touch of eco-friendly elegance to your home with our handmade bamboo rattan wicker hanging chair swing chair, crafted by local artisans in Assam, Tripura, and Nagaland. ",
+      category: "Hangingchairs",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Vintage Wicker Swing Chair",
+      price: 108,
+      lastPrice :135,
+      image:
+      hangingChair9,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 56,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage - Garden, Couryard, Hotel, Restaurant ",
+      description:
+        " It is perfect for indoor or outdoor use, our hanging chair swing chair is a cozy and comfortable addition to any space, providing a relaxing spot to read, meditate, or simply unwind. ",
+      category: "Hangingchairs",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Bamboo Rattan Woven Egg Chair",
+      price: 122,
+      lastPrice :150,
+      image:
+      hangingChair10,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 88,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage - Garden, Couryard, Hotel, Restaurant ",
+      description:
+        " Its intricate woven design and natural, earthy tones, this chair is a true testament to the beauty of traditional craftsmanship. Perfect for any room in your home, our hanging chairs provide a cozy and relaxing seating option that will add a touch of natural beauty to your decor. They are great for indoor or outdoor use and can be easily hung from a sturdy beam or ceiling hook.",
+      category: "Hangingchairs",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Garden Poly Bamboo Rattan Swing Chair",
+      price: 130,
+      lastPrice :160,
+      image:
+      hangingChair11,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 79,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage - Garden, Couryard, Hotel, Restaurant ",
+      description:
+        " This elegant rattan bamboo swing chair can be used both indoors and outdoors, making them versatile and practical.This can be hung from a sturdy ceiling or branch to create a cozy and relaxing spot in your home, garden, or patio.",
+      category: "Hangingchairs",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Double Seater Hammock Swing Chair",
+      price: 150,
+      lastPrice :198,
+      image:
+      hangingChair12,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 87,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage - Garden, Couryard, Hotel, Restaurant ",
+      description:
+        " This double sitting swing chair  can be a great addition to any home or garden, providing a comfortable and stylish seating option that is both practical and environmentally friendly.",
+      category: "Hangingchairs",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Coastal Cove Rattan Swing Seat",
+      price: 96,
+      lastPrice :127,
+      image:
+      hangingChair13,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 108,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage - Garden, Couryard, Hotel, Restaurant ",
+      description:
+        "This stylish hanging ring chair can add a touch of natural and rustic charm to any space, creating a cozy and inviting atmosphere.Its comfortable and supportive design helps to  reduce stress and promote relaxation.",
+      category: "Hangingchairs",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Rattan Wicker Hammock Hanging Chair",
+      price: 98,
+      lastPrice :130,
+      image:
+      hangingChair14,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 110,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage - Garden, Couryard, Hotel, Restaurant ",
+      description:
+        " These swing chairs can help save space and provide an alternative seating option, especially in small apartments or houses.Perfect for any room in your home, our hanging chairs provide a cozy and relaxing seating option that will add a touch of natural beauty to your decor. They are great for indoor or outdoor use and can be easily hung from a sturdy beam or ceiling hook.",
+      category: "Hangingchairs",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Handmade Haven Rattan Hanging Chair",
+      price: 118,
+      lastPrice :140,
+      image:
+      hangingChair15,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 138,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage - Garden, Couryard, Hotel, Restaurant ",
+      description:
+        " These are lightweight and durable, making them easy to move and transport.They can be hung from a sturdy ceiling or branch to create a cozy and relaxing spot in your home, garden, or patio.",
+      category: "Hangingchairs",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Stylish Cane Porch Hanging Chair",
+      price: 109,
+      lastPrice :127,
+      image:
+      hangingChair16,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 38,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage - Garden, Couryard, Hotel, Restaurant ",
+      description:
+        " Perfect for any room in your home, our hanging chairs provide a cozy and relaxing seating option that will add a touch of natural beauty to your decor.  Its intricate woven design and natural, earthy tones, this chair is a true testament to the beauty of traditional craftsmanship. Perfect for any room in your home, our hanging chairs provide a cozy and relaxing seating option that will add a touch of natural beauty to your decor. They are great for indoor or outdoor use and can be easily hung from a sturdy beam or ceiling hook.",
+      category: "Hangingchairs",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Thonet Bamboo Rocking Chair",
+      price:48,
+      lastPrice :60,
+      image:
+      rockingChair1,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 78,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        " These rocking chairs are often used in living rooms, patios, or outdoor spaces for relaxation and comfort. They are lightweight and easy to move, making them perfect for enjoying the sunshine or relaxing in the shade.",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Handcrafte Recliner Rocking Chair",
+      price:45,
+      lastPrice :55,
+      image:
+      rockingChair2,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 59,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        "  The unique design of this rocking chair provides a relaxing and calming experience, reducing stress and promoting mental health.They  are great for outdoor living spaces such as patios, decks, or gardens. ",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Vintage Rustic Rocking Lounge Chair",
+      price:50,
+      lastPrice :60,
+      image:
+      rockingChair3,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 96,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        " The versatile design of these chairs can fit well in any home decor, adding a touch of natural beauty to any space. They are great for outdoor living spaces such as patios, decks, or gardens.",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Rattan Relaxer Cane Rocking Chair",
+      price:44,
+      lastPrice :55,
+      image:
+      rockingChair4,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 72,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        "  These chairs are typically designed with a curved base, allowing for a smooth rocking motion and optimal comfort. They are lightweight and easy to move, making them perfect for enjoying the sunshine or relaxing in the shade.",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Relaxing Bamboo Rocking Chair",
+      price:43,
+      lastPrice :52,
+      image:
+      rockingChair5,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 64,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        " If you are looking for simple relciner relaxing chair add this stunning piece of furniture to your home today and experience the comfort and beauty of nature in your own space.They are lightweight and easy to move, making them perfect for enjoying the sunshine or relaxing in the shade.",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Garden Patio Cane Rocking Chair",
+      price:49,
+      lastPrice :60,
+      image:
+      rockingChair6,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 84,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        " These Bamboo cane rocking chairs are great for outdoor living spaces such as patios, decks, or gardens. They are lightweight and durable, making them easy to move around and resistant to wear and tear.",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Vintage Bamboo Children Rocking Chair",
+      price:50,
+      lastPrice :60,
+      image:
+      rockingChair7,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 81,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        " Children's rocking chairs are specially designed and sized for children to comfortably use for play, relaxation, or reading. They come in various shapes, sizes, and materials, but typically feature a sturdy and safe design that can withstand the wear and tear of young children.",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Ergonomic Cane Children Rocking Chair",
+      price:49,
+      lastPrice :58,
+      image:
+      rockingChair8,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 95,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        "  Our Children's cane rocking chairs are great for outdoor living spaces such as patios, decks, or gardens. It encourages imaginative play and creativity. It is lightweight and easy to move, making them perfect for enjoying the sunshine or relaxing in the shade.",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Indoor/ Outdoor Bamboo Rocking Chair",
+      price:54,
+      lastPrice :62,
+      image:
+      rockingChair9,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 79,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        " These rocking chairs are designed to create a soothing and relaxing motion while seated. They typically feature a curved base that allows the chair to rock back and forth, creating a gentle swaying motion that can help reduce stress and promote relaxation.",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Antique Natural Rattan Rocking Chair",
+      price:55,
+      lastPrice :65,
+      image:
+      rockingChair10,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 71,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        "  These antique style rocking chairs are great for outdoor living spaces such as patios, decks, or gardens.They can be used in a variety of settings, including living rooms, bedrooms, and outdoor spaces like porches and patios. Whether used for relaxation or simply as a comfortable seating option, a rocking chair can be a great addition to any home. ",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Classic Rattan Cane Rocking Chair",
+      price:43,
+      lastPrice :52,
+      image:
+      rockingChair11,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 69,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        "  Our rattan rocking chair boasts unique aesthetics, with a design that is both modern and timeless. It fits perfectly in any style of home decor, making it a versatile and practical addition to any space. They are lightweight and easy to move, making them perfect for enjoying the sunshine or relaxing in the shade.",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Rattan Cane Kids Rocking Chair",
+      price:54,
+      lastPrice :64,
+      image:
+      rockingChair12,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 59,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        "  It provides a comfortable seating option for reading or watching TV. They are great for outdoor living spaces such as patios, decks, or gardens. They are lightweight and easy to move, making them perfect for enjoying the sunshine or relaxing in the shade.",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Retro Bamboo Cane Rocking Chair",
+      price:58,
+      lastPrice :67,
+      image:
+      rockingChair13,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 94,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        " They are lightweight and easy to move, making them perfect for enjoying the sunshine or relaxing in the shade. They are great for outdoor living spaces such as patios, decks, or gardens. The quality of our rocking chair ensures it will last for years to come, becoming a cherished piece of furniture for generations to come. ",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Vintage Mid-Century Bamboo Rocking Chair",
+      price:53,
+      lastPrice :62,
+      image:
+      rockingChair14,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 109,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        "  These rocking chairs are stylish and eco-friendly option for indoor and outdoor seating, offering durability, comfort, and unique aesthetic appeal while supporting proper posture and alignment. They are great for outdoor living spaces such as patios, decks, or gardens. They are lightweight and easy to move, making them perfect for enjoying the sunshine or relaxing in the shade.",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Bamboo Swivel Rocking Chair",
+      price:41,
+      lastPrice :50,
+      image:
+      rockingChair15,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 58,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Cane",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Courtyard, Lounge, Hotel, Restaurant",
+      description:
+        " This chair is lightweight and easy to move around, making them ideal for both indoor and outdoor use.They are ideal for indoor or outdoor use, including in living rooms, dining rooms, patios, and gardens. ",
+      category: "Rockingchair",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Handcrafted Wicker Storage Box",
+      price: 24,
+      lastPrice :30,
+      image:
+      storageBox8,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 43,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Bedroom, Office, Hotel, Restaurant",
+      description:
+        " It offers a stylish and practical solution for organizing your home or office. These have a spacious interior that can hold a variety of items, including blankets, toys, clothes, and more. ",
+      category: "storagebox",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Bamboo Rattan Woven Storage Trunk",
+      price: 32,
+      lastPrice :42,
+      image:
+      storageBox9,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 39,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Bedroom, Office, Hotel, Restaurant",
+      description:
+        " If you are looking solution for storing clothing, toys, or office supplies, our versatile and sturdy boxes are up to the task.They have a spacious interior that can hold a variety of items, including blankets, toys, clothes, and more. They can also be used for a variety of purposes, including as a coffee table, storage ottoman, or as a decorative accent in any room of the house. ",
+      category: "storagebox",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Multipurpose Designer Wicker Storage Organizer",
+      price: 24,
+      lastPrice :32,
+      image:
+      storageBox10,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 48,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Bedroom, Office, Hotel, Restaurant",
+      description:
+        " These are lightweight and easy to move around, making them a convenient storage option.These storage boxes can be used for storing a variety of items such as clothing, toys, books, magazines, office supplies, and more. They are suitable for use in homes, offices, and other living spaces. ",
+      category: "storagebox",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Handwoven Round Rattan Laundry Storage Box",
+      price: 22,
+      lastPrice :30,
+      image:
+      storageBox11,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 65,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Bedroom, Office, Hotel, Restaurant",
+      description:
+        " These storage boxes have a natural and stylish look that can complement any interior décor. They can be used for a variety of purposes, including as a storage ottoman, or as a decorative accent in any room of the house. ",
+      category: "storagebox",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Rattan Wicker Storage Chest",
+      price: 35,
+      lastPrice :45,
+      image:
+      storageBox12,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 62,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Bedroom, Office, Hotel, Restaurant",
+      description:
+        " These large boxes offer many benefits, including eco-friendliness, durability, versatility, affordability, and a natural and stylish aesthetic. You can keep your belongings organized, free up space, and contribute to a more sustainable and eco-conscious lifestyle.",
+      category: "storagebox",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Vintage Designer Rattan Cane Box",
+      lastPrice :40,
+      image:
+      storageBox13,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 78,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Cane ",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Bedroom, Office, Hotel, Restaurant",
+      description:
+        " These storage boxes have a natural and stylish look that can complement any interior décor. They are lightweight and easy to move around, making them a convenient storage option. ",
+      category: "storagebox",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Bamboo Rattan Hinged Storage Box",
+      price: 35,
+      lastPrice :45,
+      image:
+      storageBox14,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 29,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage -Garden, Bedroom, Office, Hotel, Restaurant",
+      description:
+        " These bamboo rattan large storage boxes have a spacious interior that can hold a variety of items, including blankets, toys, clothes, and more. It can be used for a variety of purposes, including as a coffee table, storage ottoman, or as a decorative accent in any room of the house. ",
+      category: "storagebox",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Natural Rattan Pet Bed",
+      price: 25,
+      lastPrice :35,
+      image:
+      petBed20,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 42,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Rattan, Sarkanda ",
+      feature4:"100% Recycle",
+      feature5:"Customized Packaging",
+      feature6:"Usage - Dogs, Kitty, Cats",
+      description:
+        "  This type of pet bed can be used indoors or outdoors, making it a versatile choice for pet owners who want a bed that can be moved around as needed.",
+    category: "PetBeds",
+      amount: 1,
+      stock: 4,
+    },   
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Rattan Retreat Patio Ottoman Pair",
+      price: 34,
+      lastPrice :42,
+      image: mudhaSet1,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 107,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "The natural and rustic look of bamboo and rattan adds warmth and texture to any space, making a pair of ottoman set of different sizes great decorative accents.  Our Bamboo stools are the perfect blend of style, sustainability, and craftsmanship. These stools are crafted using only the finest quality bamboo, which is fully eco-friendly and recyclable. ",
+      category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Handmade Rustic Rattan Stool Set",
+      price: 33,
+      lastPrice :42,
+      image:
+      mudhaSet2,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 72,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        " This pair of different sizes of rattan ottoman sets can be a practical and stylish addition to any living space.Our Bamboo stools are the perfect blend of style, sustainability, and craftsmanship. These stools are crafted using only the finest quality bamboo rattan, which is fully eco-friendly and recyclable. ",
+      category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Bambmoo Bistro Handmade Wicker Ottoman Set",
+      price: 36,
+      lastPrice :48,
+      image:
+      mudhaSet3,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 98,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        " This handmade beautiful set is useful in number of ways . You can place the smaller ottoman in front of the larger one, or you can place them side by side to create a unique and stylish seating arrangement.Our Bamboo stools are the perfect blend of style, sustainability, and craftsmanship. These stools are crafted using only the finest quality bamboo, which is fully eco-friendly and recyclable. ",
+      category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Natural Bamboo Bliss Ottoman Set",
+      price: 35,
+      lastPrice :48,
+      image:
+      mudhaSet4,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 112,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        " This pair of bamboo ottomans of different sizes can be used to create a layered and visually interesting look in your living room or other space. Our Bamboo stools are the perfect blend of style, sustainability, and craftsmanship. These stools are crafted using only the finest quality bamboo rattan , which is fully eco-friendly and recyclable. ",
+      category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Vintage Rustic Cane Decorative Ottoman Set",
+      price: 38,
+      lastPrice :50,
+      image:
+      mudhaSet5,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 168,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan,Cane",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "Having two ottomans of different sizes allows for greater versatility in your seating arrangements. Our decorative cane ottomans are the perfect blend of style, sustainability, and craftsmanship. These stools are crafted using only the finest quaelity cane, which is fully eco-friendly and recyclable. ",
+      category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Multicolor Rattan Bamboo Mudha Set",
+      price: 98,
+      lastPrice :120,
+      image:
+      mudhaSet6,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 189,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        " Our Bamboo Mudhas are the perfect blend of style, sustainability, and craftsmanship. These mudhas are crafted using only the finest quality bamboo, which is fully eco-friendly and recyclable. ",
+      category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Double Delight Green Rattan Bamboo Ottoman Set",
+      price: 34,
+      lastPrice :45,
+      image:
+      mudhaSet7,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 96,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        " This pair of ottoman set of different sizes is eco-friendly and sustainable. Our Bamboo stools are the perfect blend of style, sustainability, and craftsmanship. These stools are crafted using only the finest quality bamboo rattan. ",
+      category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Perfect Pair Garden Bmaboo Rattan Stool",
+      price: 34,
+      lastPrice :45,
+      image:
+      mudhaSet8,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 124,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        " They are also practical and functional, providing additional seating or footrests when needed.Our Bamboo stools are the perfect blend of style, sustainability, and craftsmanship. These stools are crafted using only the finest quality bamboo rattan, which is fully eco-friendly and recyclable. ",
+      category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Set of 2 Handmade Bamboo Rattan Sticks Stool",
+      price: 34,
+      lastPrice :45,
+      image:
+      mudhaSet9,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 114,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "These are lightweight, easy to move, and can be used indoors or outdoors.Our Bamboo stools are the perfect blend of style, sustainability, and craftsmanship. These stools are crafted using only the finest quality bamboo rattan, which is fully eco-friendly and recyclable. ",
+      category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Green Rattan Ottoman With Mini Size Wicker Foot Stool",
+      price: 35,
+      lastPrice :45,
+      image:
+      mudhaSetl0,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 108,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "These bamboo rattan ottoman sets are also highly flexible, allowing for intricate weaving and unique designs. Additionally, they have a natural and rustic aesthetic that adds warmth and character to any space.",
+      category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Red Rattan Wicker Ottoman Set",
+      price: 34,
+      lastPrice :42,
+      image:
+      mudhaSetl1,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 89,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        " These sets of rattan bamboo stools are the perfect blend of style, sustainability, and craftsmanship. This pair of ottoman set of different sizes is not only a great way to add functional and eco-friendly furniture to your space, but also a way to support local artisans and promote sustainable practices. ",
+      category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Handmade Round Bamboo Bar Stool Pair",
+      price: 37,
+      lastPrice :46,
+      image:
+      mudhaSetl2,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 114,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        " The natural and rustic look of bamboo and rattan adds warmth and texture to any space, making  a pair of ottoman set of different sizes great decorative accents. They are also practical and functional, providing additional seating or footrests when needed. Our Bamboo stools are the perfect blend of style, sustainability, and craftsmanship. These stools are crafted using only the finest quality bamboo, which is fully eco-friendly and recyclable. ",
+      category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Eco-freindly Bamboo Mudha Set",
+      price: 36,
+      lastPrice :45,
+      image:
+      mudhaSetl3,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 140,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        " A pair of ottoman set of different sizes can be used as versatile and functional furniture pieces in various settings such as living rooms, bedrooms, patios, and even offices. They can be used as additional seating, footrests, or decorative accents. Our Bamboo stools are the perfect blend of style, sustainability, and craftsmanship. These stools are crafted using only the finest quality bamboo rattan, which is fully eco-friendly and recyclable. ",
+      category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Stylish Handcrafted Garden Rattan Stool Set ",
+      price: 34,
+      lastPrice :45,
+      image:
+      mudhaSetl4,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 119,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        " This set of stool of different size is lightweight, easy to move, and can be used indoors or outdoors.Our Bamboo stools are the perfect blend of style, sustainability, and craftsmanship. These stools are crafted using only the finest quality bamboo rattan, which is fully eco-friendly and recyclable. ",
+      category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Wicker Rattan Ottoman Set",
+      price: 34,
+      lastPrice :45,
+      image:  mudhaSetl5,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 133,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "This pair of ottoman set of different sizes is not only a great way to add functional and eco-friendly furniture to your space, but also a way to support local artisans and promote sustainable practices. Our Bamboo stools are the perfect blend of style, sustainability, and craftsmanship. These stools are crafted using only the finest quality bamboo rattan, which is fully eco-friendly and recyclable. ",
+      category: "Ottoman",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Classic Multicolor Bamboo Outdoor Small Kahtiya",
+      price: 52,
+      lastPrice :65,
+      image:
+      bench1,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 67,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "This small bamboo bench can be used as a seating option in small spaces such as balconies, patios, and gardens.It is not only a great way to add functional and eco-friendly furniture to your space, but also a way to support local artisans and promote sustainable practices. Our bamboo rattan benches are the perfect blend of style, sustainability, and craftsmanship. These benches are crafted using only the finest quality bamboo rattan, which is fully eco-friendly and recyclable. ",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Bamboo Patio Rattan Small Bench",
+      price: 51,
+      lastPrice :65,
+      image:
+      bench2,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 56,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "This small bamboo bench is suitable for both indoor and outdoor use, making it a versatile and practical option.It is not only a great way to add functional and eco-friendly furniture to your space, but also a way to support local artisans and promote sustainable practices. Our bamboo rattan benches are the perfect blend of style, sustainability, and craftsmanship. These benches are crafted using only the finest quality bamboo rattan, which is fully eco-friendly and recyclable. ",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Beige Natural Bamboo Low Height Bench",
+      price: 50,
+      lastPrice :60,
+      image:
+      bench3,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 88,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "This bamboo bench has a unique, natural texture that can add character and charm to any space. It is lightweight and easy to move around, making it a versatile piece of furniture. These small benches are crafted using only the finest quality bamboo rattan, which is fully eco-friendly and recyclable. ",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Handwoven Charpai Bamboo Rattan Cot",
+      price: 112,
+      lastPrice :150,
+      image:
+      charpai1,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 78,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "The woven design of a bamboo charpai/cot provides a firm yet comfortable surface for sleeping or lounging. It is not only a great way to add functional and eco-friendly furniture to your space, but also a way to support local artisans and promote sustainable practices. Our bamboo cots are the perfect blend of style, sustainability, and craftsmanship. ",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Traditional Webbing Bamboo Rattan Kahtiya",
+      price: 110,
+      lastPrice :155,
+      image:
+      charpai2,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 49,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "Handcrafted bamboo charpais/ khatiya can be used both indoors and outdoors, making them a versatile piece of furniture.It is not only a great way to add functional and eco-friendly furniture to your space, but also a way to support local artisans and promote sustainable practices.",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Bamboo Weaving Classic Charpai Bed",
+      price: 106,
+      lastPrice :145,
+      image:
+      charpai3,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 73,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "This bamboo charpai has a rustic and traditional aesthetic that can add charm and character to any space. It is not only a great way to add functional and eco-friendly furniture to your space, but also a way to support local artisans and promote sustainable practices. Our bamboo rattan traditional beds are the perfect blend of style, sustainability, and craftsmanship. ",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Fabric Woven Traditional Bamboo Bed",
+      price: 124,
+      lastPrice :54,
+      image:
+      charpai4,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 133,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "Sleeping on a firm surface of fabric woven cot like a bamboo charpai can provide orthopedic benefits and help alleviate back pain.It is not only a great way to add functional and eco-friendly furniture to your space, but also a way to support local artisans and promote sustainable practices. Our Bamboo charpais/ cots are the perfect blend of style, sustainability, and craftsmanship. ",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Vintage Antique Kahtiya Bamboo Charpoy",
+      price: 114,
+      lastPrice :150,
+      image:
+      charpai5,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 92,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "This handcrafted bamboo charpai is a beautiful, versatile, and eco-friendly piece of furniture that provides comfort, durability, and affordability. It is not only a great way to add functional and eco-friendly furniture to your space, but also a way to support local artisans and promote sustainable practices. Our Bamboo charpais are the perfect blend of style, sustainability, and craftsmanship.  ",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Moonj Grass Bamboo Indian Cot",
+      price: 104,
+      lastPrice :145,
+      image:
+      charpai6,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 89,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "This charpai cot bed is a versatile piece of furniture that can be used both indoors and outdoors. Whether you need an extra bed for guests or a relaxing spot to read a book, the charpai cot bed can accommodate your needs. ",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Multicolor Thread Handwoven Bamboo Large Bench",
+      price: 119,
+      lastPrice :148,
+      image:
+      charpai7,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 68,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "The woven design of this charpai cot provides a firm yet comfortable sleeping surface that promotes good posture and can help alleviate back pain. Whether you need an extra bed for guests or a relaxing spot to read a book, the charpai cot bed can accommodate your needs. ",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Rattan Woven Bamboo Classic Bench",
+      price: 118,
+      lastPrice :150,
+      image:
+      charpai8,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 59,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        " This charpai handwoven bench is a stylish, sustainable, and versatile piece of furniture that can be used to add a modern twist to traditional designs. Whether you are looking to furnish your home or add a unique touch to your outdoor space, the charpai cot bed is an excellent choice for those who want to add a touch of style and sophistication to their space. ",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Vintage Handcrafted Bamboo Bed With Set Of Peedi",
+      price: 160,
+      lastPrice :210,
+      image:
+      charpai9,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 84,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "The charpai bed set is a unique and eye-catching piece of furniture that is sure to impress your guests and add a touch of character to your space. It is not only a great way to add functional and eco-friendly furniture to your space, but also a way to support local artisans and promote sustainable practices.",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Mid Century Bamboo Rattan Charpoy",
+      price: 102,
+      lastPrice :140,
+      image:
+      charpai10,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 72,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "If you are looking to furnish your home or add a unique touch to your outdoor space, this charpai is an excellent choice for those who want to add a touch of style and sophistication to their space.",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Decorative Patio Traditional Bamboo Bed",
+      price: 110,
+      lastPrice :105,
+      image:
+      charpai11,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 133,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        " These decrative bmaboo beds  have a traditional aesthetic, modern designs with sleek finishes and clean lines can add a contemporary twist to your space. It is not only a great way to add functional and eco-friendly furniture to your space, but also a way to support local artisans and promote sustainable practices. ",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Wicker Rattan Bamboo Charpai",
+      price: 109,
+      lastPrice :140,
+      image:
+      charpai12,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 55,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "This handcrafted bamboo design of the charpai cot is not only beautiful but also sleek and elegant, providing a stylish and refined look. It is lightweight and easy to move around ",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: "Classic Handwoven Bamboo Indian Bed",
+      price: 134,
+      lastPrice :150,
+      image:
+      charpai13,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 61,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        " This handwoven bed is a durable, comfortable, and eco-friendly piece of furniture that can add character and charm to any living space. Its affordability, versatility, and easy maintenance make it an ideal choice for those who want a sustainable and long-lasting piece of furniture.",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Set Of 3 Handwoven Traditional Bamboo Indian Beds",
+      price: 174,
+      lastPrice :215,
+      image:
+      charpai14,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 68,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "The woven designs of a bamboo bed cot provides a firm yet comfortable surface for sleeping or relaxing. The design allows for proper ventilation, keeping the surface cool and comfortable.These cots are easy to clean and maintain, requiring only occasional wiping with a damp cloth. ",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Rectangular Handcrafted Bamboo Stool",
+      price: 27,
+      lastPrice :35,
+      image:
+      peedi1,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 83,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        " This small bamboo rattan low height stools are a versatile, affordable, and eco-friendly seating option that can add a touch of traditional charm and character to any living space.These are lightweight and easy to move ",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Natural Bamboo Woven Peedi",
+      price: 30,
+      lastPrice :40,
+      image:
+      peedi2,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 103,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "These bamboo rattan peedi low height stools are primarily used as low seating options for traditional settings like living rooms, patios, or gardens. They can also be used as footrests or decorative items in a room.",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Modern Stylish Bamboo Stool Peedi Set",
+      price: 55,
+      lastPrice :65,
+      image:
+      peedi3,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 87,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "The natural and traditional design of these peedi/ stools adds character and charm to any living space. These are not only a great way to add functional and eco-friendly furniture to your space, but also a way to support local artisans and promote sustainable practices. Our Bamboo stools are the perfect blend of style, sustainability, and craftsmanship. These stools are crafted using only the finest quality bamboo rattan, which is fully eco-friendly and recyclable. ",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recoW8ecgjtKx2Sj2",
+      name: " Handmade Patio Bamboo Bench Peedi",
+      price: 34,
+      lastPrice :45,
+      image:
+      peedi4,
+      colors: ["#ff0000", "#ffb900", "#00ff00"],
+      company: "Ecowoodies",
+      reviews: 93,
+      featured: false,
+      feature1:"Eco-friendly",
+      feature2:"Customized",
+      feature3:"Material - Bamboo, Rattan, Wicker",
+      feature4:"100% Recycle",
+      feature5:"Footrest, Seating, Storage, Decorative, Patio",
+      feature6:"Usage -Home, Garden, Courtyard, Farmhouse, Beach,  Bar, Pubs, Hotel, Restaurant",
+      description:
+        "These peedis/ low height benches can be used both indoors and outdoors, making them a versatile seating option.The woven rattan seating surface provides a comfortable and supportive seating option.",
+      category: "Bench",
+      amount: 1,
+      stock: 4,
+    },
 
 
 
