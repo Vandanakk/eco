@@ -15,7 +15,7 @@ function category() {
           const { id, image, name, price,category } = productCategory;
           return (
            
-            <MDBCol md="6" lg="4" className="mb-4">
+            <MDBCol md="4" lg="2" className="mb-4">
               <MDBRipple
                 rippleColor="dark"
                 rippleTag="div"
