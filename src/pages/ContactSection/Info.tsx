@@ -16,7 +16,7 @@ const contactDetails = [
     value: 'A-97, Shalimar Garden Main, Shahibabad,Ghaziabad, UP -201005.  INDIA.',
     icon: locationIcon,
   },
-  { value: '+91 9686722989', icon: phoneIcon },
+  { value: '+91 9686722949', icon: phoneIcon },
   { value: 'info@ecowoodies.com', icon: emailIcon },
 ]
 

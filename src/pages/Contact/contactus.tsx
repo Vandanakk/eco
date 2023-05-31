@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import Footer from "../../component/Footer/footer";
 import "./contactus.css"
+import emailjs from '@emailjs/browser';
 const ContactUs = () => {
+  const form = useRef();
   const [userData, setUserData] = useState({
     firstName: "",
     lastName: "",
@@ -19,43 +21,40 @@ const ContactUs = () => {
     setUserData({ ...userData, [name]: value });
   };
 
+
+ 
   // connect with firebase
   const submitData = async (event :any) => {
-    event.preventDefault();
+  
     const { firstName, lastName, phone, email, address, message } = userData;
 
-    if (firstName && lastName && phone && email && address && message) {
-      const res = fetch(
-        "https://baseio.com/userDataRecords.json",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            firstName,
-            lastName,
-            phone,
-            email,
-            address,
-            message,
-          }),
-        }
-      );
 
-      if (true) {
-        setUserData({
-          firstName: "",
-          lastName: "",
-          phone: "",
-          email: "",
-          address: "",
-          message: "",
-        });
-        alert("Thank you for contacting us!  We have received your message and appreciate your interest in our bamboo and cane furniture. A member of our team will review your inquiry and respond to you as soon as possible. Please allow up to 24-48 hours for a response, although we usually respond much sooner.");
-      } else {
+    if (firstName && lastName && phone && email && address && message) {
+      const inputData =JSON.stringify({
+        firstName,
+        lastName,
+        phone,
+        email,
+        address,
+        message,
+      });
+      emailjs.sendForm('service_tc8ac9a', 'template_0l67lvq', inputData, '3wu5xegb9BGPZ678e')
+      .then((result) => {
+       
+          setUserData({
+            firstName: "",
+            lastName: "",
+            phone: "",
+            email: "",
+            address: "",
+            message: "",
+          });
+          alert("Thank you for contacting us!  We have received your message and appreciate your interest in our bamboo and cane furniture. A member of our team will review your inquiry and respond to you as soon as possible. Please allow up to 24-48 hours for a response, although we usually respond much sooner.");
+      }, (error) => {
         alert("plz fill the data");
-      }
+      });       
+       
+    
     } else {
       alert("plz fill all the required information in contact us form");
     }
@@ -107,7 +106,7 @@ const ContactUs = () => {
                      <br />                      
 
                   </h2>
-                  <form method="POST">
+                  <form  method="POST">
                     <div className="row">
                       <div className="col-12 col-lg-6 contact-input-feild">
                         <input
@@ -192,7 +191,7 @@ const ContactUs = () => {
                       />
                       <label
                         className="form-check-label">
-                        I agree that the thapatechnicalpay may contact me at the
+                        I agree that the that Ecowoodies may contact me at the
                         email address or phone number above
                       </label>
                     </div>

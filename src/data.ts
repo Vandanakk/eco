@@ -432,7 +432,7 @@ import peedi4 from "./images/peedi4.jpg"
 
 const data = [
     {
-      id: "recZkNf2kwmdBcqd0",
+      id: "recZkNf2kwmdBcqd01234",
       name: "Newborn Photography Prop Cradle",
       price: 25,
       lastPrice :35,
@@ -2410,7 +2410,7 @@ const data = [
     },
     {
       id: "recoW8ecgjtKx2Sj2",
-      name: "Dreamy Wicker Baby Doll Crib",
+      name: "Dreamy Rattan Handcrafted Baby Doll Cribs",
       price: 33,
       lastPrice : 42,
       image:
@@ -3003,7 +3003,7 @@ const data = [
       stock: 4,
     },
     {
-      id: "recoW8ecgjtKx2Sj2",
+      id: "recoW8ecgjtKx2Sj231",
       name: "Vintage Handcrafted Round Dining Table Chair Set ",
       price: 260,
       lastPrice : 320,

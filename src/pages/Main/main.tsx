@@ -10,8 +10,6 @@ import Carousel from 'react-bootstrap/Carousel';
 import "./main.css"; 
 
 
-
-
 export default function Main() {
   return (
 	  <Carousel fade>

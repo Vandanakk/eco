@@ -1,0 +1,13 @@
+body {
+    background-color: #eee;
+  }
+
+  .marginTop {  
+    margin-top: 50px;         
+    padding: 30px;
+  }
+
+  .marginside {  
+    margin-left: 100px;         
+    margin-right: 100px;
+  }

@@ -2,10 +2,11 @@ import React from "react";
 import "./footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faTwitter,   
-    faGithub,
+  faTwitter,      
     faFacebook,
-    faYoutube
+    faYoutube,
+    faLinkedin,
+    faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import PrivacyModal from "../Policy/policy"
@@ -29,25 +30,34 @@ const Footer = () => {
                 <a
                     href="https://www.facebook.com/ecowoodies/"
                     target="_blank"
-                    className="item4"
+                    className="item3"
                 >
                     <FontAwesomeIcon icon={faFacebook} />
                 </a>
                 <a
-                    href="https://www.youtube.com/@ecowoodies6760"
+                    href="https://www.instagram.com/ecowoodies/"
                     target="_blank"
-                    className="item5"
+                    className="item4"
                 >
-                    <FontAwesomeIcon icon={faYoutube} />
-                </a>
+                    <FontAwesomeIcon icon={faInstagram} />
+                    
+                    </a>
+         
                 <a
                     href="https://twitter.com/ecowoodies"
                     target="_blank"
-                    className="item3"
+                    className="item5"
                 >
                     <FontAwesomeIcon icon={faTwitter} />
-                </a>
-               
+                </a>          
+              
+                <a
+                    href="https://youtube.com/@ecowoodies"
+                    target="_blank"
+                    className="item3"
+                >
+                    <FontAwesomeIcon icon={faYoutube} />
+                </a>          
               
 
                 {false && <PrivacyModal />}

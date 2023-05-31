@@ -11,7 +11,9 @@ function category() {
     <div>
     <MDBContainer fluid className="my-5 text-center">      
       <MDBRow>
-      {categories.map((productCategory) => {
+      {categories
+       .filter((item) => item.featured === false)
+      .map((productCategory) => {
           const { id, image, name, price,category } = productCategory;
           return (
            

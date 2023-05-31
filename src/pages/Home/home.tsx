@@ -11,7 +11,7 @@ export default function Home() {
       <Main/>
       <Featured />
       {/* <Services /> */}     
-    
+      {/* <Blog/> */}
       <Footer />
     </>
   );

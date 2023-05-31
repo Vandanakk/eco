@@ -1,12 +1,16 @@
 import bamboCategory from "./images/category/LOUNGE.jpg"
 import stoolCategory from "./images/category/stools.png"
 import newBornBasket from "./images/category/newBornbasket.png"
+import newBornBasketFeatured from "./images/category/newbornFeatured.png"
+
 import hangingLight from "./images/category/lighting.png"
 import petCategory from "./images/category/petCategory.png" 
 import bamboosofaCategory from "./images/category/bambooSofas.png" 
 import BamboodiningsetsCategory from "./images/category/Bamboodiningsets.png" 
 import basketsCategory from "./images/category/baskets.png" 
+import basketsCategoryFeatured from "./images/category/basketsFeatured.png" 
 import BamboodollstrollersCategory from "./images/category/Babydollstrollers.png" 
+import BamboodollstrollersFeatured from "./images/category/BabydollstrollersFeatured.png" 
 import HangingchairsCategory from "./images/category/Hangingchairs.png" 
 import KidchairsCategory from "./images/category/Kidchairs.png"
 import RockingchairCategory from "./images/category/Rockingchair.png"
@@ -53,6 +57,7 @@ const categories = [
       shipping: true,
       amount: 1,
       stock: 4,
+      
     },
     {
       id: "recd1jIVIEChmiwhe",
@@ -61,13 +66,14 @@ const categories = [
       image: bamboCategory,
       colors: ["#000", "#00ff00", "#0000ff"],
       company: "Ecowoodies",
-      featured: true,
+      featured: false,
       description:
         "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
       category: "BambooLoungeChair",
       shipping: true,
       amount: 1,
       stock: 4,
+      
     },
    
     {
@@ -104,6 +110,22 @@ const categories = [
     },	
     {
       id: "recZkNf2kwmdBcqd0",
+      name: "Rattan Baskets",
+      price: 25,
+      image:
+      basketsCategoryFeatured,
+      colors: ["#ff0000", "#00ff00", "#0000ff"],
+      company: "Ecowoodies",
+      featured: true,
+      description:
+        "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore.",
+      category: "baskets",
+      shipping: true,
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recZkNf2kwmdBcqd0",
       name: "Baby Doll Strollers",
       price: 25,
       image:
@@ -118,6 +140,25 @@ const categories = [
       amount: 1,
       stock: 4,
     },
+
+    {
+      id: "recZkNf2kwmdBcqd0",
+      name: "Baby Doll Strollers",
+      price: 25,
+      image:
+      BamboodollstrollersFeatured,
+      colors: ["#ff0000", "#00ff00", "#0000ff"],
+      company: "Ecowoodies",
+      featured: true,
+      description:
+        "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore.",
+      category: "Babydollstrollers",
+      shipping: true,
+      amount: 1,
+      stock: 4,
+    },
+
+    
     {
       id: "recZkNf2kwmdBcqd0",
       name: "Hanging Chairs",
@@ -287,6 +328,22 @@ const categories = [
       colors: ["#ff0000", "#00ff00", "#0000ff"],
       company: "Ecowoodies",
       featured: false,
+      description:
+        "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore.",
+      category: "NewBorns",
+      shipping: true,
+      amount: 1,
+      stock: 4,
+    },
+    {
+      id: "recZkNf2kwmdBcqd0",
+      name: "Newborn Photography Prop",
+      price: 25,
+      image:
+      newBornBasketFeatured,
+      colors: ["#ff0000", "#00ff00", "#0000ff"],
+      company: "Ecowoodies",
+      featured: true,
       description:
         "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore.",
       category: "NewBorns",
