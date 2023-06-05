@@ -1,103 +1,14 @@
-/* reset
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-  ul {
-    list-style: none;
-  }
-  a {
-    text-decoration: none;
-    color: #444;
-    font-size: 18px;
-  }
-  
-  /*Navbar*/
-  
-  #nav {
-    background-color: #fff;
-    color: rgb(51, 144, 51);
-  }
-  
-  #nav ul {
-    display: flex;
-  }
-  #nav li {
-    margin: 15px;
-    padding: 10px;
-  }
-  .container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 10vh;
-  }
-  .logo {
-    font-family: cursive;
-  }
-  .links li {
-    color:#fff;
-    background-color:rgb(51, 144, 51);
-    padding:8px;
-    border:none;
-    outline:none;
-    cursor:pointer;
-    border-radius: 5px;
-    border:2px solid transparent;
-  }
-  .links li:hover {
-    border-color: rgb(51, 144, 51);
-    color: rgb(51, 144, 51);
-    background-color: #fff;
-    outline:none;
-  }
-  
-  .links li:focus{
-    outline:none;
+
+
+.navbar-light .navbar-brand{
+  color: #acd83a !important;
+  font-size:200%;
+  font-weight: bold;
 }
-  .btn{
-      color:#fff;
-      background-color: rgb(51, 144, 51);
-      padding:8px;
-      border:none;
-      outline:none;
-      cursor:pointer;
-      border:2px solid transparent;
-  }
-  .btn:hover{
-      border-color: rgb(51, 144, 51);
-      color: rgb(51, 144, 51);
-      background-color: #fff;
-      outline:none;
-  }
-  .btn:focus{
-      outline:none;
-  }
+.nav-link
+{
+  color: #acd83a !important;
+  font-size:150%;
+  /* font-weight: 300; */
   
-  @media (max-width:767px){
-      *{
-          padding:0;
-          margin:0;
-          box-sizing: border-box;
-      }
-      .container {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
-          height:27vh;
-          margin-bottom:5px;
-          
-        }
-        .links li:hover{
-          border-color: rgb(51, 144, 51);
-          color: rgb(51, 144, 51);
-          background-color: #fff;
-          outline:none;
-        }
-  }
-   
+}

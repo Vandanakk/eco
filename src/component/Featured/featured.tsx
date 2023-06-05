@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from 'react-router-dom';
- import "../../pages/Products/product.css";
+//  import "../../pages/Products/product.css";
  import categories from "../../categories"; 
  import './featured.css'
  import { MDBContainer, MDBRow, MDBCol, MDBRipple,MDBCard,

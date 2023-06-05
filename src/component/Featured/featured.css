@@ -3,11 +3,20 @@ body {
   }
 
   .marginTop {  
-    margin-top: 50px;         
-    padding: 30px;
+    margin-top: 20px;         
+    padding: 20px;
   }
 
   .marginside {  
     margin-left: 100px;         
     margin-right: 100px;
   }
+  .product-title{
+    color: #acd83a !important;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom:2rem;
+}
+.center{
+  text-align:center;
+}

@@ -1,12 +1,32 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import logos from "./ecoiconorignal.jpg"
+
+import {
+  MDBContainer,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
+  MDBIcon,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBBtn,
+  MDBDropdown,
+  MDBDropdownToggle,
+  MDBDropdownMenu,
+  MDBDropdownItem,
+  MDBCollapse,
+} from 'mdb-react-ui-kit';
 
 //import { useHistory } from "react-router-dom";
 
 import "./Navbar.css";
 
 const Navbar = () => {
- // const history = useHistory();
+  const [showBasic, setShowBasic] = useState(false);
+  const [showNav, setShowNav] = useState(false);
+  // const history = useHistory();
   const [firstName, setFirstName] = useState("");
 
   // const googleSignIn = async () => {
@@ -28,54 +48,76 @@ const Navbar = () => {
   // }, [history, firstName]);
 
   return (
-    <header>
-      <nav id="nav">
-        <div className="container">
-          <h1 className="logo">
-            <i className="fa fa-home"></i>Ecowoodies
-          </h1>
+    <MDBNavbar expand='lg' light bgColor='light'>
+      <MDBContainer fluid>
+        <MDBNavbarBrand href='/'>
+          <img
+            src={logos}
+            height='70'
+            alt=''
+            loading='lazy'
+          />
+          Ecowoodies
+        </MDBNavbarBrand>
 
-          <ul className="links">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/category">Products Category</Link>
-            </li>
-            {/* <li>
-              <Link to="/blogList">Blogs</Link>
-            </li> */}
-            <li>
-              <Link to="/services">Services</Link>
-            </li>
-            <li>
-              <Link to="/contactus">Contact Us</Link>
-            </li>
+        <MDBNavbarToggler
+          aria-controls='navbarSupportedContent'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+          onClick={() => setShowBasic(!showBasic)}
+        >
+          <MDBIcon icon='bars' fas />
+        </MDBNavbarToggler>
 
-          </ul>
+        <MDBCollapse navbar show={showBasic}>
+          <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
+            {/* <MDBNavbarItem>
+              <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/'>
+                Home
+              </MDBNavbarLink>
+            </MDBNavbarItem> */}
+              <MDBNavbarItem>
+            <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/category'>
+                Product Category
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+            <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/services'>
+                Services
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink  tag='a' className='nav-link' href='/about'>About</MDBNavbarLink>
+            </MDBNavbarItem>
+          
+            <MDBNavbarItem>
+            <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/contactus'>
+                Contact Us
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            
 
-          {/* {firstName ? (
-            <Link
-              to="/"
-              onClick={() => {
-              //  auth().signOut();
-                setFirstName("");
-              }}
-            >
-              {" "}
-              <button className="btn">Sign Out</button>
-            </Link>
-          ) : (
-            <button className="btn">
-              Sign Up
-            </button>
-          )} */}
-        </div>
-      </nav>
-    </header>
+            {/* <MDBNavbarItem>
+              <MDBDropdown>
+                <MDBDropdownToggle tag='a' className='nav-link' role='button'>
+                  Dropdown
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem link>Action</MDBDropdownItem>
+                  <MDBDropdownItem link>Another action</MDBDropdownItem>
+                  <MDBDropdownItem link>Something else here</MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavbarItem> */}
+
+          
+          </MDBNavbarNav>
+         
+        </MDBCollapse>
+      </MDBContainer>
+    </MDBNavbar>
+
+    // </header>
   );
 };
 export default Navbar;

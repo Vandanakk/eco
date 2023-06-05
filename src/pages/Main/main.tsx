@@ -12,6 +12,7 @@ import "./main.css";
 
 export default function Main() {
   return (
+    <div className="marginTopCarasoul">
 	  <Carousel fade>
       <Carousel.Item>
         <img
@@ -66,7 +67,7 @@ export default function Main() {
       </Carousel.Item>     
     </Carousel>
 
-
+    </div>
 
   );
   }
