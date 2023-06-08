@@ -1,15 +1,31 @@
 import { Link } from "react-router-dom";
 // import "../Services/services.css";
 import "./about.css";
+
+import aboutusmainpage from "../../images/puppybed.jpg"
+import categories from "../../categories"; 
 import Footer from "../../component/Footer/footer";
+import {
+  MDBCard,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCardImage
+} from 'mdb-react-ui-kit';
 
 const About = () => {
   return (
+    <>
+    <MDBCard className='mb-3'>
+      <MDBCardImage position='top' height='700px'  src={aboutusmainpage} alt='/productlist/PetBeds' />     
+    </MDBCard>
+
+
     <div className="about-wrapper flex-columns">
       <div className="product-center">
        
         <section className="content-prod">
-         
+        <h1> What Makes Us Different</h1>
           <p className="main-hero-para">
           Ecowoodies is a pioneer manufacturer of outdoor furniture and accessories . 
           Enter the world of Ecowoodies’ outdoor furniture and discover the latest products that are designed by the topmost designers of our company.You can avail a wide range of Outdoor furniture, Wicker Furniture, Rattan Wicker Furniture, Patio Furniture, Garden furniture, Poolside Furniture, Terrace Furniture, Hotel Furniture, Restaurant Furniture, Resort Furniture, Villas Outdoor Furniture and many more luxury outdoor furniture at our website that is made with high-quality materials under expert supervision. 
@@ -39,9 +55,10 @@ The ultimate mission of our organization is creating an online presence of India
           
         </section>
       </div>
+      
       <Footer />
     </div>
- 
+    </>
   );
 };
 

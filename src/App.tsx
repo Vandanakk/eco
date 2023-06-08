@@ -1,11 +1,11 @@
 import React, {useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router,Switch, Route } from "react-router-dom";
-import { About, Home, Category,Services,ContactUs,ProductListing,BlogList, ProductDetails } from "./pages/index";
+import { About, Home, Category,Services,ContactUs,ProductListing,BlogList, ProductDetails, Policy } from "./pages/index";
 import Navbar from "./component/Navbar/Navbar";
 
 import ReactGA from 'react-ga';
-const TRACKING_ID = "UA-66955533-1";
+const TRACKING_ID = "G-TNCBMY3Q09"; 
 ReactGA.initialize(TRACKING_ID);
 
 export default function App() {
@@ -28,7 +28,8 @@ export default function App() {
 
           <Route exact path="/about" component={About}></Route>
           <Route exact path="/services" component={Services}></Route>  
-          <Route exact path="/contactus" component={ContactUs}></Route>         
+          <Route exact path="/contactus" component={ContactUs}></Route>   
+          <Route exact path="/policy" component={Policy}></Route>         
       </Switch> 
     
     </Router> 

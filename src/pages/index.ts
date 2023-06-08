@@ -6,5 +6,7 @@ import Category from "./Category/category";
 import ProductListing from "./ProductList/productlist";
 import ProductDetails from "./ProductDetails/productdetails";
 import BlogList from "./Blog/blogList";
+import Policy from "./Policy/policy";
 
-export { About, Home,  Services,ContactUs,Category,ProductListing, BlogList,ProductDetails };
+
+export { About, Home,  Services,ContactUs,Category,ProductListing, BlogList,ProductDetails,Policy };
