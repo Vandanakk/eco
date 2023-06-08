@@ -71,11 +71,7 @@ const Navbar = () => {
 
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
-            {/* <MDBNavbarItem>
-              <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/'>
-                Home
-              </MDBNavbarLink>
-            </MDBNavbarItem> */}
+          
               <MDBNavbarItem>
             <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/category'>
                 Products

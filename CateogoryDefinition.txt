@@ -1,8 +1,8 @@
 1. Copy category Image from any locaiton
 2. Set the path of category image in category.ts file
 
-import petCategory from "./images/category/petCategory.png" 
-import bamboosofaCategory from "./images/category/bambooSofas.png" 
+import petCategory from "./images/category/petCategory.jpg" 
+import bamboosofaCategory from "./images/category/bambooSofas.jpg" 
 
 3. copy any json tags
 

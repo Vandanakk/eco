@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Main/>
       <Featured />
-      {/* <FeaturedProducts/> */}
+      <FeaturedProducts/>
       {/* <Services /> */}     
       {/* <Blog/> */}
       <Footer />

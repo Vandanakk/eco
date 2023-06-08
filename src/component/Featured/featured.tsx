@@ -16,7 +16,7 @@ const Featured = () => {
   return (
     <>
    
-    <h1 className="product-title center marginTop" >Featured Categories</h1>
+    <h1 className="product-title center marginTop" >New Arrivals</h1>
    
     
    <div className="marginside">
@@ -38,20 +38,8 @@ const Featured = () => {
             alt='...'
             position='top'
           />
-           <Link to={`/productlist/${category}`}>
-             
-                  {/* <div
-                    className="mask"
-                    style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
-                  > */}
-                    {/* <div className="d-flex justify-content-start align-items-start h-100">
-                      <h5>
-                        <span className="badge bg-light pt-2 ms-3 mt-3 text-dark">
-                        {pname}
-                        </san>
-                      </h5>
-                    </div> */}
-                  {/* </div> */}
+           <Link to={`/productlist/${category}`}>             
+                
                   <div className="hover-overlay">
                     <div
                       className="mask"

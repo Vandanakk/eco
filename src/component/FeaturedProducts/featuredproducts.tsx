@@ -5,12 +5,15 @@ import categories from "../../categories";
 import './featuredproducts.css'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css"
-import charpai4 from "./charpai4.jpg"
-import charpai6 from "./charpai6.jpg"
-import charpai7 from "./charpai7.jpg"
-import charpai10 from "./charpai10.jpg"
-import lamp23 from "./lamp23.jpg"
-import mudhaSet6 from "./mudhaSet6.jpg"
+import babyChair from "./babyChair.jpg"
+import babydollCrib from "./babydollCrib.jpg"
+import hangingChair from "./hangingChair.jpg"
+import kidChair from "./kidChair.jpg"
+import mudhaSet from "./mudhaSet.jpg"
+import newborn from "./newborn.jpg"
+import peedi2 from "./peedi2.jpg"
+import tray from "./tray.jpg"
+
 
 import {
   MDBContainer, MDBRow, MDBCol, MDBRipple, MDBCard,
@@ -46,8 +49,7 @@ const FeaturedProducts = () => {
   return (
     <>
 
-      <h1 className="product-title center marginTop" >Featured Categories</h1>
-
+      <h1 className="product-title center marginTop">We Think You'll Love These Products</h1>
 
       <div className="marginside">
         <Carousel
@@ -69,51 +71,56 @@ const FeaturedProducts = () => {
           itemClass="carousel-item-padding-40-px"
         >
           <div>
-
             <img
-              src={charpai4}
+              src={babyChair}
               className="w-100"
+              alt="Baby Chair"
             />
 
           </div>
           <div>
             <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp"
+              src={babydollCrib}
+              className="w-100"
+              alt="Baby Doll Crib"
+            />
+          </div>
+          <div>
+            <img
+              src={hangingChair}
+              className="w-100"
+              alt="Hanging Chair" />
+          </div>
+          <div>
+            <img
+              src={kidChair}
+              className="w-100"
+              alt="Kids Chair"
+            />
+          </div>
+          <div>
+            <img
+              src={mudhaSet}
+              className="w-100"
+              alt="Ottomans"
+            />
+          </div>
+          <div>
+            <img
+              src={newborn}
+              className="w-100"
+              alt="NewBorn Bed"
+            />
+          </div>
+          <div>
+            <img
+              src={peedi2}
               className="w-100"
             />
           </div>
           <div>
             <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp"
-              className="w-100"
-            /></div>
-          <div>
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp"
-              className="w-100"
-            />
-          </div>
-          <div>
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp"
-              className="w-100"
-            />
-          </div>
-          <div>
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp"
-              className="w-100"
-            />
-          </div>
-          <div>
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp"
-              className="w-100"
-            />
-          </div>
-          <div>
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp"
+              src={tray}
               className="w-100"
             />
           </div>

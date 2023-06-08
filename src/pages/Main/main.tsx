@@ -1,73 +1,42 @@
 
 import React from "react";
-import ottomon from "../../images/8.png"
-import baskets from "../../images/4.png"
-import dinings from "../../images/11.jpg"
-import canesofas from "../../images/3.png"
-import newborn from "../../images/newborn.jpg"
+import ottomon from "../../images/ottoman.jpg" 
+import baskets from "../../images/cribsCarasoul.jpg"
+import canesofas from "../../images/SofaSetCarasoul1.jpg"
+import "./main.css";
 
-import Carousel from 'react-bootstrap/Carousel';
-import "./main.css"; 
-
+import {
+  MDBCarousel,
+  MDBCarouselItem,
+} from 'mdb-react-ui-kit';
 
 export default function Main() {
   return (
     <div className="marginTopCarasoul">
-	  <Carousel fade>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
+      <MDBCarousel showControls showIndicators dealy={2000}>
+        <MDBCarouselItem
+          className='w-100 d-block'
+          itemId={1}
           src={ottomon}
-          alt="Ottoman"
-        />
-        <Carousel.Caption>
-         
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
+          alt='...'   >
+
+        </MDBCarouselItem>
+        <MDBCarouselItem
+          className='w-100 d-block'
+          itemId={3}
           src={canesofas}
-          alt="Cane Sofas"
-        />
-
-        <Carousel.Caption>
-       
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={dinings}
-          alt="Dining Items"
-        />
-        <Carousel.Caption>
-         
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
+          alt='...'
+        >
+        </MDBCarouselItem>
+        <MDBCarouselItem
+          className='w-100 d-block'
+          itemId={5}
           src={baskets}
-          alt="Baskets"
-        />
-        <Carousel.Caption>
-         
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={newborn}
-          alt="Newborn Photography Prop"
-        />
-        <Carousel.Caption>
-         
-        </Carousel.Caption>
-      </Carousel.Item>     
-    </Carousel>
-
+          alt='...'
+        >
+        </MDBCarouselItem>
+      </MDBCarousel>
     </div>
 
   );
-  }
+}

@@ -12,10 +12,9 @@ body {
     margin-right: 100px;
   }
   .product-title{
-    color: #acd83a !important;
-    font-weight: bold;
-    font-size: 45px;
-    margin-bottom:2rem;
+    /* color: #acd83a !important; */
+    font-size:200%;
+  font-weight: bold;
 }
 .center{
   text-align:center;

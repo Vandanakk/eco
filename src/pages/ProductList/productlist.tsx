@@ -58,11 +58,9 @@ const Productlist = (props: any) => {
      feature4: model[0].feature4,
      feature5: model[0].feature5,
      feature6: model[0].feature6
-    }   
-  
-    setmodelData(updatedModel);
-   
-    console.log(model);
+    }     
+    setmodelData(updatedModel);  
+    
   };
 
 

@@ -1,10 +1,10 @@
 import bamboCategory from "./images/category/LOUNGE.jpg"
-import stoolCategory from "./images/category/stools.png"
+import stoolCategory from "./images/category/stools.jpg"
 //import sofaCategory from "./images//category/sofaset.jpg"
-import newBornBasket from "./images/category/newBornbasket.png"
-import hangingLight from "./images/category/lighting.png"
-import petCategory from "./images/category/petCategory.png" 
-import bamboosofaCategory from "./images/category/bambooSofas.png" 
+import newBornBasket from "./images/category/newBornbasket.jpg"
+import hangingLight from "./images/category/lighting.jpg"
+import petCategory from "./images/category/petCategory.jpg" 
+import bamboosofaCategory from "./images/category/bambooSofas.jpg" 
 
 const blogs = [
     {
