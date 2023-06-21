@@ -1,7 +1,7 @@
 import React, {useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router,Switch, Route } from "react-router-dom";
-import { About, Home, Category,Services,ContactUs,ProductListing,BlogList, ProductDetails, Policy } from "./pages/index";
+import { About, Home, Category,Services,ContactUs,ProductListing,BlogList, ProductDetails, Policy, Partners, Designers } from "./pages/index";
 import Navbar from "./component/Navbar/Navbar";
 
 import ReactGA from 'react-ga';
@@ -30,6 +30,8 @@ export default function App() {
           <Route exact path="/services" component={Services}></Route>  
           <Route exact path="/contactus" component={ContactUs}></Route>   
           <Route exact path="/policy" component={Policy}></Route>         
+          <Route exact path="/partners" component={Partners}></Route>
+          <Route exact path="/designers" component={Designers}></Route>
       </Switch> 
     
     </Router> 

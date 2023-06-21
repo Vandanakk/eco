@@ -106,19 +106,19 @@ const Footer = () => {
             </MDBCol>
 
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='fw-bold mb-4'>About Us</h6>
+              <h6 className='fw-bold mb-4'>About</h6>
               <p>
-                <a href='#!' className='text-reset'>
-                  Policy
+                <a href='/partners' className='text-reset'>
+                Our Partners
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  Blogs
+                <a href='/designers' className='text-reset'>
+                  Our Designers
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/about' className='text-reset'>
                   Our Story
                 </a>
               </p>

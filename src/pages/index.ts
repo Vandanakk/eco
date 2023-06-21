@@ -7,6 +7,8 @@ import ProductListing from "./ProductList/productlist";
 import ProductDetails from "./ProductDetails/productdetails";
 import BlogList from "./Blog/blogList";
 import Policy from "./Policy/policy";
+import Partners from "./Partners/partners";
+import Designers from "./Designers/designers";
 
 
-export { About, Home,  Services,ContactUs,Category,ProductListing, BlogList,ProductDetails,Policy };
+export { About, Home,  Services,ContactUs,Category,ProductListing, BlogList,ProductDetails,Policy,Partners,Designers };
