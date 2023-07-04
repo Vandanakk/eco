@@ -11,3 +11,8 @@ section.content-prod{
     width: 90%;
     text-align: justify;
   }
+
+  .marginMyTeamTop {  
+    margin-top: 20px;         
+    padding: 10px;
+  }

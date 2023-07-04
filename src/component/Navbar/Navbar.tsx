@@ -91,10 +91,7 @@ const Navbar = () => {
               <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/designers'>Designers</MDBNavbarLink>
             </MDBNavbarItem> */}
 
-            {/* <MDBNavbarItem>
-              <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/about'>About</MDBNavbarLink>
-            </MDBNavbarItem> */}
-
+         
           
 
             <MDBNavbarItem>
@@ -103,7 +100,7 @@ const Navbar = () => {
                   About
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem link href='/about' className='nav-link' active aria-current='page' >Our Story</MDBDropdownItem>
+                  <MDBDropdownItem link href='/whyus' className='nav-link' active aria-current='page' >Why Us</MDBDropdownItem>
                   <MDBDropdownItem link href='/partners' className='nav-link' active aria-current='page'>Our Partners</MDBDropdownItem>
                   <MDBDropdownItem link href='/designers' className='nav-link' active aria-current='page'>Our Designers</MDBDropdownItem>
                 </MDBDropdownMenu>

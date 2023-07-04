@@ -25,3 +25,8 @@ section.content-prod{
     justify-content: flex-end !important;  
     
   }
+
+  .margindesignerside {  
+    margin-left: 10%;         
+    margin-right: 10%;
+  }

@@ -118,8 +118,8 @@ const Footer = () => {
                 </a>
               </p>
               <p>
-                <a href='/about' className='text-reset'>
-                  Our Story
+                <a href='/whyus' className='text-reset'>
+                  Why Us
                 </a>
               </p>
               <p>

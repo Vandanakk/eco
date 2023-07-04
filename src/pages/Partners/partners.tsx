@@ -22,20 +22,20 @@ const Partners = () => {
       </MDBCard> */}
 
 
-      <div className="about-wrapper flex-columns">
+     
         <div className="product-center">
 
           <section className="content-prod">     
          
               <MDBCard className='mb-3'>
-                <MDBCardImage position='top' height='400px' src={ourpartners} />
+                <MDBCardImage position='top' src={ourpartners} />
               </MDBCard>            
 
           </section>
         </div>
 
         <Footer />
-      </div>
+      
     </>
   );
 };

@@ -41,15 +41,15 @@ Whether it's incorporating intricate details, exploring innovative forms, or enh
         </MDBCardBody>
       </MDBCard>
 
-      <MDBCard alignment='center' width={600} className="marginside">
+      <MDBCard alignment='center'  className="margindesignerside marginMyTeamTop">
         <MDBRow  >
-          <MDBCol md='8'>
-            <MDBCardImage src={designersmainpage} height={300} width={800} alt='...' fluid />
+          <MDBCol md='6'>
+            <MDBCardImage src={designersmainpage} alt='...' fluid />
           </MDBCol>
-          <MDBCol md='4'>
+          <MDBCol md='6'>
             <MDBCardBody>
-              <MDBCardTitle>Viren K</MDBCardTitle>
-              <MDBCardText className="alignright">
+              <MDBCardTitle className="content-prod">Viren K</MDBCardTitle>
+              <MDBCardText className="main-hero-para">
               
 Introducing Viren, our esteemed designer who brings a wealth of expertise to the realm of furniture manufacturing. With a Bachelor and Master's degree in Fine Arts, a postgraduate degree in Law, a diploma in Naturopathy & Yoga Science, and a Diploma in Cinematography & Film making, Viren's diverse educational background lends a multidimensional perspective to his work.
 Passionate about fostering global cultural relations, Viren approaches the world with love, compassion, and forgiveness. His portfolio showcases his exceptional talent in designing art, architecture, cultural, and educational projects. Additionally, Viren is an accomplished author. 
@@ -63,12 +63,12 @@ Viren's exceptional skills, extensive experience, and dedication to his craft ma
         </MDBRow>
       </MDBCard>
 
-      <MDBCard alignment='center' width={600} className="marginside">
+      <MDBCard alignment='center' className="margindesignerside">
         <MDBRow  >
-        <MDBCol md='4'>
+        <MDBCol md='6'>
             <MDBCardBody>
-              <MDBCardTitle>Monika</MDBCardTitle>
-              <MDBCardText className="alignleft" >
+              <MDBCardTitle className="content-prod" >Monika</MDBCardTitle>
+              <MDBCardText className="main-hero-para" >
               Monika is a highly skilled and accomplished furniture designer with a passion for innovation and creativity. With over a decade of experience in the industry, she brings a unique blend of artistic vision and functional expertise to her work. Monika holds a Bachelor's degree in Fine Arts with a specialization in Applied Art, as well as a Master's degree in Fine Arts with a focus on graphics designing. She is currently pursuing her PhD in Applied Arts from Delhi University.
               Monika's impressive portfolio includes working on prestigious projects such as the Namami Gange project for Doordarshan and serving as an art director for lantern designing for the Korean embassy. Monika has conducted workshops for the Center for Cultural Resources and Training (CCRT) and has been a freelance columnist for Art Times Newspaper. Additionally, she has showcased her artwork in numerous exhibitions and workshops across the country.
            With a deep understanding of design principles and a commitment to delivering exceptional results, Monika's expertise in furniture innovation is unparalleled. Her ability to blend aesthetics with functionality ensures that each piece she designs is not only visually striking but also practical for everyday use. Monika's passion for her craft, coupled with her extensive experience, makes her an invaluable asset to our furniture design team.
@@ -76,8 +76,8 @@ Viren's exceptional skills, extensive experience, and dedication to his craft ma
             
             </MDBCardBody>
           </MDBCol>
-          <MDBCol md='8'>
-            <MDBCardImage src={designermona} height={300} width={800} alt='...' fluid />
+          <MDBCol md='6'>
+            <MDBCardImage src={designermona} alt='...' fluid />
           </MDBCol>
           
         </MDBRow>

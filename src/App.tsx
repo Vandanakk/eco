@@ -1,18 +1,18 @@
 import React, {useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router,Switch, Route } from "react-router-dom";
-import { About, Home, Category,Services,ContactUs,ProductListing,BlogList, ProductDetails, Policy, Partners, Designers } from "./pages/index";
+import { Home, Category,Services,ContactUs,ProductListing,BlogList, ProductDetails, Policy, Partners, Designers, Whyus } from "./pages/index";
 import Navbar from "./component/Navbar/Navbar";
 
-import ReactGA from 'react-ga';
-const TRACKING_ID = "G-TNCBMY3Q09"; 
-ReactGA.initialize(TRACKING_ID);
+// import ReactGA from 'react-ga';
+// const TRACKING_ID = "G-TNCBMY3Q09";  
+// ReactGA.initialize(TRACKING_ID);
 
 export default function App() {
 
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.pageview(window.location.pathname + window.location.search);
+  // }, []);
 
   return (
   
@@ -26,12 +26,13 @@ export default function App() {
           <Route exact path="/productdetails/:product" component={ProductDetails}></Route>
           <Route exact path="/blogList" component={BlogList}></Route>   
 
-          <Route exact path="/about" component={About}></Route>
+          
           <Route exact path="/services" component={Services}></Route>  
           <Route exact path="/contactus" component={ContactUs}></Route>   
           <Route exact path="/policy" component={Policy}></Route>         
           <Route exact path="/partners" component={Partners}></Route>
           <Route exact path="/designers" component={Designers}></Route>
+          <Route exact path="/whyus" component={Whyus}></Route>
       </Switch> 
     
     </Router> 
