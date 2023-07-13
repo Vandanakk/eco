@@ -13,10 +13,18 @@ import {
   MDBCardText,
   MDBCardImage
 } from 'mdb-react-ui-kit';
+import Helmet from 'react-helmet';
+import { useTranslation } from 'react-i18next';
 
 const Partners = () => {
+  const { t } = useTranslation(); 
   return (
     <>
+     <Helmet>
+        <title>{t('PARTNER_HEADER')}</title>
+        <meta name="description" content={t('PARTNER_CONTENT')} />
+      </Helmet>
+
       {/* <MDBCard className='mb-3'>
         <MDBCardImage position='top' height='700px' src={partnersmainpage} alt='/productlist/PetBeds' />
       </MDBCard> */}

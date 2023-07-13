@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./myteams.css";
 import ourpartners from "../../images/myteams.jpg"
 
+
 import {
   MDBCard,
   MDBCardBody,
@@ -11,8 +12,10 @@ import {
 } from 'mdb-react-ui-kit';
 
 const Myteams = () => {
-  return (    <>
-    
+  
+  return (    <>    
+   
+
     <h1 className="product-title center marginMyTeamTop">Meet Our Team</h1>
       <div className="about-wrapper flex-columns">
         <div className="product-center">

@@ -21,10 +21,17 @@ import {
   MDBCol
 } from 'mdb-react-ui-kit';
 import serviceshomepage from "../../images/serviceshomepage.jpg"
+import Helmet from 'react-helmet';
+import { useTranslation } from 'react-i18next';
 
 const Whyus = () => {
+  const { t } = useTranslation(); 
   return (
     <>
+     <Helmet>
+        <title>{t('SERVICES_HEADER')}</title>
+        <meta name="description" content={t('SERVICES_CONTENT')} />
+      </Helmet>
       <div>
 
         <MDBCard className='mb-3'>

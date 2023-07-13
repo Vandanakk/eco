@@ -19,10 +19,18 @@ import {
   MDBCol
 } from 'mdb-react-ui-kit';
 import whymainpage from "../../images/whymainpage.jpg"
+import Helmet from 'react-helmet';
+import { useTranslation } from 'react-i18next';
+
 
 const Whyus = () => {
+  const { t } = useTranslation(); 
   return (
     <>
+     <Helmet>
+        <title>{t('WHYUS_HEADER')}</title>
+        <meta name="description" content={t('WHYUS_CONTENT')} />
+      </Helmet>
       <div>
 
         <MDBCard className='mb-3'>

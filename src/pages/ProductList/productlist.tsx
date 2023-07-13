@@ -22,15 +22,23 @@ import {
 } from "mdb-react-ui-kit";
 import "./productlist.css";
 import data from "../../data";
+import categories from "../../categories";
 import { ProductData } from "../ProductDetails/productModel";
+import Helmet from 'react-helmet';
+import { useTranslation } from 'react-i18next';
 
 const Productlist = (props: any) => {
+  const { t } = useTranslation(); 
   const [scrollableModal, setScrollableModal] = React.useState(false);
   const category = props.match.params.category;
   const Filtered = (element: any) => {
     return (element.category == category);
   }
+  const CategoryFiltered = (element: any) => {
+    return (element.category == category);
+  }
   const fiteredData = data.filter(Filtered);
+  const categoryfiteredData = categories.filter(CategoryFiltered);
   const [modelData, setmodelData] = React.useState<ProductData>(new ProductData());
 
  
@@ -65,12 +73,18 @@ const Productlist = (props: any) => {
 
 
   return (
+    <>
+    <Helmet>
+    <title>{categoryfiteredData[0].name}</title>
+    <meta name="description" content={categoryfiteredData[0].description} />
+  </Helmet>
     <MDBContainer fluid>
       <MDBRow className="justify-content-center mb-0">
         {
           fiteredData.map((products) => {
             const { id, image, name, price, category, description, reviews, lastPrice
               , feature1, feature2, feature3, feature4, feature5, feature6 } = products;
+
             return (
               <MDBCol md="12" xl="10">
                 <MDBCard className="shadow-0 border rounded-3 mt-5 mb-3">
@@ -240,7 +254,7 @@ const Productlist = (props: any) => {
 
     </MDBContainer>
 
-
+    </>
   );
 }
 

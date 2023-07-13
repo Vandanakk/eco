@@ -3,7 +3,8 @@ import "./designers.css";
 
 import designersmainpage from "../../images/designers11.jpeg"
 import designermona from "../../images/desingermona.jpeg"
-
+import Helmet from 'react-helmet';
+import { useTranslation } from 'react-i18next';
 
 
 import categories from "../../categories";
@@ -20,10 +21,14 @@ import {
 import designerhome from "../../images/designerhome.jpg"
 
 const Designers = () => {
+  const { t } = useTranslation(); 
   return (
     <>
     <div>
-
+    <Helmet>
+        <title>{t('DESIGNER_HEADER')}</title>
+        <meta name="description" content={t('DESIGNER_CONTENT')} />
+      </Helmet>
     <MDBCard className='mb-3'>
       <MDBCardImage position='top' height='700px'  src={designerhome} />     
     </MDBCard>

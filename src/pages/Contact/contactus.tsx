@@ -2,7 +2,11 @@ import React, { useState,useRef } from "react";
 import Footer from "../../component/Footer/footer";
 import "./contactus.css"
 import emailjs from '@emailjs/browser';
+import Helmet from 'react-helmet';
+import { useTranslation } from 'react-i18next';
+
 const ContactUs = () => {
+  const { t } = useTranslation(); 
   const form = useRef();
   const [userData, setUserData] = useState({
     firstName: "",
@@ -62,6 +66,10 @@ const ContactUs = () => {
 
   return (
  <>
+  <Helmet>
+        <title>{t('CONTACT_CONTENT')}</title>
+        <meta name="description" content={t('CONTACT_HEADER')} />
+      </Helmet>
       <section className="contactus-section">
         <div className="container">
           <div className="row">

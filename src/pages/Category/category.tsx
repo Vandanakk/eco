@@ -4,11 +4,20 @@ import { MDBContainer, MDBRow, MDBCol, MDBRipple } from "mdb-react-ui-kit";
 import categories from "../../categories";
 import Footer from "../../component/Footer/footer";
 import './category.css'
+import Helmet from 'react-helmet';
+import { useTranslation } from 'react-i18next';
 
-function category() {
+
+
+const Category = () => {
+  const { t } = useTranslation(); 
   return (
     <>
     <div>
+    <Helmet>
+        <title>{t('CATEGORY_HEADER')}</title>
+        <meta name="description" content={t('CATEGORY_DESCRIPTION')} />
+      </Helmet>
     <MDBContainer fluid className="my-5 text-center">      
       <MDBRow>
       {categories
@@ -63,4 +72,4 @@ function category() {
  
 }
 
-export default category;
+export default Category;
