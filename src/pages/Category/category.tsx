@@ -45,7 +45,7 @@ const Category = () => {
                     <div className="d-flex justify-content-start align-items-start h-100">
                       <h5>
                         <span className="badge bg-light pt-2 ms-3 mt-3 text-dark">
-                        {name}
+                        {category}
                         </span>
                       </h5>
                     </div>
