@@ -6,7 +6,7 @@ import Footer from "../../component/Footer/footer";
 import './category.css'
 import Helmet from 'react-helmet';
 import { useTranslation } from 'react-i18next';
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 const Category = () => {
@@ -32,7 +32,7 @@ const Category = () => {
                 rippleTag="div"
                 className="bg-image rounded hover-zoom shadow-1-strong"
               >
-                <img
+                <LazyLoadImage
                   src={image}            
                   className="w-100"
                 />

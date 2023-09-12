@@ -23,7 +23,7 @@ import {
   MDBCardText,
 } from "mdb-react-ui-kit";
 
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 
@@ -70,61 +70,61 @@ const FeaturedProducts = () => {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
-          <div>
-            <img
-              src={babyChair}
-              className="w-100"
-              alt="Baby Chair"
-            />
+          <div>           
+
+       <LazyLoadImage src={babyChair}
+        className="w-100"
+        alt="Baby Chair"
+      />
 
           </div>
           <div>
-            <img
+            <LazyLoadImage
               src={babydollCrib}
               className="w-100"
               alt="Baby Doll Crib"
             />
           </div>
           <div>
-            <img
+            <LazyLoadImage
               src={hangingChair}
               className="w-100"
               alt="Hanging Chair" />
           </div>
           <div>
-            <img
+            <LazyLoadImage
               src={kidChair}
               className="w-100"
               alt="Kids Chair"
             />
           </div>
           <div>
-            <img
+            <LazyLoadImage
               src={mudhaSet}
               className="w-100"
               alt="Ottomans"
             />
           </div>
           <div>
-            <img
+            <LazyLoadImage
               src={newborn}
               className="w-100"
               alt="NewBorn Bed"
             />
           </div>
           <div>
-            <img
+            <LazyLoadImage
               src={peedi2}
               className="w-100"
             />
           </div>
           <div>
-            <img
+            <LazyLoadImage
               src={tray}
               className="w-100"
             />
           </div>
-        </Carousel >;
+        </Carousel >
       </div >
     </>
   );
