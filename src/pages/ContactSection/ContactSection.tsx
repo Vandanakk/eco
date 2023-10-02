@@ -2,6 +2,7 @@ import React from 'react'
 import Form from './Form'
 import Info from './Info'
 import Footer from "../../component/Footer/footer";
+import Addresses from './Addresses';
 import Disclaimer from '../Disclaimer/disclaimer';
 import Helmet from 'react-helmet';
 
@@ -19,7 +20,8 @@ const ContactSection = () => (
       <Info />      
     
     </div>
-    <Disclaimer/>
+    <Addresses/>
+    {/* <Disclaimer/> */}
     <Footer />
   </>
 )
