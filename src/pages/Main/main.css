@@ -6,10 +6,11 @@
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #8064A2;
 }
-
+@media only screen and (min-width: 1200px) {
 .carousel .carousel-item {
     height: 700px;
   }
+}
   
   .carousel-item img {
       position: absolute;
@@ -23,3 +24,9 @@
     width: 567px;
   }
   
+  @media only screen and (max-width: 767px) {
+    .carousel .carousel-item {
+      height: 200px;
+    }
+    
+  }

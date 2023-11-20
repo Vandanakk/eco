@@ -79,6 +79,19 @@ const Addresses = () => {
       <section className=''>
         <MDBContainer className='text-center text-md-start mt-3'>
           <MDBRow className='mt-4'>
+            
+          <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-4'>
+          <h6 className='fw-bold mb-4'>Marketing Office - Bangalore</h6>
+              <p>
+                <MDBIcon icon="home" className="me-2" />
+                01035,Virthur, Panathur Main Road, Whitefield, Bangalore - 560087,  India 
+              </p>
+              <p>
+                <MDBIcon icon="phone" className="me-3" /> +91 9310618686
+              </p>
+         
+           
+            </MDBCol>
 
             <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-4'>
               <h6 className='fw-bold mb-4'>Workshop - Garh Mukteshwar</h6>
@@ -94,14 +107,11 @@ const Addresses = () => {
             <h6 className='fw-bold mb-4'>Workshop - Tripura</h6>
             <p>
                 <MDBIcon icon="home" className="me-2" />
-                Agartala, Tripura Agartala - 799001, West Tripura, Tripura, India
+                967, Businesss Netaji Nagar, Teliamura, Khowai, Tripura - 799205, India
               </p>           
             </MDBCol>
 
-            <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-4'>
-            <h6 className='fw-bold mb-4'></h6>
-           
-            </MDBCol>
+          
         
           </MDBRow>
         </MDBContainer>

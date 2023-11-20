@@ -2,12 +2,28 @@ body {
     background-color: #eee;
   }
 
-  .marginTop {  
-    margin-top: 50px;         
-    padding: 30px;
+
+  @media only screen and (max-width: 767px) {
+    .marginTop {  
+      margin-top: 2%;         
+      padding: 2%;         
+    }
+  
+    .marginside {  
+      margin-left: 2%;         
+      margin-right: 2%;         
+    }
   }
 
-  .marginside {  
-    margin-left: 100px;         
-    margin-right: 100px;
+  @media only screen and (min-width: 1200px) {
+    .marginTop {  
+      margin-top: 50px;         
+      padding: 30px;
+    }
+  
+    .marginside {  
+      margin-left: 100px;         
+      margin-right: 100px;
+    }
   }
+    

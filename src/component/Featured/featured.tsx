@@ -16,7 +16,7 @@ const Featured = () => {
   return (
     <>
    
-    <h1 className="product-title center marginTop" >New Arrivals</h1>
+    <h1 className="product-title center marginTop">New Arrivals</h1>
    
     
    <div className="marginside">

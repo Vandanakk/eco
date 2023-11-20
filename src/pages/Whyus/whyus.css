@@ -6,9 +6,9 @@ section.content-prod{
    .main-hero-para {
     font-size: 1rem;
     color: var(--text-color);
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 1rem 0;
     font-weight: lighter;
-    width: 90%;
+    width: 100%;
     text-align: justify;
   }
   .alignright {
@@ -26,7 +26,23 @@ section.content-prod{
     
   }
 
-  .marginwhyuside {  
-    margin-left: 10%;         
-    margin-right: 10%;
+
+
+  @media only screen and (min-width: 1200px) {
+    .marginwhyuside {  
+      margin-left: 10%;         
+      margin-right: 10%;
+    }
+    .mainImageHeight {
+      height:'700px';
+      }
   }
+    @media only screen and (max-width: 767px) {
+    .marginwhyuside {  
+      margin-left: 1%;              
+    }
+    .mainImageHeight {
+      height:'200px';
+      }
+  }
+  

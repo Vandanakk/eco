@@ -30,7 +30,7 @@ const Designers = () => {
         <meta name="description" content={t('DESIGNER_CONTENT')} />
       </Helmet>
     <MDBCard className='mb-3'>
-      <MDBCardImage position='top' height='700px'  src={designerhome} />     
+      <MDBCardImage position='top' className='mainImageHeight'  src={designerhome} />     
     </MDBCard>
 
       <MDBCard >

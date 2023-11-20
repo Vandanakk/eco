@@ -25,8 +25,25 @@ section.content-prod{
     justify-content: flex-end !important;  
     
   }
-
+  @media only screen and (min-width: 1200px) {
   .marginserviceside {  
     margin-left: 15%;         
     margin-right: 15%;
   }
+  .mainImageHeight {
+    height:'700px';
+    }
+}
+  @media only screen and (max-width: 767px) {
+  .marginserviceside {  
+    margin-left: 1%;         
+    margin-right: 1%;
+  }
+  .mainImageHeight {
+    height:'200px';
+    }
+}
+
+
+
+

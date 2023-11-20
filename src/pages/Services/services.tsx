@@ -35,7 +35,7 @@ const Whyus = () => {
       <div>
 
         <MDBCard className='mb-3'>
-          <MDBCardImage position='top' height='700px' src={serviceshomepage} />
+          <MDBCardImage position='top' className="mainImageHeight" src={serviceshomepage} />
         </MDBCard>
 
 
