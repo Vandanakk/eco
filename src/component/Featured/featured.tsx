@@ -22,7 +22,7 @@ const Featured = () => {
    <div className="marginside">
      <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
      {categories
-       .filter((item) => item.featured === true)
+       .filter((item) => item.featured === true && item.shipping===true)
       .map((productCategory) => {
           const { id, image, name, price,category } = productCategory;
           return (

@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../component/Footer/footer";
 import Blog from "../Blog/blog";
 import Featured from "../../component/Featured/featured";
+import Trending from "../../component/Trending/trending";
 import FeaturedProducts from "../../component/FeaturedProducts/featuredproducts";
 import Services from "../Services/services";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Main/>
       <Featured />
       <FeaturedProducts/>
+      <Trending/>
       {/* <Services /> */}     
       {/* <Blog/> */}
       <Footer />

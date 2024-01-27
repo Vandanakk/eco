@@ -11,7 +11,7 @@ import hangingChair from "./hangingChair.jpg"
 import kidChair from "./kidChair.jpg"
 import mudhaSet from "./mudhaSet.jpg"
 import newborn from "./newborn.jpg"
-import peedi2 from "./peedi2.jpg"
+import peedi2 from "./peedi2.jpeg"
 import tray from "./tray.jpg"
 
 

@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logos from "./ecoiconorignal.jpg"
+import Cataluge24 from "../Catalog/Ecowoodies Catalogue.pdf"
+import ottomons from '../Catalog/Ecowoodies_Ottoman_Catalog.pdf'
+import ottomonset from '../Catalog/Ecowoodies_OttomanSet_Catalog.pdf'
+
+
 
 import {
   MDBContainer,
@@ -57,7 +62,7 @@ const Navbar = () => {
             alt=''
             loading='lazy'
           />
-          Ecowoodies
+         Ecowoodies
         </MDBNavbarBrand>
 
         <MDBNavbarToggler
@@ -108,11 +113,30 @@ const Navbar = () => {
             </MDBNavbarItem>
 
             <MDBNavbarItem>
+              <MDBDropdown>
+                <MDBDropdownToggle tag='a' className='nav-link' role='button' >
+                  Catalogue
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem link href={Cataluge24} className='nav-link' active aria-current='page' >Catalogue 2024</MDBDropdownItem>
+                  <MDBDropdownItem link href={ottomons} className='nav-link' active aria-current='page'>Stools / Ottomon</MDBDropdownItem>
+                  <MDBDropdownItem link href={ottomonset} className='nav-link' active aria-current='page'>Ottoman Set</MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavbarItem>
+
+            <MDBNavbarItem>
+            <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='https://www.ecowoodies.in'>
+                Shop
+              </MDBNavbarLink>          
+            </MDBNavbarItem>
+            
+            <MDBNavbarItem>
+           
             <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/contactus'>
                 Contact Us
               </MDBNavbarLink>
             </MDBNavbarItem>
-            
 
           
           </MDBNavbarNav>

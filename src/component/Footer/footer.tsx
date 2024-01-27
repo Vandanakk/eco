@@ -72,7 +72,7 @@ const Footer = () => {
     //         {false && <PrivacyModal />}
     //     </div>
     // </footer>
-    <MDBFooter style={{ backgroundColor: '#9ccc65' }} color='black-50' className='text-center text-lg-start text-muted'>
+    <MDBFooter style={{ backgroundColor: '#FCFCFF ' }} color='black-50' className='text-center text-lg-start text-muted'>
       <section className='d-flex justify-content-center justify-content-lg-between'>
          
       </section>
@@ -200,7 +200,7 @@ const Footer = () => {
         
       </div>
       <div className='text-center' style={{ backgroundColor: 'black',color:'white' }}>
-        © 2023 Copyright:
+        © 2024 Copyright:
         <a className='text-reset' href='https://ecowoodies.com/'>
            Ecowoodies. All Right Reserved.
         </a>

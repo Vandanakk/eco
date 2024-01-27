@@ -1,0 +1,17 @@
+body {
+    background-color: #eee;
+  }
+
+  .marginTop {  
+    margin-top: 20px;          
+  }
+
+
+  .product-title{
+    /* color: #acd83a !important; */
+    font-size:200%;
+  font-weight: bold;
+}
+.center{
+  text-align:center;
+}

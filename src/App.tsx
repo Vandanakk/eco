@@ -5,6 +5,8 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home, Category, Services, ContactUs, ProductListing, BlogList, ProductDetails, Policy, Partners, Designers, Whyus } from "./pages/index";
 import Navbar from "./component/Navbar/Navbar";
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
+
 
 // import ReactGA from 'react-ga';
 // const TRACKING_ID = "G-TNCBMY3Q09";  
@@ -44,6 +46,16 @@ export default function App() {
         </Switch>
 
       </Router>
+
+      <FloatingWhatsApp
+      phoneNumber='+919686722949'
+      accountName='Ecowoodies'
+      allowEsc
+      allowClickAway
+      notification
+      chatMessage='Hello there! 🤝 
+      How can we help?'      
+      />
     </>
   );
 }
