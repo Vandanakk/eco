@@ -155,7 +155,7 @@ const Productlist = (props: any) => {
                             <s>${lastPrice}</s>
                           </span>
                         </div>
-                        <h6 className="text-success">Shipping - Negotiable</h6>
+                        <h6 className="text-success">MOQ - 450 Sets/Pieces</h6>
                         <div className="d-flex flex-column mt-4">
                           {/* <MDBBtn color="primary" size="sm" href={`/productdetails/${scrollableModal}`}>
                       Details
