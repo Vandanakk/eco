@@ -26,7 +26,7 @@ const Addresses = () => {
          
       </section>
 
-      <section className=''>
+      {/* <section className=''>
         <MDBContainer className='text-center text-md-start mt-3'>
           <MDBRow className='mt-4'>
 
@@ -74,7 +74,7 @@ const Addresses = () => {
             </MDBCol>
           </MDBRow>
         </MDBContainer>
-      </section>   
+      </section>    */}
 
       <section className=''>
         <MDBContainer className='text-center text-md-start mt-3'>
