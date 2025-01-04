@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../../component/Footer/footer";
-import Blog from "../Blog/blog";
+import Blog from "../Blog/BlogView";
 import Featured from "../../component/Featured/featured";
 import Trending from "../../component/Trending/trending";
 import FeaturedProducts from "../../component/FeaturedProducts/featuredproducts";
