@@ -3,10 +3,9 @@ const blogs = [
   {
     id: 1,
     title: "AI and Fraud Detection: Enhancing Security in Online Transactions",
+    date: "2025-01-09",
     image: "https://picsum.photos/1400/300?random=5",
     content: `
-
-    <div class="post-date" style="box-sizing:border-box;color:rgb(170, 170, 170);display:block;font-size:12px;margin:-8.39062px 0px 20px;outline:0px;padding:0px;text-align:center;text-decoration:none;">Friday, December 6, 2024</div>
     <div class="rich-blog-image" style="box-sizing:border-box;font-size:0px;margin:0px 0px 50px;outline:0px;padding:0px;text-align:center;text-decoration:none;"><img style="box-sizing:border-box;margin:0px;max-width:100%;outline:0px;padding:0px;text-decoration:none;" src="https://www.ecowoodies.in/images/thumbs/0002591_b_600.png" alt="Unlocking Bamboo Dreams: 5 Overlooked Essentials for Beginner Designers" title="Unlocking Bamboo Dreams: 5 Overlooked Essentials for Beginner Designers" width="600" height="388"></div>
     <div class="post-body" style="box-sizing:border-box;line-height:24px;margin:auto;max-width:1000px;outline:0px;padding:0px;text-align:left;text-decoration:none;">
         <p style="box-sizing:border-box;color:rgb(0, 0, 0);line-height:24px;margin:0px;outline:0px;padding:0px;text-align:justify;text-decoration:none;" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">If you’re a budding bamboo designer or considering a career shift into the field, you’re embarking on a journey filled with creativity, sustainability, and innovation. Designing with&nbsp;bamboo&nbsp;requires an appreciation for its unique qualities and a commitment to mastering the craft. This guide outlines five essential tips for beginners to help you build a strong foundation and thrive in this dynamic field.</p>
@@ -84,10 +83,9 @@ const blogs = [
   {
     id: 2,
     title: "AI and Fraud Detection: Enhancing Security in Online Transactions",
+    date: "2025-01-09",
     image: "https://picsum.photos/1400/300?random=5",
     content: `
-
-    <div class="post-date" style="box-sizing:border-box;color:rgb(170, 170, 170);display:block;font-size:12px;margin:-8.39062px 0px 20px;outline:0px;padding:0px;text-align:center;text-decoration:none;">Friday, December 6, 2024</div>
     <div class="rich-blog-image" style="box-sizing:border-box;font-size:0px;margin:0px 0px 50px;outline:0px;padding:0px;text-align:center;text-decoration:none;"><img style="box-sizing:border-box;margin:0px;max-width:100%;outline:0px;padding:0px;text-decoration:none;" src="https://www.ecowoodies.in/images/thumbs/0002591_b_600.png" alt="Unlocking Bamboo Dreams: 5 Overlooked Essentials for Beginner Designers" title="Unlocking Bamboo Dreams: 5 Overlooked Essentials for Beginner Designers" width="600" height="388"></div>
     <div class="post-body" style="box-sizing:border-box;line-height:24px;margin:auto;max-width:1000px;outline:0px;padding:0px;text-align:left;text-decoration:none;">
         <p style="box-sizing:border-box;color:rgb(0, 0, 0);line-height:24px;margin:0px;outline:0px;padding:0px;text-align:justify;text-decoration:none;" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">If you’re a budding bamboo designer or considering a career shift into the field, you’re embarking on a journey filled with creativity, sustainability, and innovation. Designing with&nbsp;bamboo&nbsp;requires an appreciation for its unique qualities and a commitment to mastering the craft. This guide outlines five essential tips for beginners to help you build a strong foundation and thrive in this dynamic field.</p>
@@ -166,9 +164,8 @@ const blogs = [
     id: 3,
     title: "AI and Fraud Detection: Enhancing Security in Online Transactions",
     image: "https://picsum.photos/1400/300?random=5",
+    date: "2025-01-09",
     content: `
-
-    <div class="post-date" style="box-sizing:border-box;color:rgb(170, 170, 170);display:block;font-size:12px;margin:-8.39062px 0px 20px;outline:0px;padding:0px;text-align:center;text-decoration:none;">Friday, December 6, 2024</div>
     <div class="rich-blog-image" style="box-sizing:border-box;font-size:0px;margin:0px 0px 50px;outline:0px;padding:0px;text-align:center;text-decoration:none;"><img style="box-sizing:border-box;margin:0px;max-width:100%;outline:0px;padding:0px;text-decoration:none;" src="https://www.ecowoodies.in/images/thumbs/0002591_b_600.png" alt="Unlocking Bamboo Dreams: 5 Overlooked Essentials for Beginner Designers" title="Unlocking Bamboo Dreams: 5 Overlooked Essentials for Beginner Designers" width="600" height="388"></div>
     <div class="post-body" style="box-sizing:border-box;line-height:24px;margin:auto;max-width:1000px;outline:0px;padding:0px;text-align:left;text-decoration:none;">
         <p style="box-sizing:border-box;color:rgb(0, 0, 0);line-height:24px;margin:0px;outline:0px;padding:0px;text-align:justify;text-decoration:none;" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">If you’re a budding bamboo designer or considering a career shift into the field, you’re embarking on a journey filled with creativity, sustainability, and innovation. Designing with&nbsp;bamboo&nbsp;requires an appreciation for its unique qualities and a commitment to mastering the craft. This guide outlines five essential tips for beginners to help you build a strong foundation and thrive in this dynamic field.</p>
@@ -246,10 +243,8 @@ const blogs = [
   {
     id: 4,
     title: "AI and Fraud Detection: Enhancing Security in Online Transactions",
-    image: "https://picsum.photos/1400/300?random=5",
+    date: "2025-01-09",
     content: `
-
-    <div class="post-date" style="box-sizing:border-box;color:rgb(170, 170, 170);display:block;font-size:12px;margin:-8.39062px 0px 20px;outline:0px;padding:0px;text-align:center;text-decoration:none;">Friday, December 6, 2024</div>
     <div class="rich-blog-image" style="box-sizing:border-box;font-size:0px;margin:0px 0px 50px;outline:0px;padding:0px;text-align:center;text-decoration:none;"><img style="box-sizing:border-box;margin:0px;max-width:100%;outline:0px;padding:0px;text-decoration:none;" src="https://www.ecowoodies.in/images/thumbs/0002591_b_600.png" alt="Unlocking Bamboo Dreams: 5 Overlooked Essentials for Beginner Designers" title="Unlocking Bamboo Dreams: 5 Overlooked Essentials for Beginner Designers" width="600" height="388"></div>
     <div class="post-body" style="box-sizing:border-box;line-height:24px;margin:auto;max-width:1000px;outline:0px;padding:0px;text-align:left;text-decoration:none;">
         <p style="box-sizing:border-box;color:rgb(0, 0, 0);line-height:24px;margin:0px;outline:0px;padding:0px;text-align:justify;text-decoration:none;" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">If you’re a budding bamboo designer or considering a career shift into the field, you’re embarking on a journey filled with creativity, sustainability, and innovation. Designing with&nbsp;bamboo&nbsp;requires an appreciation for its unique qualities and a commitment to mastering the craft. This guide outlines five essential tips for beginners to help you build a strong foundation and thrive in this dynamic field.</p>
@@ -328,9 +323,8 @@ const blogs = [
     id: 5,
     title: "AI and Fraud Detection: Enhancing Security in Online Transactions",
     image: "https://picsum.photos/1400/300?random=5",
+    date: "2025-01-09",
     content: `
-
-    <div class="post-date" style="box-sizing:border-box;color:rgb(170, 170, 170);display:block;font-size:12px;margin:-8.39062px 0px 20px;outline:0px;padding:0px;text-align:center;text-decoration:none;">Friday, December 6, 2024</div>
     <div class="rich-blog-image" style="box-sizing:border-box;font-size:0px;margin:0px 0px 50px;outline:0px;padding:0px;text-align:center;text-decoration:none;"><img style="box-sizing:border-box;margin:0px;max-width:100%;outline:0px;padding:0px;text-decoration:none;" src="https://www.ecowoodies.in/images/thumbs/0002591_b_600.png" alt="Unlocking Bamboo Dreams: 5 Overlooked Essentials for Beginner Designers" title="Unlocking Bamboo Dreams: 5 Overlooked Essentials for Beginner Designers" width="600" height="388"></div>
     <div class="post-body" style="box-sizing:border-box;line-height:24px;margin:auto;max-width:1000px;outline:0px;padding:0px;text-align:left;text-decoration:none;">
         <p style="box-sizing:border-box;color:rgb(0, 0, 0);line-height:24px;margin:0px;outline:0px;padding:0px;text-align:justify;text-decoration:none;" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">If you’re a budding bamboo designer or considering a career shift into the field, you’re embarking on a journey filled with creativity, sustainability, and innovation. Designing with&nbsp;bamboo&nbsp;requires an appreciation for its unique qualities and a commitment to mastering the craft. This guide outlines five essential tips for beginners to help you build a strong foundation and thrive in this dynamic field.</p>

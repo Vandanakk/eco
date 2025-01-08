@@ -4,6 +4,18 @@ import { MDBContainer, MDBCardBody, MDBCardImage } from "mdb-react-ui-kit";
 import blogs from "./blogs";
 import Helmet from "react-helmet";
 import "./blog.css";
+import Footer from "../../component/Footer/footer";
+
+// Helper to format the date
+const formatDate = (date: string) => {
+  const formattedDate = new Date(date);
+  return formattedDate.toLocaleDateString("en-US", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+};
 
 const BlogView = () => {
   const { id } = useParams<{ id: string }>();
@@ -19,7 +31,7 @@ const BlogView = () => {
     );
   }
 
-  const { title, image, content } = blog;
+  const { title, image, content, date } = blog;
 
   return (
     <>
@@ -42,12 +54,14 @@ const BlogView = () => {
               />
             )}
             {title && <h1 className="blog-title">{title}</h1>}
+            <p className="blog-date">{formatDate(date)}</p> {/* Display the date here */}
           </header>
           <MDBCardBody className="p-0 blog-content">
             <div dangerouslySetInnerHTML={{ __html: content }} />
           </MDBCardBody>
         </article>
       </MDBContainer>
+      <Footer />
     </>
   );
 };
