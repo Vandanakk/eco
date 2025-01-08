@@ -1,77 +1,52 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import {
-  MDBContainer,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBRipple,
-  MDBBtn,
-} from "mdb-react-ui-kit";
-import blogs from "./blogs";  // Import your blog data
+import { useParams, Link } from "react-router-dom";
+import { MDBContainer, MDBCardBody, MDBCardImage } from "mdb-react-ui-kit";
+import blogs from "./blogs";
 import Helmet from "react-helmet";
-import './blog.css'
-
-interface Blog {
-  id: number;
-  title: string;
-  image: string;
-  summary: string;
-  content: string;
-}
-
-type BlogParams = {
-  id: string;
-};
+import "./blog.css";
 
 const BlogView = () => {
-  const { id } = useParams<BlogParams>();
-  const [blog, setBlog] = useState<Blog | null>(null);
-
-  useEffect(() => {
-    const blogId = Number(id);  // Convert string `id` to a number
-    const selectedBlog = blogs.find((b) => b.id === blogId);  // Compare the number ids
-    setBlog(selectedBlog || null);
-  }, [id]);
+  const { id } = useParams<{ id: string }>();
+  const [blog, setBlog] = useState(() => blogs.find((b) => b.id === Number(id)) || null);
 
   if (!blog) {
-    return <div>Loading...</div>;
+    return (
+      <div className="not-found-container">
+        <h2 className="not-found-title">Oops! We couldn't find that blog.</h2>
+        <p className="not-found-message">Maybe it's taking a nap, or it never existed.</p>
+        <Link to="/blogs" className="back-to-blogs">Back to Blogs</Link>
+      </div>
+    );
   }
+
+  const { title, image, content } = blog;
 
   return (
     <>
       <Helmet>
-        <title>{blog.title}</title>
-        <meta name="description" content={`Read more about ${blog.title}.`} />
+        <title>{title}</title>
+        <meta name="description" content={`Read more about ${title}.`} />
       </Helmet>
       <MDBContainer className="my-5">
-        <MDBCard className="shadow-sm rounded">
-          <MDBRipple
-            rippleColor="light"
-            rippleTag="div"
-            className="bg-image hover-overlay"
-          >
-            <MDBCardImage src={blog.image} fluid alt={blog.title} className="blog-image" />
-            <a>
-              <div
-                className="mask"
-                style={{ backgroundColor: "rgba(251, 251, 251, 0.6)" }}
-              ></div>
-            </a>
-          </MDBRipple>
-          <MDBCardBody>
-            <h2 className="text-center text-dark">{blog.title}</h2>
-            <div
-              className="content-text"
-              dangerouslySetInnerHTML={{ __html: blog.content }}
-            />
+        <article>
+          <Link to="/blogs" className="back-link">
+            &larr; Back to Blogs
+          </Link>
+          <header className="blog-header">
+            {image && (
+              <MDBCardImage
+                src={image}
+                alt={title}
+                fluid
+                className="blog-image"
+              />
+            )}
+            {title && <h1 className="blog-title">{title}</h1>}
+          </header>
+          <MDBCardBody className="p-0 blog-content">
+            <div dangerouslySetInnerHTML={{ __html: content }} />
           </MDBCardBody>
-          <div className="d-flex justify-content-center">
-            <MDBBtn color="primary" href="/blogs">
-              Back to Blogs
-            </MDBBtn>
-          </div>
-        </MDBCard>
+        </article>
       </MDBContainer>
     </>
   );

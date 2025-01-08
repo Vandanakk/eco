@@ -88,6 +88,13 @@ const Navbar = () => {
               </MDBNavbarLink>
             </MDBNavbarItem>
 
+            
+            <MDBNavbarItem>
+            <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/blogs'>
+                Blogs
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+
             {/* <MDBNavbarItem>
               <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/partners'>Partners</MDBNavbarLink>
             </MDBNavbarItem> */}
