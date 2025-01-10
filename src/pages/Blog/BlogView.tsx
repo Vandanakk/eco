@@ -39,12 +39,15 @@ const BlogView = () => {
         <title>{title}</title>
         <meta name="description" content={`Read more about ${title}.`} />
       </Helmet>
-      <MDBContainer className="my-5">
+      <MDBContainer className="my-5 p-5 bg-white">
         <article>
           <Link to="/blogs" className="back-link">
             &larr; Back to Blogs
           </Link>
           <header className="blog-header">
+            
+            {title && <h1 className="blog-title">{title}</h1>}
+            <p className="blog-date">{formatDate(date)}</p> {/* Display the date here */}
             {image && (
               <MDBCardImage
                 src={image}
@@ -53,11 +56,9 @@ const BlogView = () => {
                 className="blog-image"
               />
             )}
-            {title && <h1 className="blog-title">{title}</h1>}
-            <p className="blog-date">{formatDate(date)}</p> {/* Display the date here */}
           </header>
           <MDBCardBody className="p-0 blog-content">
-            <div dangerouslySetInnerHTML={{ __html: content }} />
+            <div className="blog-html-content" dangerouslySetInnerHTML={{ __html: content }} />
           </MDBCardBody>
         </article>
       </MDBContainer>

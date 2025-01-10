@@ -134,8 +134,9 @@
 }
 
 .blog-image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  max-height: 400px;
   border-radius: 12px;
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease;
@@ -150,6 +151,9 @@
   line-height: 1.75;
   color: #444;
   padding: 0 1rem;
+  font-family: Arial, sans-serif; 
+
+  
 }
 
 @media (min-width: 768px) {
@@ -240,4 +244,13 @@
 
 .back-link:hover {
   color: #0056b3;
+}
+
+.blog-html-content {
+  font-family: Roboto, Helvetica, Arial, sans-serif;; /* Force all child elements to inherit the parent font */
+
+}
+
+.main-blog * {
+  font-family: Roboto, Helvetica, Arial, sans-serif;; /* Force all child elements to inherit the parent font */
 }
