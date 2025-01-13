@@ -11,6 +11,12 @@ import Policy from "./Policy/policy";
 import Partners from "./Partners/partners";
 import Designers from "./Designers/designers";
 import Whyus from "./Whyus/whyus";
+import BulkOrder from "./BulkOrder/bulkorder";
+import ZapierChatbot from "./ChatBot/ZapierChatbot"
 
 
-export { Home,  Services,ContactUs,Category,ProductListing, BlogList,BlogView,ProductDetails,Policy,Partners,Designers,Whyus };
+
+
+
+export { Home,  Services,ContactUs,Category,ProductListing, BlogList,BlogView,ProductDetails,Policy,Partners,Designers,Whyus,
+    BulkOrder,ZapierChatbot }; // Export BulkOrder

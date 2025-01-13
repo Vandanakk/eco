@@ -25,7 +25,7 @@ const blogs = [
   {
     id: 2,
     title: "Why Post-Sale Support is Key to Success in Bamboo Furniture Export?",
-    date: "2025-01-10",
+    date: "2024-12-10",
     image: "https://www.ecowoodies.in/images/thumbs/0002588_a1_600.jpeg",
     content: `<p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Poppins, sans-serif;font-size:13px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;line-height:24px;margin:0px;orphans:2;outline:0px;padding:0px;text-align:justify;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">Bamboo and rattan furniture have become increasingly popular due to their&nbsp;eco-friendly&nbsp;nature, aesthetic appeal, and durability. However, like all furniture, proper care and post-sale support are essential to ensure long-lasting quality and customer satisfaction. This guide explores key strategies for maintaining bamboo and rattan furniture, troubleshooting common issues, and ensuring that importers and end-users alike have access to effective after-sales solutions.</p>
 <h3 style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Poppins, sans-serif;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:normal;margin:0px;orphans:2;outline:0px;padding:0px;text-align:justify;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">&nbsp;</h3>
@@ -215,7 +215,7 @@ const blogs = [
     id: 3,
     title: "Customs and Regulations for Purchasing Bamboo Furniture and Rattan Products: A Comprehensive Guide",
     image: "https://www.ecowoodies.in/images/thumbs/0002576_a_600.jpeg",
-    date: "2025-01-10",
+    date: "2024-11-02",
     content: `
     <p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Poppins, sans-serif;font-size:13px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;line-height:24px;margin:0px;orphans:2;outline:0px;padding:0px;text-align:justify;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;" data-original-attrs="{&quot;style&quot;:&quot;mso-margin-bottom-alt: auto; mso-margin-top-alt: auto;&quot;}">In recent years, the demand for bamboo and rattan furniture has surged as consumers and businesses increasingly prioritize sustainability and eco-friendliness in their purchasing decisions. These natural materials not only add a unique aesthetic appeal to interiors but also contribute to a more sustainable future by reducing reliance on traditional hardwoods. However, the process of importing bamboo and rattan products is fraught with complexities, particularly when navigating customs regulations and compliance requirements.</p>
 <p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Poppins, sans-serif;font-size:13px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;line-height:24px;margin:20px 0px 0px;orphans:2;outline:0px;padding:0px;text-align:justify;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;" data-original-attrs="{&quot;style&quot;:&quot;mso-margin-bottom-alt: auto; mso-margin-top-alt: auto;&quot;}">This guide aims to illuminate the key aspects of customs and regulations for importing bamboo and rattan furniture, focusing on critical markets including the United States, Europe, Japan, and South Korea. By understanding these regulations, importers can streamline their processes, ensure compliance, and enhance their market competitiveness.</p>
@@ -405,7 +405,7 @@ const blogs = [
   {
     id: 4,
     title: "AI and Fraud Detection: Enhancing Security in Online Transactions",
-    date: "2025-01-10",
+    date: "2024-10-23",
     image:"https://www.ecowoodies.in/images/thumbs/0002572_a7_600.jpeg",
     content: `
     <div style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Poppins, sans-serif;font-size:13px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px;orphans:2;outline:0px;padding:0px;text-align:left;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
@@ -484,7 +484,7 @@ const blogs = [
     id: 5,
     title: "Sarkanda: A Versatile Resource with Rich History and Promising Future",
     image: "https://www.ecowoodies.in/images/thumbs/0002505_10_600.png",
-    date: "2025-01-10",
+    date: "2024-10-03",
     content: `
     <p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Poppins, sans-serif;font-size:13px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;line-height:24px;margin:0px;orphans:2;outline:0px;padding:0px;text-align:justify;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">In the world of natural resources, one often overlooked but incredibly versatile material is Sarkanda. Derived from various species of tall grasses, Sarkanda has been utilized for centuries across different cultures and industries. From construction to handicrafts, its applications are diverse and its potential vast. In this article, we delve into the fascinating world of Sarkanda, exploring its history, cultivation, uses, and potential for the future.</p>
 <p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Poppins, sans-serif;font-size:13px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;line-height:24px;margin:20px 0px 0px;orphans:2;outline:0px;padding:0px;text-align:justify;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">&nbsp;</p>
