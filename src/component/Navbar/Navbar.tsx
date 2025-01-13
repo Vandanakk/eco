@@ -87,6 +87,18 @@ const Navbar = () => {
                 Services
               </MDBNavbarLink>
             </MDBNavbarItem>
+            
+            <MDBNavbarItem>
+            <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='https://www.ecowoodies.in'>
+                Shop
+              </MDBNavbarLink>          
+            </MDBNavbarItem>
+            
+            <MDBNavbarItem>
+            <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/blogs'>
+                Blogs
+              </MDBNavbarLink>
+            </MDBNavbarItem>
 
             {/* <MDBNavbarItem>
               <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/partners'>Partners</MDBNavbarLink>
@@ -125,11 +137,7 @@ const Navbar = () => {
               </MDBDropdown>
             </MDBNavbarItem>
 
-            <MDBNavbarItem>
-            <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='https://www.ecowoodies.in'>
-                Shop
-              </MDBNavbarLink>          
-            </MDBNavbarItem>
+
             
             <MDBNavbarItem>
            
