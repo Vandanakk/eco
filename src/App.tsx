@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home, Category, Services, ContactUs, ProductListing, BlogList, ProductDetails, Policy, Partners, Designers, Whyus } from "./pages/index";
+import { Home, Category, Services, ContactUs, ProductListing, BlogList, BlogView,  ProductDetails, Policy, Partners, Designers, Whyus } from "./pages/index";
 import Navbar from "./component/Navbar/Navbar";
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
@@ -34,7 +34,8 @@ export default function App() {
           <Route exact path="/category" component={Category}></Route>
           <Route exact path="/productlist/:category" component={ProductListing}></Route>
           <Route exact path="/productdetails/:product" component={ProductDetails}></Route>
-          <Route exact path="/blogList" component={BlogList}></Route>
+          <Route exact path="/blogs" component={BlogList}></Route>
+          <Route exact path="/blogs/:id" component={BlogView}></Route>
 
 
           <Route exact path="/services" component={Services}></Route>
