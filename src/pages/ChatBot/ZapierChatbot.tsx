@@ -9,7 +9,7 @@ const ZapierChatbot: React.FC = () => {
 
   return (
     <>
-      {/ Floating Button /}
+      
       <button
         onClick={toggleChatbot}
         style={{
@@ -30,13 +30,12 @@ const ZapierChatbot: React.FC = () => {
       >
         💬
       </button>
-
-      {/ Chatbot Component /}
+     
       {isOpen && (
         <div
           style={{
             position: "fixed",
-            bottom: "90px",
+            bottom: "110px",
             right: "20px",
             zIndex: 1000,
             width: "400px",
@@ -45,7 +44,7 @@ const ZapierChatbot: React.FC = () => {
           }}
         >
           <iframe
-            src="https://interfaces.zapier.com/embed/chatbot/cm5gsc2zg001i2t1ikmssh7kb"
+            src="https://interfaces.zapier.com/embed/chatbot/cm5w0n53y002e5k7ygwbrptdw"
             height="100%"
             width="100%"
             allow="clipboard-write *"

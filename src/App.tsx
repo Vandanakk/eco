@@ -30,6 +30,7 @@ export default function App() {
       <Router>
         {<Navbar />}
       
+        {<ZapierChatbot />}
       
      
         <Switch>

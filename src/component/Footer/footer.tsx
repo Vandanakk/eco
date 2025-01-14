@@ -212,7 +212,7 @@ const Footer = () => {
         
       </div>
       <div className='text-center' style={{ backgroundColor: 'black',color:'white' }}>
-        © 2024 Copyright:
+        © 2025 Copyright:
         <a className='text-reset' href='https://ecowoodies.com/'>
            Ecowoodies. All Right Reserved.
         </a>
