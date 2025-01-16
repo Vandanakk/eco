@@ -108,7 +108,11 @@ const Navbar = () => {
               <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/designers'>Designers</MDBNavbarLink>
             </MDBNavbarItem> */}
 
-         
+          <MDBNavbarItem>
+            <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/videos'>
+                Videos
+              </MDBNavbarLink>
+            </MDBNavbarItem>
           
 
             <MDBNavbarItem>

@@ -13,10 +13,11 @@ import Designers from "./Designers/designers";
 import Whyus from "./Whyus/whyus";
 import BulkOrder from "./BulkOrder/bulkorder";
 import ZapierChatbot from "./ChatBot/ZapierChatbot"
+import Youtube from "./Youtube/youtube"
 
 
 
 
 
 export { Home,  Services,ContactUs,Category,ProductListing, BlogList,BlogView,ProductDetails,Policy,Partners,Designers,Whyus,
-    BulkOrder,ZapierChatbot }; // Export BulkOrder
+    BulkOrder,ZapierChatbot,Youtube  }; // Export BulkOrder
