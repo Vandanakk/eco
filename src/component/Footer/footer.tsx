@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import {
   faTwitter,
   faFacebook,
@@ -103,6 +104,17 @@ const Footer = () => {
                   Sofa Set
                 </a>
               </p>
+              <div className="bulk-order">
+                <h6 className="fw-bold mb-2">
+                  <Link
+                    to="/bulkorder"
+                    className="text-reset"
+                    rel="noopener noreferrer"
+                  >
+                    Bulk Orders
+                  </Link>
+                </h6>
+              </div>
             </MDBCol>
 
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
@@ -200,7 +212,7 @@ const Footer = () => {
         
       </div>
       <div className='text-center' style={{ backgroundColor: 'black',color:'white' }}>
-        © 2024 Copyright:
+        © 2025 Copyright:
         <a className='text-reset' href='https://ecowoodies.com/'>
            Ecowoodies. All Right Reserved.
         </a>
