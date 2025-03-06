@@ -1,14 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { MDBContainer, MDBCardBody, MDBCardImage } from "mdb-react-ui-kit";
-import blogs from "./blogs";
+import {
+  MDBContainer,
+  MDBCardBody,
+  MDBSpinner,
+} from "mdb-react-ui-kit";
 import Helmet from "react-helmet";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 import "./blog.css";
 import Footer from "../../component/Footer/footer";
 
+const API_KEY = ""; // Replace with your API Key
+const DRIVE_API_URL = "https://www.googleapis.com/drive/v3/files";
+
 // Helper to format the date
-const formatDate = (date: string) => {
-  const formattedDate = new Date(date);
+const formatDate = (dateString: string) => {
+  const formattedDate = new Date(dateString);
   return formattedDate.toLocaleDateString("en-US", {
     weekday: "long",
     year: "numeric",
@@ -17,21 +25,59 @@ const formatDate = (date: string) => {
   });
 };
 
+// Helper to format the file name as the blog title
+const formatTitle = (fileName: string) => {
+  return fileName.replace(".html", "").replace(/_/g, " ");
+};
+
 const BlogView = () => {
   const { id } = useParams<{ id: string }>();
-  const [blog, setBlog] = useState(() => blogs.find((b) => b.id === Number(id)) || null);
+  const [blogContent, setBlogContent] = useState<string>("");
+  const [title, setTitle] = useState<string>("Loading...");
+  const [date, setDate] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<boolean>(false);
 
-  if (!blog) {
-    return (
-      <div className="not-found-container">
-        <h2 className="not-found-title">Oops! We couldn't find that blog.</h2>
-        <p className="not-found-message">Maybe it's taking a nap, or it never existed.</p>
-        <Link to="/blogs" className="back-to-blogs">Back to Blogs</Link>
-      </div>
-    );
-  }
+  useEffect(() => {
+    const fetchBlog = async () => {
+      try {
+        setLoading(true);
+        setError(false);
 
-  const { title, image, content, date } = blog;
+        // Fetch file metadata (name and created date)
+        const metadataResponse = await fetch(
+          `${DRIVE_API_URL}/${id}?key=${API_KEY}&fields=name,createdTime`
+        );
+
+        if (!metadataResponse.ok) {
+          throw new Error(`HTTP error! Status: ${metadataResponse.status}`);
+        }
+
+        const metadata = await metadataResponse.json();
+        setTitle(formatTitle(metadata.name));
+        setDate(formatDate(metadata.createdTime));
+
+        // Fetch file content
+        const contentResponse = await fetch(
+          `https://docs.google.com/document/d/${id}/export?format=txt`
+        );
+
+        if (!contentResponse.ok) {
+          throw new Error(`HTTP error! Status: ${contentResponse.status}`);
+        }
+
+        const htmlContent = await contentResponse.text();
+        setBlogContent(htmlContent);
+      } catch (error) {
+        console.error("Error fetching blog:", error);
+        setError(true);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlog();
+  }, [id]);
 
   return (
     <>
@@ -39,27 +85,46 @@ const BlogView = () => {
         <title>{title}</title>
         <meta name="description" content={`Read more about ${title}.`} />
       </Helmet>
-      <MDBContainer className="my-5 p-5 bg-white">
+      <MDBContainer className=" bg-white container">
         <article>
-          <Link to="/blogs" className="back-link">
+          <Link to="/blogs" className="my-5 back-link">
             &larr; Back to Blogs
           </Link>
+
+          {/* Blog Header */}
           <header className="blog-header">
-            
-            {title && <h1 className="blog-title">{title}</h1>}
-            <p className="blog-date">{formatDate(date)}</p> {/* Display the date here */}
-            {image && (
-              <MDBCardImage
-                src={image}
-                alt={title}
-                fluid
-                className="blog-image"
-              />
+            {loading ? (
+              <Skeleton height={40} width="60%" />
+            ) : (
+              <h1 className="blog-title">{title}</h1>
+            )}
+            {loading ? (
+              <Skeleton height={20} width="30%" />
+            ) : (
+              <p className="blog-date">{date}</p>
             )}
           </header>
-          <MDBCardBody className="p-0 blog-content">
-            <div className="blog-html-content" dangerouslySetInnerHTML={{ __html: content }} />
-          </MDBCardBody>
+
+          {/* Loading / Error Handling / Blog Content */}
+          {loading ? (
+            <div className="blog-skeleton">
+              <Skeleton count={8} height={20} width="100%" />
+              <Skeleton height={200} width="100%" className="my-2" />
+              <Skeleton count={5} height={20} width="100%" />
+            </div>
+          ) : error ? (
+            <div className="text-center my-5">
+              <h2 className="text-danger">Oops! Blog Not Found.</h2>
+              <p>It looks like this blog doesn't exist or is unavailable.</p>
+            </div>
+          ) : (
+            <MDBCardBody className="p-0 blog-content">
+              <div
+                className="blog-html-content"
+                dangerouslySetInnerHTML={{ __html: blogContent }}
+              />
+            </MDBCardBody>
+          )}
         </article>
       </MDBContainer>
       <Footer />
