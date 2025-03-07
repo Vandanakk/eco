@@ -1,54 +1,78 @@
+.video-page {
+  padding: 20px;
+  text-align: center;
+}
 
-    .video-page {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f9f9f9;
-    }
-    .header {
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 20px;
-      color: #333;
-    }
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 20px;
-    }
-    .video-item {
-      cursor: pointer;
-    }
-    .video-card {
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: transform 0.3s;
-    }
-    .video-card:hover {
-      transform: translateY(-5px);
-    }
-    .thumbnail {
-      display: block;
-      border-bottom: 2px solid #ddd;
-    }
-    .video-title {
-      padding: 10px;
-      font-size: 16px;
-      color: #555;
-      text-align: center;
-    }
-    button {
-      margin-top: 10px;
-      padding: 8px 16px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-  
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Increased min-width */
+  gap: 15px; /* More space between cards */
+  padding: 15px;
+}
+
+.video-item {
+  cursor: pointer;
+}
+
+.video-card {
+  background: #fff;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.video-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 12px;
+  transition: opacity 0.3s;
+}
+
+.video-title {
+  font-size: 16px; /* Slightly bigger text */
+  font-weight: 600;
+  margin-top: 10px;
+  line-height: 1.4;
+  height: 2.8em; /* Slightly taller for better readability */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limits text to 2 lines */
+  -webkit-box-orient: vertical;
+}
+
+.load-more {
+  padding: 12px 24px;
+  background: #007bff;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.2s ease-in-out;
+}
+
+.load-more:hover {
+  background: #0056b3;
+}
+
+.load-more:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}
