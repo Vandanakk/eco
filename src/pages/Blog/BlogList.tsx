@@ -13,8 +13,8 @@ import "react-loading-skeleton/dist/skeleton.css";
 import Footer from "../../component/Footer/footer";
 import "./blog.css";
 
-const API_KEY = ""; // Replace with your API Key
-const FOLDER_ID = ""; // Replace with your Folder ID
+const API_KEY = "AIzaSyCl3-QoioozwyMq0S6YCeGBs5GYdsKe_YI"; // Replace with your API Key
+const FOLDER_ID = "102qSDvLtKj5z7Uibu6PqgXDgraoHoXD2"; // Replace with your Folder ID
 
 interface Blog {
   id: string;

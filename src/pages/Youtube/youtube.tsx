@@ -13,25 +13,25 @@ export default function YoutubePage() {
   const [videos, setVideos] = useState<Video[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [playingVideo, setPlayingVideo] = useState<string | null>(null);
-  const [searchQuery, setSearchQuery] = useState<string>("");
+  //const [searchQuery, setSearchQuery] = useState<string>("");
   const [pageToken, setPageToken] = useState<string | null>(null);
   const [totalResults, setTotalResults] = useState<number>(0);
 
-  const API_KEY = "AIzaSyAt6VB6C_aeO7JPSHmo13wdB5hWxXCBWPw";
+  const API_KEY =   "AIzaSyCl3-QoioozwyMq0S6YCeGBs5GYdsKe_YI"; //"AIzaSyAt6VB6C_aeO7JPSHmo13wdB5hWxXCBWPw";//
   const CHANNEL_ID = "UCE3dJgl47TZQNLDZYJff_AQ";
-  const MAX_RESULTS = 18;
+  const MAX_RESULTS = 20;
 
   useEffect(() => {
     fetchVideos(true);
-  }, [searchQuery]); // Refetch when search changes
+  }, []); // Refetch when search changes
 
   const fetchVideos = async (reset = false) => {
     try {
       setLoading(true);
-      let searchParam = searchQuery ? `&q=${encodeURIComponent(searchQuery)}` : "";
+      //let searchParam = searchQuery ? `&q=${encodeURIComponent(searchQuery)}` : "";
 
       const searchResponse = await fetch(
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&maxResults=${MAX_RESULTS}&order=date&type=video${searchParam}&pageToken=${pageToken || ""}&key=${API_KEY}`
+        `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&maxResults=${MAX_RESULTS}&order=date&type=video&pageToken=${pageToken || ""}&key=${API_KEY}`
       );
       const searchData = await searchResponse.json();
 
@@ -85,7 +85,7 @@ export default function YoutubePage() {
       <div className="video-page">
         <h2 className="header">Fresh Shorts</h2>
 
-        {/* Search Bar */}
+        {/* Search Bar
         <input
           type="text"
           placeholder="Search Shorts..."
@@ -96,7 +96,7 @@ export default function YoutubePage() {
             setPageToken(null); // Reset pagination
             fetchVideos(true);
           }}
-        />
+        /> */}
 
         <div className="video-grid">
           {loading && videos.length === 0

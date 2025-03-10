@@ -11,7 +11,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import "./blog.css";
 import Footer from "../../component/Footer/footer";
 
-const API_KEY = ""; // Replace with your API Key
+const API_KEY =  "AIzaSyCl3-QoioozwyMq0S6YCeGBs5GYdsKe_YI"; // Replace with your API Key
 const DRIVE_API_URL = "https://www.googleapis.com/drive/v3/files";
 
 // Helper to format the date
