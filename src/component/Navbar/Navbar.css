@@ -1,14 +1,330 @@
+/* Custom Premium Navbar Styling */
 
-
-.navbar-light .navbar-brand{
-  /* color: #acd83a !important; */
-  font-size:100%;
-  font-weight: bold;
+.eco-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
 }
-.nav-link
-{
-  /* color: #acd83a !important; */
-  font-size:100%;
-  /* font-weight: 300; */
-  
+
+/* Top bar with contact info and CTA */
+.eco-header-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  padding: 8px 60px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.eco-contact-info {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.eco-contact-item {
+  color: #555555;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s ease;
+}
+
+.eco-contact-item:hover {
+  color: #48870a;
+}
+
+.eco-contact-item i {
+  color: #48870a;
+  font-size: 14px;
+}
+
+.eco-get-quote-btn {
+  background-color: #48870a;
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 22px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(72, 135, 10, 0.2);
+}
+
+.eco-get-quote-btn:hover {
+  background-color: #3b6e08;
+  box-shadow: 0 4px 8px rgba(72, 135, 10, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Main Navbar container */
+.eco-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.eco-logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.eco-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.eco-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #333333;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Navigation List */
+.eco-nav {
+  display: flex;
+  align-items: center;
+}
+
+.eco-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.eco-nav-link,
+.eco-nav-link-span {
+  color: #333333;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.eco-nav-link:hover,
+.eco-nav-link-span:hover {
+  color: #48870a;
+}
+
+/* Active indicator line under Home, etc. */
+.eco-nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #48870a;
+  border-radius: 1px;
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+  color: #888888;
+  transition: transform 0.2s ease;
+}
+
+.eco-nav-dropdown-wrapper:hover .dropdown-arrow {
+  transform: rotate(180deg);
+  color: #48870a;
+}
+
+/* Dropdown Menu styling */
+.eco-nav-dropdown-wrapper {
+  position: relative;
+}
+
+.eco-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+  min-width: 170px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 1000;
+}
+
+.eco-nav-dropdown-wrapper:hover .eco-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.eco-dropdown-menu li {
+  width: 100%;
+}
+
+.eco-dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: #444444;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.eco-dropdown-menu a:hover {
+  background-color: #f6faf2;
+  color: #48870a;
+  padding-left: 24px;
+}
+
+.eco-mobile-only {
+  display: none;
+}
+
+/* Responsive Header Styling */
+@media (max-width: 1024px) {
+  .eco-header-top {
+    padding: 8px 30px;
+  }
+  .eco-navbar-container {
+    padding: 12px 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .eco-header-top {
+    display: none; /* Hide top bar on mobile */
+  }
+
+  .eco-menu-toggle {
+    display: block; /* Show hamburger button */
+  }
+
+  .eco-logo {
+    height: 50px;
+  }
+
+  .eco-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 2px solid #48870a;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    display: none;
+    max-height: calc(100vh - 75px);
+    overflow-y: auto;
+  }
+
+  .eco-nav.open {
+    display: block;
+  }
+
+  .eco-nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 15px 0;
+  }
+
+  .eco-nav-list li {
+    border-bottom: 1px solid #f9f9f9;
+  }
+
+  .eco-nav-link,
+  .eco-nav-link-span {
+    padding: 14px 30px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .eco-nav-link.active::after {
+    left: 30px;
+    width: 30px;
+    bottom: 8px;
+  }
+
+  /* Expand dropdowns inline for mobile */
+  .eco-nav-dropdown-wrapper:hover .eco-dropdown-menu {
+    transform: none;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    border: none;
+    background-color: #fafdf7;
+    padding: 0;
+    width: 100%;
+  }
+
+  .eco-dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    border: none;
+    background-color: #fafdf7;
+    padding: 0;
+    transform: none;
+    display: block;
+    width: 100%;
+  }
+
+  .eco-dropdown-menu a {
+    padding: 12px 50px;
+    border-left: 3px solid transparent;
+  }
+
+  .eco-dropdown-menu a:hover {
+    padding-left: 55px;
+    border-left-color: #48870a;
+  }
+
+  /* Show contact inside mobile menu */
+  .eco-mobile-only.eco-mobile-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 15px;
+    border-bottom: none;
+    background-color: #fcfcfc;
+  }
+
+  .eco-mobile-contact .eco-contact-item {
+    font-size: 15px;
+  }
+
+  .eco-mobile-contact .mobile-btn {
+    text-align: center;
+    margin-top: 5px;
+    padding: 12px;
+  }
 }

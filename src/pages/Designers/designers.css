@@ -1,59 +1,145 @@
+.designers-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-   .main-hero-para {
-    font-size: 1rem;
-    color: var(--text-color);
-    margin: 1rem 0 2rem 0;
-    font-weight: lighter;
-    width: 90%;
-    text-align: justify;
+/* Header Section */
+.designers-page-header-container {
+  text-align: center;
+  margin: 40px auto 50px auto;
+  max-width: 800px;
+}
+
+.designers-subheader {
+  font-size: 14px;
+  font-weight: 700;
+  color: #48870a;
+  letter-spacing: 1.5px;
+  display: inline-block;
+}
+
+.designers-subheader-line {
+  width: 40px;
+  height: 2px;
+  background-color: #48870a;
+  margin: 12px auto;
+}
+
+.designers-page-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #222222;
+  line-height: 1.2;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+.designers-page-description {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #555555;
+  text-align: justify;
+}
+
+/* Designer Profile Cards */
+.designer-profile-card {
+  background-color: #ffffff;
+  border: 1px solid #e1e8df;
+  border-radius: 16px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.designer-profile-card.card-reversed {
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.designer-image-container {
+  width: 100%;
+}
+
+.designer-profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.designer-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.designer-header-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.designer-icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid #48870a;
+  background-color: #f6faf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #48870a;
+  font-size: 16px;
+}
+
+.designer-name-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.designer-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #222222;
+  margin: 0;
+}
+
+.designer-role {
+  font-size: 12px;
+  font-weight: 700;
+  color: #48870a;
+  letter-spacing: 1px;
+}
+
+.designer-bio-text {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #555555;
+  text-align: justify;
+}
+
+/* Responsive Rules */
+@media screen and (max-width: 991px) {
+  .designers-page-title {
+    font-size: 2.2rem;
   }
-  .alignright {
-    text-align: left !important;
-    display: flex !important;
-    justify-content: flex-end !important;
-   
-
-  }
-
-  .alignleft {
-    text-align: left !important;
-    display: flex !important;
-    justify-content: flex-end !important;  
-    
-  }
-
-
-
-  @media only screen and (max-width: 767px) {
-    .marginTop {  
-      margin-top: 2%;         
-      padding: 2%;         
-    }
   
-    .margindesignerside {  
-      margin-left: 10%;         
-      margin-right: 10%;
-    }
-    .mainImageHeight {
-      height:'200px';
-      }
-  
+  .designer-profile-card {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
   }
-
-  @media only screen and (min-width: 1200px) {
-    .marginTop {  
-      margin-top: 50px;         
-      padding: 30px;
-    }
   
-    .margindesignerside {  
-      margin-left: 10%;         
-      margin-right: 10%;
-    }
-
-    .mainImageHeight {
-      height:'700px';
-      }
-  
+  .designer-profile-card.card-reversed {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse; /* Put image on top, details on bottom */
   }
-    
+}

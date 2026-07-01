@@ -1,163 +1,116 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import logos from "./ecoiconorignal.jpg"
-import Cataluge24 from "../Catalog/Ecowoodies Catalogue.pdf"
-import ottomons from '../Catalog/Ecowoodies_Ottoman_Catalog.pdf'
-import ottomonset from '../Catalog/Ecowoodies_OttomanSet_Catalog.pdf'
-
-
-
-import {
-  MDBContainer,
-  MDBNavbar,
-  MDBNavbarBrand,
-  MDBNavbarToggler,
-  MDBIcon,
-  MDBNavbarNav,
-  MDBNavbarItem,
-  MDBNavbarLink,
-  MDBBtn,
-  MDBDropdown,
-  MDBDropdownToggle,
-  MDBDropdownMenu,
-  MDBDropdownItem,
-  MDBCollapse,
-} from 'mdb-react-ui-kit';
-
-//import { useHistory } from "react-router-dom";
-
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import logos from "../../images/NewLogoECowoodies.png";
+import Cataluge24 from "../Catalog/Ecowoodies Catalogue.pdf";
+import ottomons from '../Catalog/Ecowoodies_Ottoman_Catalog.pdf';
+import ottomonset from '../Catalog/Ecowoodies_OttomanSet_Catalog.pdf';
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [showBasic, setShowBasic] = useState(false);
-  const [showNav, setShowNav] = useState(false);
-  // const history = useHistory();
-  const [firstName, setFirstName] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
-  // const googleSignIn = async () => {
-  //   try {
-  //     await Auth();
-  //   } catch (error) {
-  //     console.log(error.message);
-  //   }
-  // };
+  const isActive = (path: string) => {
+    return location.pathname === path ? "active" : "";
+  };
 
-  // useEffect(() => {
-  //   // auth().onAuthStateChanged(function (user) {
-  //   //   if (user) {
-  //   //     setFirstName(user.displayName);
-  //   //     console.log(firstName);
-  //   //     history.push("/products");
-  //   //   } else console.log("no user");
-  //   });
-  // }, [history, firstName]);
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
 
   return (
-    <MDBNavbar expand='lg' light bgColor='light'>
-      <MDBContainer fluid>
-        <MDBNavbarBrand href='/'>
-          <img
-            src={logos}
-            height='70'
-            alt=''
-            loading='lazy'
-          />
-         Ecowoodies
-        </MDBNavbarBrand>
+    <header className="eco-header">
+      {/* Top Bar for Contact & CTA */}
+      <div className="eco-header-top">
+        <div className="eco-contact-info">
+          <a href="tel:+919686722949" className="eco-contact-item">
+            <i className="fas fa-phone-alt"></i> +91 96867 22949
+          </a>
+          <a href="mailto:info@ecowoodies.com" className="eco-contact-item">
+            <i className="fas fa-envelope"></i> info@ecowoodies.com
+          </a>
+        </div>
+      </div>
 
-        <MDBNavbarToggler
-          aria-controls='navbarSupportedContent'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
-          onClick={() => setShowBasic(!showBasic)}
-        >
-          <MDBIcon icon='bars' fas />
-        </MDBNavbarToggler>
+      {/* Main Navbar */}
+      <div className="eco-navbar-container">
+        <Link to="/" className="eco-logo-link" onClick={closeMenu}>
+          <img src={logos} alt="ECOWOODIES" className="eco-logo" />
+        </Link>
 
-        <MDBCollapse navbar show={showBasic}>
-          <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
-          
-              <MDBNavbarItem>
-            <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/category'>
-                Products
-              </MDBNavbarLink>
-            </MDBNavbarItem>
-            <MDBNavbarItem>
-            <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/services'>
-                Services
-              </MDBNavbarLink>
-            </MDBNavbarItem>
+        {/* Hamburger Toggler for Mobile */}
+        <button className="eco-menu-toggle" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+          <i className={isOpen ? "fas fa-times" : "fas fa-bars"}></i>
+        </button>
+
+        {/* Navigation Links */}
+        <nav className={`eco-nav ${isOpen ? "open" : ""}`}>
+          <ul className="eco-nav-list">
+            <li>
+              <Link to="/" className={`eco-nav-link ${isActive("/")}`} onClick={closeMenu}>Home</Link>
+            </li>
+            <li className="eco-nav-dropdown-wrapper">
+              <Link to="/category" className={`eco-nav-link ${isActive("/category")}`} onClick={closeMenu}>
+                Products <i className="fas fa-chevron-down dropdown-arrow"></i>
+              </Link>
+              <ul className="eco-dropdown-menu">
+                <li><Link to="/category" onClick={closeMenu}>All Categories</Link></li>
+                <li><a href="https://www.ecowoodies.in" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Shop Online</a></li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/services" className={`eco-nav-link ${isActive("/services")}`} onClick={closeMenu}>Services</Link>
+            </li>
+            <li>
+              <Link to="/blogs" className={`eco-nav-link ${isActive("/blogs")}`} onClick={closeMenu}>Blogs</Link>
+            </li>
+            <li>
+              <Link to="/videos" className={`eco-nav-link ${isActive("/videos")}`} onClick={closeMenu}>Videos</Link>
+            </li>
+            <li>
+              <Link to="/whyus" className={`eco-nav-link ${isActive("/whyus")}`} onClick={closeMenu}>Workshop</Link>
+            </li>
+            <li>
+              <Link to="/policy" className={`eco-nav-link ${isActive("/policy")}`} onClick={closeMenu}>CSR</Link>
+            </li>
+            <li className="eco-nav-dropdown-wrapper">
+              <span className="eco-nav-link-span">
+                About Us <i className="fas fa-chevron-down dropdown-arrow"></i>
+              </span>
+              <ul className="eco-dropdown-menu">
+                <li><Link to="/whyus" onClick={closeMenu}>Why Us</Link></li>
+                <li><Link to="/partners" onClick={closeMenu}>Our Partners</Link></li>
+                <li><Link to="/designers" onClick={closeMenu}>Our Designers</Link></li>
+              </ul>
+            </li>
+            <li className="eco-nav-dropdown-wrapper">
+              <span className="eco-nav-link-span">
+                Catalogue <i className="fas fa-chevron-down dropdown-arrow"></i>
+              </span>
+              <ul className="eco-dropdown-menu">
+                <li><a href={Cataluge24} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Catalogue 2024</a></li>
+                <li><a href={ottomons} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Stools / Ottoman</a></li>
+                <li><a href={ottomonset} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Ottoman Set</a></li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/contactus" className={`eco-nav-link ${isActive("/contactus")}`} onClick={closeMenu}>Contact Us</Link>
+            </li>
             
-            <MDBNavbarItem>
-            <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='https://www.ecowoodies.in'>
-                Shop
-              </MDBNavbarLink>          
-            </MDBNavbarItem>
-            
-            <MDBNavbarItem>
-            <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/blogs'>
-                Blogs
-              </MDBNavbarLink>
-            </MDBNavbarItem>
-
-            {/* <MDBNavbarItem>
-              <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/partners'>Partners</MDBNavbarLink>
-            </MDBNavbarItem> */}
-
-            {/* <MDBNavbarItem>
-              <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/designers'>Designers</MDBNavbarLink>
-            </MDBNavbarItem> */}
-
-          <MDBNavbarItem>
-            <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/videos'>
-                Videos
-              </MDBNavbarLink>
-            </MDBNavbarItem>
-          
-
-            <MDBNavbarItem>
-              <MDBDropdown>
-                <MDBDropdownToggle tag='a' className='nav-link' role='button' >
-                  About
-                </MDBDropdownToggle>
-                <MDBDropdownMenu>
-                  <MDBDropdownItem link href='/whyus' className='nav-link' active aria-current='page' >Why Us</MDBDropdownItem>
-                  <MDBDropdownItem link href='/partners' className='nav-link' active aria-current='page'>Our Partners</MDBDropdownItem>
-                  <MDBDropdownItem link href='/designers' className='nav-link' active aria-current='page'>Our Designers</MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown>
-            </MDBNavbarItem>
-
-            <MDBNavbarItem>
-              <MDBDropdown>
-                <MDBDropdownToggle tag='a' className='nav-link' role='button' >
-                  Catalogue
-                </MDBDropdownToggle>
-                <MDBDropdownMenu>
-                  <MDBDropdownItem link href={Cataluge24} className='nav-link' active aria-current='page' >Catalogue 2024</MDBDropdownItem>
-                  <MDBDropdownItem link href={ottomons} className='nav-link' active aria-current='page'>Stools / Ottomon</MDBDropdownItem>
-                  <MDBDropdownItem link href={ottomonset} className='nav-link' active aria-current='page'>Ottoman Set</MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown>
-            </MDBNavbarItem>
-
-
-            
-            <MDBNavbarItem>
-           
-            <MDBNavbarLink  tag='a' className='nav-link' active aria-current='page' href='/contactus'>
-                Contact Us
-              </MDBNavbarLink>
-            </MDBNavbarItem>
-
-          
-          </MDBNavbarNav>
-         
-        </MDBCollapse>
-      </MDBContainer>
-    </MDBNavbar>
-
-    // </header>
+            {/* Mobile Contact & Quote button */}
+            <li className="eco-mobile-only eco-mobile-contact">
+              <a href="tel:+919686722949" className="eco-contact-item">
+                <i className="fas fa-phone-alt"></i> +91 96867 22949
+              </a>
+              <a href="mailto:info@ecowoodies.com" className="eco-contact-item">
+                <i className="fas fa-envelope"></i> info@ecowoodies.com
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
 };
+
 export default Navbar;

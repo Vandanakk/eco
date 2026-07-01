@@ -1,8 +1,8 @@
 
-import { Icon } from '@iconify/react'
-import sendCircle from '@iconify/icons-mdi/send-circle'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faPhone, faEnvelope, faCommentDots, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import emailjs from '@emailjs/browser';
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import './form.css'
 
 const formInputs = [
@@ -81,77 +81,74 @@ const Form = () => {
   };
 
   return (
-    <>
-    <form className="form">
-      <h2 className="form-h2">Send us a message</h2>
-      <label key="name" id="name" className="form-label">
-        Name
-        <input
-         className="form-input"
-          type="text"
-          name="from_name"         
-          placeholder="Alex Duc"
-          value={userData.from_name}
-          onChange={postUserData}
-        />
-      </label>
-      <label id="phoneno" className="form-label">
-        Phone number
-        <input
-         className="form-input"
-          type="tel"
-          name="phone"         
-          placeholder="+61 44444444"
-          value={userData.phone}
-          onChange={postUserData}
-        />
-      </label>
-      <label id="phoneno" className="form-label" key="phoneno">
-        Email address
-        <input
-          className="form-input"
-          type="email"
-          name="reply_to"
-          placeholder="a@b.com"
-          value={userData.reply_to}
-          onChange={postUserData}
-        />
-      </label>
-      <label key="message" id="message" className="form-label">
-        Message
-        <input
-          className="form-textarea"
-          type="textarea"
-          name="message"
-          placeholder="How can we help you?"
-          value={userData.message}
-          onChange={postUserData}
-        />
-      </label>
-      {/* {formInputs.map(input => (
-        <label key={input.label} id={input.id} className="form-label">
-          {input.label} 
-
-          {input.type === 'textarea' ? (
-            <textarea className="form-textarea" placeholder={input.placeholder} />
-          ) : (
+    <form className="form" onSubmit={submitData}>
+      <div className="form-grid">
+        <div className="form-field-group">
+          <label key="name" id="name" className="form-label">
+            <span className="form-label-text">
+              <FontAwesomeIcon icon={faUser} className="form-label-icon" /> Name
+            </span>
             <input
               className="form-input"
-              type={input.type}
-              placeholder={input.placeholder}
-            
+              type="text"
+              name="from_name"         
+              placeholder="Alex Duc"
+              value={userData.from_name}
+              onChange={postUserData}
             />
-          )}
-        </label>
-      ))} */}
+          </label>
 
-      <Icon className="form-submit" icon={sendCircle} type="submit" onClick={submitData} />
+          <label id="email" className="form-label" key="email">
+            <span className="form-label-text">
+              <FontAwesomeIcon icon={faEnvelope} className="form-label-icon" /> Email address
+            </span>
+            <input
+              className="form-input"
+              type="email"
+              name="reply_to"
+              placeholder="a@b.com"
+              value={userData.reply_to}
+              onChange={postUserData}
+            />
+          </label>
+        </div>
 
-      {/* {<button className="form-submit" >
-        Send message
-      </button>} */}
+        <div className="form-field-group">
+          <label id="tel" className="form-label">
+            <span className="form-label-text">
+              <FontAwesomeIcon icon={faPhone} className="form-label-icon" /> Phone number
+            </span>
+            <input
+              className="form-input"
+              type="tel"
+              name="phone"         
+              placeholder="+61 44444444"
+              value={userData.phone}
+              onChange={postUserData}
+            />
+          </label>
+
+          <label key="message" id="message" className="form-label message-label">
+            <span className="form-label-text">
+              <FontAwesomeIcon icon={faCommentDots} className="form-label-icon" /> Message
+            </span>
+            <textarea
+              className="form-textarea"
+              name="message"
+              placeholder="How can we help you?"
+              value={userData.message}
+              onChange={postUserData}
+            />
+          </label>
+        </div>
+      </div>
+
+      <div className="form-submit-container">
+        <button className="form-submit-btn" type="submit">
+          Send Message <FontAwesomeIcon icon={faArrowRight} className="btn-arrow-icon" />
+        </button>
+      </div>
     </form>
-    </>
   )
 };
 

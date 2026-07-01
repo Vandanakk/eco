@@ -25,25 +25,11 @@ const Partners = () => {
         <meta name="description" content={t('PARTNER_CONTENT')} />
       </Helmet>
 
-      {/* <MDBCard className='mb-3'>
-        <MDBCardImage position='top' height='700px' src={partnersmainpage} alt='/productlist/PetBeds' />
-      </MDBCard> */}
+      <div className="partners-page-container">
+        <img className="partners-main-image" src={ourpartners} alt="Our Partners" />
+      </div>
 
-
-     
-        <div className="product-center">
-
-          <section className="content-prod">     
-         
-              <MDBCard className='mb-3'>
-                <MDBCardImage position='top' src={ourpartners} />
-              </MDBCard>            
-
-          </section>
-        </div>
-
-        <Footer />
-      
+      <Footer />
     </>
   );
 };

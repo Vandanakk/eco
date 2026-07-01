@@ -1,27 +1,64 @@
+.contact-page-header-container {
+  text-align: center;
+  margin: 40px auto 25px auto;
+  max-width: 600px;
+  position: relative;
+}
+
+.contact-page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222222;
+  margin: 10px 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Green ornament lines */
+.header-ornament-line-top,
+.header-ornament-line-bottom {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #48870a 20%, #48870a 80%, transparent);
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-ornament-line-top::after,
+.header-ornament-line-bottom::after {
+  content: "❖";
+  color: #48870a;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.contact-card-container {
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+
 .contact-section {
-    background-color: var(--white);
-    width: 100%;
-    margin-top: 0.5rem;
+  background-color: #ffffff;
+  border: 1px solid #e1e8df;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    gap: 30px;
   }
-  
-  @media screen and (min-width: 799px) {
-    .contact-section {
-      --offset-height: 100px;
-  
-      display: grid;
-      grid-template-columns: 3fr 1.5fr;
-      width: 80vw;
-      height: 475px;
-      margin: 0 auto;
-      top: var(--offset-height);
-      left: 50%;
-      margin-left: -40vw;
-      margin-bottom: var(--offset-height);
-      position: relative;      
-      overflow: hidden;
-      border-color: black;
-      border-width: 6dvi;
-      box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.15);
-      border:groove
-    }
-  }
+}

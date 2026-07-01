@@ -1,48 +1,295 @@
-section.content-prod{
-     margin-left: 30px !important; 
-    padding:40px;
-   }
+.why-us-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-   .main-hero-para {
-    font-size: 1rem;
-    color: var(--text-color);
-    margin: 1rem 0 1rem 0;
-    font-weight: lighter;
-    width: 100%;
-    text-align: justify;
-  }
-  .alignright {
-    text-align: left !important;
-    display: flex !important;
-    justify-content: flex-end !important;
-   
+/* Top Hero Section */
+.why-us-hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0 60px 0;
+}
 
-  }
+.why-us-hero-content {
+  text-align: left;
+}
 
-  .alignleft {
-    text-align: left !important;
-    display: flex !important;
-    justify-content: flex-end !important;  
-    
-  }
+.why-us-subheader {
+  font-size: 14px;
+  font-weight: 700;
+  color: #48870a;
+  letter-spacing: 1.5px;
+  display: inline-block;
+}
 
+.why-us-subheader-line {
+  width: 40px;
+  height: 2px;
+  background-color: #48870a;
+  margin: 12px 0;
+}
 
+.why-us-hero-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #222222;
+  line-height: 1.2;
+  margin: 15px 0;
+}
 
-  @media only screen and (min-width: 1200px) {
-    .marginwhyuside {  
-      margin-left: 10%;         
-      margin-right: 10%;
-    }
-    .mainImageHeight {
-      height:'700px';
-      }
-  }
-    @media only screen and (max-width: 767px) {
-    .marginwhyuside {  
-      margin-left: 1%;              
-    }
-    .mainImageHeight {
-      height:'200px';
-      }
+.why-us-hero-para {
+  font-size: 1.1rem;
+  color: #555555;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+.why-us-hero-image-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.why-us-hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  border-top-left-radius: 180px;
+  border-bottom-left-radius: 180px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+/* Who We Are & Our Story columns */
+.why-us-two-col-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 70px;
+}
+
+.why-us-col-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.why-us-card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.why-us-card-icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid #48870a;
+  background-color: #f6faf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #48870a;
+  font-size: 16px;
+}
+
+.why-us-card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #222222;
+  margin: 0;
+}
+
+.why-us-card-text {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #555555;
+  text-align: justify;
+}
+
+.why-us-card-link {
+  color: #48870a;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+  width: fit-content;
+  transition: color 0.2s ease;
+}
+
+.why-us-card-link:hover {
+  color: #3b6e08;
+}
+
+/* Our Craftsmanship Section */
+.why-us-craftsmanship-section {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 60px;
+  margin-bottom: 70px;
+  align-items: flex-start;
+}
+
+.why-us-craftsmanship-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.why-us-highlight-block {
+  background-color: #f6faf2;
+  border-left: 4px solid #48870a;
+  padding: 18px 24px;
+  border-radius: 4px 12px 12px 4px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.why-us-highlight-quote {
+  font-size: 15.5px;
+  font-style: italic;
+  font-weight: 600;
+  color: #2e5c04;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.why-us-craftsmanship-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery-top-image-container {
+  width: 100%;
+}
+
+.gallery-top-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.gallery-bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.gallery-sub-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* Environmental Decisions Section */
+.why-us-environmental-section {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  margin-bottom: 70px;
+  align-items: flex-start;
+}
+
+.why-us-environmental-image-container {
+  width: 100%;
+}
+
+.why-us-environmental-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.why-us-environmental-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.why-us-badges-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.why-us-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #ffffff;
+  padding: 8px 0;
+}
+
+.why-us-badge-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid #48870a;
+  background-color: #f6faf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #48870a;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.why-us-badge-label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #444444;
+  text-align: left;
+}
+
+/* Responsive Rules */
+@media screen and (max-width: 991px) {
+  .why-us-hero-section,
+  .why-us-two-col-section,
+  .why-us-craftsmanship-section,
+  .why-us-environmental-section {
+    grid-template-columns: 1fr;
+    gap: 35px;
   }
   
+  .why-us-hero-image {
+    border-radius: 16px;
+    max-height: 350px;
+  }
+  
+  .why-us-hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .gallery-top-image {
+    height: 250px;
+  }
+  
+  .gallery-sub-image {
+    height: 140px;
+  }
+  
+  .why-us-environmental-image {
+    max-height: 350px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .why-us-badges-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

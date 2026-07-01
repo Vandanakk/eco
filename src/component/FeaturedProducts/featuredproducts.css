@@ -1,29 +1,208 @@
-body {
-    background-color: #eee;
-  }
+/* FeaturedProducts / We Think You'll Love These Products Carousel Styling */
 
+.eco-recommended-section {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+  overflow: visible;
+}
 
-  @media only screen and (max-width: 767px) {
-    .marginTop {  
-      margin-top: 2%;         
-      padding: 2%;         
-    }
-  
-    .marginside {  
-      margin-left: 2%;         
-      margin-right: 2%;         
-    }
-  }
+.eco-section-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgba(72, 135, 10, 0.08);
+  box-shadow: 0 10px 45px rgba(72, 135, 10, 0.035), 0 4px 15px rgba(0, 0, 0, 0.005);
+  padding: 50px 0 60px 0;
+  position: relative;
+  overflow: visible;
+}
 
-  @media only screen and (min-width: 1200px) {
-    .marginTop {  
-      margin-top: 50px;         
-      padding: 30px;
-    }
-  
-    .marginside {  
-      margin-left: 100px;         
-      margin-right: 100px;
-    }
+/* Background Leaf SVGs styling */
+.eco-decor-leaf {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.eco-decor-tl {
+  top: -15px;
+  left: -15px;
+  width: 90px;
+  height: 90px;
+}
+
+.eco-decor-tr {
+  top: -15px;
+  right: -15px;
+  width: 90px;
+  height: 90px;
+}
+
+/* Hanging Rattan Lamp SVG styling */
+.eco-decor-lamp {
+  position: absolute;
+  top: -1px;
+  right: 140px;
+  width: 70px;
+  height: 90px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .eco-decor-leaf,
+  .eco-decor-lamp {
+    display: none !important;
   }
-    
+  .eco-section-container {
+    padding: 30px 0 40px 0;
+    border-radius: 10px;
+  }
+}
+
+.eco-carousel-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Ensure card shadows do not get clipped by carousel overflow */
+.eco-carousel-item-padding {
+  padding: 15px 15px 30px 15px;
+}
+
+.eco-carousel-card-wrapper {
+  height: 100%;
+}
+
+.eco-carousel-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #cde2c1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 30px rgba(72, 135, 10, 0.03);
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  height: 100%;
+}
+
+.eco-carousel-img-wrapper {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+  background-color: #fcfcfc;
+}
+
+.eco-carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Premium shine sweep effect */
+.eco-carousel-img-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  z-index: 4;
+}
+
+.eco-carousel-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(72, 135, 10, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  backdrop-filter: blur(1px);
+  z-index: 5;
+}
+
+.eco-carousel-card-body {
+  padding: 22px 20px;
+  text-align: center;
+}
+
+.eco-carousel-card-title {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #2c382d;
+  margin: 0;
+  transition: color 0.25s ease;
+}
+
+/* Card Hover States */
+.eco-carousel-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 36px rgba(72, 135, 10, 0.07);
+  border-color: rgba(72, 135, 10, 0.25);
+}
+
+.eco-carousel-card:hover .eco-carousel-img {
+  transform: scale(1.04);
+}
+
+.eco-carousel-card:hover .eco-carousel-img-wrapper::after {
+  left: 125%;
+  transition: left 0.75s ease-in-out;
+}
+
+.eco-carousel-card:hover .eco-carousel-card-overlay {
+  opacity: 1;
+}
+
+.eco-carousel-card:hover .eco-carousel-card-title {
+  color: #48870a;
+}
+
+/* Custom Dots Styling */
+.eco-custom-dots {
+  bottom: 0px !important;
+}
+
+.eco-custom-dots .react-multi-carousel-dot button {
+  border: 1.5px solid #48870a !important;
+  background-color: transparent !important;
+  width: 10px !important;
+  height: 10px !important;
+  transition: all 0.2s ease !important;
+  margin: 0 5px !important;
+}
+
+.eco-custom-dots .react-multi-carousel-dot--active button {
+  background-color: #48870a !important;
+  width: 24px !important;
+  border-radius: 5px !important;
+}
+
+/* Responsive spacing */
+@media (max-width: 991px) {
+  .eco-carousel-wrapper {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .eco-carousel-img-wrapper {
+    height: 240px;
+  }
+}
