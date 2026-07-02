@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home, Category, Services, ContactUs, ProductListing, BlogList, BlogView,  ProductDetails, Policy, Partners, Designers, Whyus,BulkOrder, ZapierChatbot, Youtube } from "./pages/index";
+import { Home, Category, Services, ContactUs, ProductListing, BlogList, BlogView,  ProductDetails, Policy, Partners, Designers, Whyus,BulkOrder, ZapierChatbot, Youtube, Workshop, Csr } from "./pages/index";
 import Navbar from "./component/Navbar/Navbar";
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
@@ -50,6 +50,8 @@ export default function App() {
           <Route exact path="/whyus" component={Whyus}></Route>
           <Route exact path="/bulkorder" component={BulkOrder}></Route>
           <Route exact path="/videos" component={Youtube}></Route>
+          <Route exact path="/workshop" component={Workshop}></Route>
+          <Route exact path="/csr" component={Csr}></Route>
           
           
         </Switch>

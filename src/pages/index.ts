@@ -14,10 +14,8 @@ import Whyus from "./Whyus/whyus";
 import BulkOrder from "./BulkOrder/bulkorder";
 import ZapierChatbot from "./ChatBot/ZapierChatbot"
 import Youtube from "./Youtube/youtube"
-
-
-
-
+import Workshop from "./Workshop/workshop"
+import Csr from "./Csr/csr"
 
 export { Home,  Services,ContactUs,Category,ProductListing, BlogList,BlogView,ProductDetails,Policy,Partners,Designers,Whyus,
-    BulkOrder,ZapierChatbot,Youtube  }; // Export BulkOrder
+    BulkOrder,ZapierChatbot,Youtube, Workshop, Csr  };

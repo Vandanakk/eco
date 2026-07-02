@@ -68,10 +68,10 @@ const Navbar = () => {
               <Link to="/videos" className={`eco-nav-link ${isActive("/videos")}`} onClick={closeMenu}>Videos</Link>
             </li>
             <li>
-              <Link to="/whyus" className={`eco-nav-link ${isActive("/whyus")}`} onClick={closeMenu}>Workshop</Link>
+              <Link to="/workshop" className={`eco-nav-link ${isActive("/workshop")}`} onClick={closeMenu}>Workshop</Link>
             </li>
             <li>
-              <Link to="/policy" className={`eco-nav-link ${isActive("/policy")}`} onClick={closeMenu}>CSR</Link>
+              <Link to="/csr" className={`eco-nav-link ${isActive("/csr")}`} onClick={closeMenu}>CSR</Link>
             </li>
             <li className="eco-nav-dropdown-wrapper">
               <span className="eco-nav-link-span">

@@ -1,81 +1,158 @@
-.designers-page {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Redesigned B2B Exporter Designers Styling System */
+:root {
+  --font-display: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  --color-primary: #48870a;      /* Extracted logo green */
+  --color-primary-dark: #3b6e08; /* Darker green hover state */
+  --color-deep-green: #1a3c10;   /* Deep forest green for quote accents */
+  --color-black: #111111;        /* True deep black for headings */
+  --color-text: #2c2c2c;         /* High-contrast body text */
+  --color-bg: #faf8f2;           /* Warm neutral off-white/beige background */
+  --color-white: #ffffff;
+  --color-border: #eaeaea;       /* Muted gray for lines & card borders */
+  --color-muted: #757575;        /* For metadata and secondary info */
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.designers-page-wrapper {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  padding: 0;
 }
 
 /* Header Section */
 .designers-page-header-container {
   text-align: center;
-  margin: 40px auto 50px auto;
+  margin: 0 auto;
   max-width: 800px;
+  padding: 5rem 2rem 3rem 2rem;
 }
 
-.designers-subheader {
-  font-size: 14px;
-  font-weight: 700;
-  color: #48870a;
-  letter-spacing: 1.5px;
+.designers-badge {
   display: inline-block;
-}
-
-.designers-subheader-line {
-  width: 40px;
-  height: 2px;
-  background-color: #48870a;
-  margin: 12px auto;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+  background-color: rgba(72, 135, 10, 0.08);
+  padding: 6px 14px;
+  border-radius: 50px;
 }
 
 .designers-page-title {
-  font-size: 2.8rem;
+  font-family: var(--font-display);
+  font-size: 3rem;
   font-weight: 800;
-  color: #222222;
-  line-height: 1.2;
-  margin: 15px 0;
-  text-transform: uppercase;
+  color: var(--color-black);
+  line-height: 1.25;
+  margin: 0 0 15px 0;
+  letter-spacing: -1px;
 }
 
-.designers-page-description {
-  font-size: 14.5px;
+.title-accent {
+  color: var(--color-primary);
+}
+
+.designers-subheader-line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-primary);
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+.designers-page-description-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 0.95rem;
   line-height: 1.7;
-  color: #555555;
+  color: var(--color-text);
+}
+
+.description-lead {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.description-detail {
   text-align: justify;
 }
 
 /* Designer Profile Cards */
 .designer-profile-card {
-  background-color: #ffffff;
-  border: 1px solid #e1e8df;
-  border-radius: 16px;
-  padding: 30px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  padding: 40px;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  gap: 40px;
-  margin-bottom: 40px;
+  gap: 50px;
+  margin: 0 auto 60px auto;
+  max-width: 1200px;
   align-items: flex-start;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.01);
 }
 
 .designer-profile-card.card-reversed {
   grid-template-columns: 1.5fr 1fr;
 }
 
+.designer-main-visual {
+  position: relative;
+  width: 100%;
+}
+
 .designer-image-container {
   width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid var(--color-border);
 }
 
 .designer-profile-image {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  display: block;
   object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: var(--transition);
+}
+
+.designer-image-container:hover .designer-profile-image {
+  transform: scale(1.04);
+}
+
+.designer-featured-badge {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--color-white);
+  border: 1px solid rgba(72, 135, 10, 0.2);
+  color: var(--color-primary);
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  font-family: var(--font-display);
 }
 
 .designer-details-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
   text-align: left;
 }
 
@@ -83,63 +160,193 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  border-bottom: 1.5px solid var(--color-border);
+  padding-bottom: 15px;
 }
 
 .designer-icon-circle {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  border: 1.5px solid #48870a;
-  background-color: #f6faf2;
+  border-radius: 12px;
+  background-color: rgba(72, 135, 10, 0.08);
+  border: 1.5px solid rgba(72, 135, 10, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #48870a;
-  font-size: 16px;
+  color: var(--color-primary);
+  font-size: 18px;
 }
 
 .designer-name-sub {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
 }
 
 .designer-name {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #222222;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--color-black);
   margin: 0;
+  letter-spacing: -0.5px;
 }
 
 .designer-role {
-  font-size: 12px;
-  font-weight: 700;
-  color: #48870a;
-  letter-spacing: 1px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 750;
+  color: var(--color-primary);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Quote Block */
+.designer-quote-block {
+  background-color: rgba(72, 135, 10, 0.04);
+  border-left: 4px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 4px 12px 12px 4px;
+  position: relative;
+}
+
+.designer-quote-icon {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  color: rgba(72, 135, 10, 0.06);
+  font-size: 30px;
+}
+
+.designer-quote {
+  font-size: 0.92rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-deep-green);
+  margin: 0;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
 }
 
 .designer-bio-text {
-  font-size: 14.5px;
+  font-size: 0.95rem;
   line-height: 1.7;
-  color: #555555;
+  color: var(--color-text);
+}
+
+.designer-bio-text p {
+  margin: 0 0 15px 0;
   text-align: justify;
 }
 
-/* Responsive Rules */
-@media screen and (max-width: 991px) {
+.designer-bio-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Showcase Grid */
+.featured-showcase-container {
+  margin-top: 15px;
+}
+
+.showcase-title {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 750;
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 15px 0;
+}
+
+.showcase-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.showcase-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+  aspect-ratio: 1;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+}
+
+.showcase-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.showcase-item:hover .showcase-img {
+  transform: scale(1.06);
+}
+
+.showcase-label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: rgba(26, 60, 16, 0.9);
+  color: var(--color-white);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 6px 8px;
+  border-radius: 6px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-family: var(--font-display);
+}
+
+/* Responsive Breakpoints */
+@media screen and (max-width: 1024px) {
   .designers-page-title {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
   
   .designer-profile-card {
-    grid-template-columns: 1fr;
     gap: 30px;
-    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .designers-page-header-container {
+    padding: 3rem 1.5rem 1rem 1.5rem;
+  }
+
+  .designer-profile-card {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    margin: 0 1.5rem 30px 1.5rem;
   }
   
   .designer-profile-card.card-reversed {
     grid-template-columns: 1fr;
     display: flex;
-    flex-direction: column-reverse; /* Put image on top, details on bottom */
+    flex-direction: column-reverse;
+  }
+  
+  .designer-featured-badge {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .designers-page-title {
+    font-size: 2.2rem;
+  }
+  
+  .showcase-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .showcase-item {
+    aspect-ratio: 16/9;
   }
 }
