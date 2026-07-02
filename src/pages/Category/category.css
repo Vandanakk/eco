@@ -1,3 +1,145 @@
-body {
-    background-color: #eee;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Redesigned B2B Exporter Categories Styling System */
+:root {
+  --font-display: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  --color-primary: #48870a;      /* Extracted logo green */
+  --color-primary-dark: #3b6e08; /* Darker green hover state */
+  --color-black: #111111;        /* True deep black for headings */
+  --color-text: #2c2c2c;         /* High-contrast body text */
+  --color-bg: #faf8f2;           /* Warm neutral off-white/beige background */
+  --color-white: #ffffff;
+  --color-border: #eaeaea;       /* Muted gray for lines & card borders */
+  --color-muted: #757575;        /* For metadata and secondary info */
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.category-page-wrapper {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  padding: 0;
+}
+
+/* Header Section */
+.category-header-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5rem 2rem 3rem 2rem;
+}
+
+.category-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+  background-color: rgba(72, 135, 10, 0.08);
+  padding: 6px 14px;
+  border-radius: 50px;
+}
+
+.category-page-title {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-black);
+  line-height: 1.25;
+  margin: 0 0 15px 0;
+  letter-spacing: -1px;
+}
+
+.category-header-line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-primary);
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+.category-page-desc {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+/* Category Cards Grid */
+.category-card-wrapper {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+  transition: var(--transition);
+  height: 100%;
+}
+
+.category-card-wrapper:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-primary);
+  box-shadow: 0 12px 30px rgba(72, 135, 10, 0.08);
+}
+
+.category-card-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.category-image-box {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+}
+
+.category-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.category-card-wrapper:hover .category-img {
+  transform: scale(1.05);
+}
+
+.category-card-body {
+  padding: 1.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.category-card-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.category-card-action {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+.category-card-wrapper:hover .category-card-action {
+  color: var(--color-primary-dark);
+  padding-left: 4px;
+}

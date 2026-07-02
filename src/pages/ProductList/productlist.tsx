@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 import {
   MDBContainer,
   MDBRow,
@@ -31,6 +31,7 @@ const Productlist = (props: any) => {
   const { t } = useTranslation(); 
   const [scrollableModal, setScrollableModal] = React.useState(false);
   const category = props.match.params.category;
+  
   const Filtered = (element: any) => {
     return (element.category == category);
   }
@@ -41,219 +42,217 @@ const Productlist = (props: any) => {
   const categoryfiteredData = categories.filter(CategoryFiltered);
   const [modelData, setmodelData] = React.useState<ProductData>(new ProductData());
 
- 
-  const postUserData = (event: any) => {
+  const formatCategoryName = (cat: string) => {
+    const mapping: { [key: string]: string } = {
+      "Ottoman": "Ottoman Poufs & Stools",
+      "BambooLoungeChair": "Lounge Chairs",
+      "NewBornBasket": "Newborn Photography Props",
+      "lighting": "Woven Pendant Lighting",
+      "petCategory": "Eco Pet Beds",
+      "bambooSofas": "Bamboo Sofas",
+      "Bamboodiningsets": "Dining Sets",
+      "baskets": "Handwoven Baskets",
+      "Babydollstrollers": "Baby Doll Strollers",
+      "Hangingchairs": "Hanging Swing Chairs",
+      "kidChairs": "Kid Chairs",
+      "rockingChair": "Rocking Chairs",
+      "Sofaset": "Sofa Sets",
+      "trays": "Woven Trays & Bowls",
+      "storageBox": "Storage Boxes",
+      "Bambooamplifier": "Bamboo Amplifiers",
+      "Chairs2": "Accent Chairs",
+      "Shelves": "Shelves & Racks",
+      "Tables": "Coffee & End Tables",
+      "Bench": "Patio Benches"
+    };
+    return mapping[cat] || cat.replace(/([A-Z])/g, ' $1').trim();
+  };
 
+  const postUserData = (event: any) => {
     const productFiltered = (element: any) => {
       return (element.name == event);
     }
     setScrollableModal(!scrollableModal);      
     let model = fiteredData.filter(productFiltered);
     
-    let updatedModel = 
-    {
-     id: model[0].id,
-     name: model[0].name,
-     image: model[0].image,
-     price: model[0].price,
-     category: model[0].category,
-     description: model[0].description,
-     reviews: model[0].reviews,
-     lastPrice: model[0].lastPrice,
-     feature1: model[0].feature1,
-     feature2: model[0].feature2,
-     feature3: model[0].feature3,
-     feature4: model[0].feature4,
-     feature5: model[0].feature5,
-     feature6: model[0].feature6
-    }     
+    let updatedModel = {
+      id: model[0].id,
+      name: model[0].name,
+      image: model[0].image,
+      price: model[0].price,
+      category: model[0].category,
+      description: model[0].description,
+      reviews: model[0].reviews,
+      lastPrice: model[0].lastPrice,
+      feature1: model[0].feature1,
+      feature2: model[0].feature2,
+      feature3: model[0].feature3,
+      feature4: model[0].feature4,
+      feature5: model[0].feature5,
+      feature6: model[0].feature6
+    };     
     setmodelData(updatedModel);  
-    
   };
-
 
   return (
     <>
-    <Helmet>
-    <title>{categoryfiteredData[0].name}</title>
-    <meta name="description" content={categoryfiteredData[0].description} />
-  </Helmet>
-    <MDBContainer fluid>
-      <MDBRow className="justify-content-center mb-0">
-        {
-          fiteredData.map((products) => {
-            const { id, image, name, price, category, description, reviews, lastPrice
-              , feature1, feature2, feature3, feature4, feature5, feature6 } = products;
+      <Helmet>
+        <title>{categoryfiteredData[0]?.name || formatCategoryName(category)}</title>
+        <meta name="description" content={categoryfiteredData[0]?.description} />
+      </Helmet>
 
-            return (
-              <MDBCol md="12" xl="10">
-                <MDBCard className="shadow-0 border rounded-3 mt-5 mb-3">
-                  <MDBCardBody>
-                    <MDBRow>
+      <div className="productlist-page-wrapper">
+        {/* Header Section */}
+        <div className="productlist-header-container text-center">
+          <span className="productlist-badge">WHOLESALE CATALOG</span>
+          <h1 className="productlist-page-title">{formatCategoryName(category)}</h1>
+          <div className="productlist-header-line"></div>
+          <p className="productlist-page-desc">
+            Discover premium quality, customizable handcrafted pieces for {formatCategoryName(category).toLowerCase()}. Contact us directly for bulk wholesale container pricing.
+          </p>
+        </div>
+
+        {/* Product Catalog Grid */}
+        <MDBContainer fluid className="px-4 pb-5">
+          <MDBRow className="justify-content-center">
+            {fiteredData.map((products) => {
+              const { id, image, name, price, description, reviews, lastPrice
+                , feature1, feature2, feature3, feature4, feature5, feature6 } = products;
+
+              return (
+                <MDBCol md="12" xl="10" key={id} className="mb-4">
+                  <div className="product-card-wrapper">
+                    <MDBRow className="align-items-center">
+                      {/* Product Image Column */}
                       <MDBCol md="12" lg="3" className="mb-4 mb-lg-0">
-                        <MDBRipple
-                          rippleColor="light"
-                          rippleTag="div"
-                          className="bg-image rounded hover-zoom hover-overlay"
-                        >
+                        <div className="product-image-box">
                           <MDBCardImage
                             src={image}
                             fluid
-                            className="w-100"
+                            className="product-img"
+                            alt={name}
                           />
-                          <a href="#!">
-                            <div
-                              className="mask"
-                              style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}
-                            ></div>
-                          </a>
-                        </MDBRipple>
+                        </div>
                       </MDBCol>
-                      <MDBCol md="6">
-                        <h5>{name}</h5>
-                        <div className="d-flex flex-row">
-                          <div className="text-danger mb-1 me-2">
+
+                      {/* Product Info Column */}
+                      <MDBCol md="12" lg="6" className="product-info-box">
+                        <h4 className="product-name">{name}</h4>
+                        
+                        <div className="product-stars-reviews">
+                          <div className="stars-box">
+                            <MDBIcon fas icon="star" />
                             <MDBIcon fas icon="star" />
                             <MDBIcon fas icon="star" />
                             <MDBIcon fas icon="star" />
                             <MDBIcon fas icon="star" />
                           </div>
-                          <span>{reviews}</span>
+                          <span className="reviews-count">({reviews} reviews)</span>
                         </div>
-                        <div className="mt-1 mb-0 text-muted small">
-                          <span>{feature1}</span>
-                          <span className="text-primary"> • </span>
-                          <span>{feature2}</span>
-                          <span className="text-primary"> • </span>
-                          <span>
-                            {feature3}
-                            <br />
-                          </span>
+
+                        <div className="specs-grid">
+                          {feature1 && <span className="spec-tag">{feature1}</span>}
+                          {feature2 && <span className="spec-tag">{feature2}</span>}
+                          {feature3 && <span className="spec-tag">{feature3}</span>}
+                          {feature4 && <span className="spec-tag">{feature4}</span>}
+                          {feature5 && <span className="spec-tag">{feature5}</span>}
+                          {feature6 && <span className="spec-tag">{feature6}</span>}
                         </div>
-                        <div className="mb-2 text-muted small">
-                          <span>{feature4}</span>
-                          <span className="text-primary"> • </span>
-                          <span>{feature5}</span>
-                          <span className="text-primary"> • </span>
-                          <span>
-                            {feature6}
-                            <br />
-                          </span>
-                        </div>
-                        <p className="text-truncate mb-4 mb-md-0">
+
+                        <p className="product-desc">
                           {description}
                         </p>
                       </MDBCol>
-                      <MDBCol
-                        md="6"
-                        lg="3"
-                        className="border-sm-start-none border-start"
-                      >
-                        <div className="d-flex flex-row align-items-center mb-1">
-                          <h4 className="mb-1 me-1">${price}</h4>
-                          <span className="text-danger">
-                            <s>${lastPrice}</s>
-                          </span>
+
+                      {/* Product Price & Call to Action Column */}
+                      <MDBCol md="12" lg="3" className="product-action-box">
+                        <div className="price-tag-row">
+                          <h3 className="product-price">${price}</h3>
+                          {lastPrice && (
+                            <span className="product-old-price">
+                              <s>${lastPrice}</s>
+                            </span>
+                          )}
                         </div>
-                        <h6 className="text-success">MOQ - 450 Sets/Pieces</h6>
-                        <div className="d-flex flex-column mt-4">
-                          {/* <MDBBtn color="primary" size="sm" href={`/productdetails/${scrollableModal}`}>
-                      Details
-                    </MDBBtn> */}
-                          <MDBBtn color="primary" size="sm" onClick={() =>postUserData(name)}>Details</MDBBtn>
-                          {/* <MDBBtn outline color="primary" size="sm" className="mt-2">
-                      Add to wish list
-                    </MDBBtn> */}
+                        
+                        <div className="moq-badge-box">
+                          <span className="moq-badge">MOQ - 450 Sets/Pieces</span>
+                        </div>
+
+                        <div className="action-buttons-column">
+                          <button className="btn-details-cta" onClick={() => postUserData(name)}>
+                            Details
+                          </button>
                         </div>
                       </MDBCol>
                     </MDBRow>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
+                  </div>
+                </MDBCol>
+              );
+            })}
+          </MDBRow>
+        </MDBContainer>
 
-            );
-          })}
-      </MDBRow>
-      <MDBModal show={scrollableModal} setShow={setScrollableModal} tabIndex='-1'>
-        <MDBModalDialog scrollable size="lg">
-          <MDBModalContent>
-            <MDBModalHeader>
-              <MDBModalTitle>{modelData?.name}</MDBModalTitle>
-              <MDBBtn
-                className='btn-close'
-                color='none'
-                onClick={() => setScrollableModal(!scrollableModal)}
-              ></MDBBtn>
-            </MDBModalHeader>
-            <MDBModalBody>
-              <MDBCard>
-                <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-                  <MDBCardImage src={modelData.image} fluid alt='...' />
-                  <a>
-                    <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-                  </a>
-                </MDBRipple>
-                <MDBCardBody>
-                  <MDBCardTitle>
-                  <div className="d-flex flex-row align-items-center mb-1">
-                          <h4 className="mb-1 me-1">${modelData.price}</h4>
-                          <span className="text-danger">
-                            <s>${modelData.lastPrice}</s>
-                          </span>
-                        </div>
-                    </MDBCardTitle>
-                  <MDBCardText>                 
-                        <div className="d-flex flex-row">
-                          <div className="text-danger mb-1 me-2">
-                            <MDBIcon fas icon="star" />
-                            <MDBIcon fas icon="star" />
-                            <MDBIcon fas icon="star" />
-                            <MDBIcon fas icon="star" />
-                          </div>
-                          <span>{modelData.reviews}</span>
-                        </div>
-                        <div className="mt-1 mb-0 text-muted small">
-                          <span>{modelData.feature1}</span>
-                          <span className="text-primary"> • </span>
-                          <span>{modelData.feature2}</span>
-                          <span className="text-primary"> • </span>
-                          <span>
-                            {modelData.feature3}
-                            <br />
-                          </span>
-                        </div>
-                        <div className="mb-2 text-muted small">
-                          <span>{modelData.feature4}</span>
-                          <span className="text-primary"> • </span>
-                          <span>{modelData.feature5}</span>
-                          <span className="text-primary"> • </span>
-                          <span>
-                            {modelData.feature6}
-                            <br />
-                          </span>
-                        </div>                       
+        {/* Modal dialog for specs */}
+        <MDBModal show={scrollableModal} setShow={setScrollableModal} tabIndex='-1'>
+          <MDBModalDialog scrollable size="lg">
+            <MDBModalContent className="modal-custom-content">
+              <MDBModalHeader className="modal-custom-header">
+                <MDBModalTitle className="modal-custom-title">{modelData?.name}</MDBModalTitle>
+                <MDBBtn
+                  className='btn-close btn-close-white'
+                  color='none'
+                  onClick={() => setScrollableModal(!scrollableModal)}
+                ></MDBBtn>
+              </MDBModalHeader>
+              <MDBModalBody className="modal-custom-body">
+                <div className="modal-product-grid">
+                  <div className="modal-image-box">
+                    <MDBCardImage src={modelData.image} fluid alt={modelData.name} className="modal-product-img" />
+                  </div>
+                  <div className="modal-details-box">
+                    <div className="price-tag-row mb-3">
+                      <h3 className="product-price">${modelData.price}</h3>
+                      {modelData.lastPrice && (
+                        <span className="product-old-price">
+                          <s>${modelData.lastPrice}</s>
+                        </span>
+                      )}
+                    </div>
 
-                  </MDBCardText>
-                  
+                    <div className="product-stars-reviews mb-3">
+                      <div className="stars-box">
+                        <MDBIcon fas icon="star" />
+                        <MDBIcon fas icon="star" />
+                        <MDBIcon fas icon="star" />
+                        <MDBIcon fas icon="star" />
+                        <MDBIcon fas icon="star" />
+                      </div>
+                      <span className="reviews-count">({modelData.reviews} reviews)</span>
+                    </div>
 
-                  <MDBCardText>
-                   {modelData.description}
-                  </MDBCardText>
-                
-                </MDBCardBody>
-              </MDBCard>
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={() => setScrollableModal(!setScrollableModal)}>
-                Close
-              </MDBBtn>            
-            </MDBModalFooter>
-          </MDBModalContent>
-        </MDBModalDialog>
-      </MDBModal>
+                    <div className="specs-grid mb-3">
+                      {modelData.feature1 && <span className="spec-tag">{modelData.feature1}</span>}
+                      {modelData.feature2 && <span className="spec-tag">{modelData.feature2}</span>}
+                      {modelData.feature3 && <span className="spec-tag">{modelData.feature3}</span>}
+                      {modelData.feature4 && <span className="spec-tag">{modelData.feature4}</span>}
+                      {modelData.feature5 && <span className="spec-tag">{modelData.feature5}</span>}
+                      {modelData.feature6 && <span className="spec-tag">{modelData.feature6}</span>}
+                    </div>
 
-    </MDBContainer>
-
+                    <p className="modal-desc">{modelData.description}</p>
+                  </div>
+                </div>
+              </MDBModalBody>
+              <MDBModalFooter className="modal-custom-footer">
+                <MDBBtn className="btn-modal-close" onClick={() => setScrollableModal(false)}>
+                  Close
+                </MDBBtn>            
+              </MDBModalFooter>
+            </MDBModalContent>
+          </MDBModalDialog>
+        </MDBModal>
+      </div>
     </>
   );
 }
