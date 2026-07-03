@@ -1,15 +1,16 @@
 .info-section-container {
   display: flex;
   flex-direction: column;
+  background-color: #122914;
   height: 100%;
 }
 
 .info-glass-card {
-  background: linear-gradient(145deg, #1a3c10 0%, #0e2208 100%);
-  border-radius: 20px;
-  padding: 40px;
+  background: transparent;
+  border-radius: 0;
+  padding: 50px;
   color: #ffffff;
-  box-shadow: 0 15px 35px rgba(14, 34, 8, 0.2);
+  box-shadow: none;
   display: flex;
   flex-direction: column;
   gap: 25px;

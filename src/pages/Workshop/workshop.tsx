@@ -4,24 +4,36 @@ import Helmet from "react-helmet";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
-  faUsers, faLeaf, faSync, faCheckCircle, 
-  faChevronRight, faBoxes, faShieldAlt, 
-  faTruck, faClock, faEnvelope, faAward,
-  faGlobe, faTools, faCogs
+  faUsers, faLeaf, faCheckCircle, 
+  faChevronRight, faBoxes, faTools,
+  faRecycle, faBriefcase, faArrowRight
 } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../../component/Footer/footer";
 import "./workshop.css";
 
-// Images from assets
-import workshopHero from "../../images/workshop_hero.png";
-import productionImg from "../../images/production.jpg";
-import craftsmanshipImg from "../../images/craftsmanship.jpg";
-import whoweareImg from "../../images/whoweare.jpg";
-import ourstoryImg from "../../images/ourstroy.jpg";
-import ecofriendlyImg from "../../images/ecofriendly.jpg";
-import basketImg from "../../images/basket13.jpg"; // stack of baskets
-import stoolImg from "../../images/stool3.png";
-
+// Redesigned Image Assets
+import workshop1 from "../../images/workshop-1.jpeg";
+import workshop2 from "../../images/workshop-2.png";
+import workshop3 from "../../images/workshop-3.png";
+import workshop4 from "../../images/workshop-4.png";
+import workshop5 from "../../images/workshop-5.png";
+import workshop6 from "../../images/workshop-6.png";
+import workshop7 from "../../images/workshop-7.png";
+import workshop8 from "../../images/workshop-8.png";
+import workshop9 from "../../images/workshop-9.png";
+import workshop10 from "../../images/workshop-10.png";
+import workshop11 from "../../images/workshop-11.png";
+import workshop12 from "../../images/workshop-12.png";
+import workshop13 from "../../images/workshop-13.png";
+import workshop14 from "../../images/workshop-14.png";
+import workshop15 from "../../images/workshop-15.png";
+import workshop16 from "../../images/workshop-16.png";
+import workshop17 from "../../images/workshop-17.png";
+import workshop18 from "../../images/workshop-18.png";
+import workshop19 from "../../images/workshop-19.png";
+import workshop20 from "../../images/workshop-20.png";
+import workshop21 from "../../images/workshop-21.png";
+import workshopMainFull from "../../images/workshop_main.png";
 
 export default function Workshop() {
   const { t } = useTranslation();
@@ -29,366 +41,391 @@ export default function Workshop() {
   return (
     <>
       <Helmet>
-        <title>Our Workshop - Ecowoodies</title>
-        <meta name="description" content="Discover our crafting process, sustainable workshop practices, and packaging standards." />
+        <title>Our Workshop & Crafting Process - Ecowoodies</title>
+        <meta name="description" content="Discover our upcycling workshop, from selecting raw fire hoses to careful packaging and shipping sustainable creations globally." />
       </Helmet>
 
-      <div className="workshop-page">
-        {/* Background Decorative Patterns */}
-        <div className="workshop-bg-patterns">
-          {/* Blurred Glow Spheres */}
-          <div className="bg-glow glow-1" />
-          <div className="bg-glow glow-2" />
-          <div className="bg-glow glow-3" />
-
-          {/* Leaf Watermarks */}
-          <div className="bg-pattern pattern-left-1">
-            <svg viewBox="0 0 100 100" fill="currentColor">
-              <path d="M50,95 Q48,60 52,10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
-              <path d="M52,10 Q65,0 72,15 Q65,25 51,18 Z" />
-              <path d="M48,22 Q30,15 25,30 Q35,38 49,27 Z" />
-              <path d="M52,35 Q75,30 80,45 Q70,55 53,42 Z" />
-              <path d="M48,48 Q25,45 20,60 Q32,68 49,54 Z" />
-              <path d="M52,62 Q80,62 82,77 Q70,85 53,68 Z" />
-              <path d="M48,75 Q28,75 25,90 Q38,95 49,80 Z" />
-            </svg>
+      <div className="workshop-page-redesign">
+        {/* HERO BANNER SECTION */}
+        <section className="workshop-hero-banner">
+          <div className="hero-banner-image-wrapper">
+            <img src={workshopMainFull} alt="Our Workshop Banner" className="hero-banner-bg" />
           </div>
-          <div className="bg-pattern pattern-right-1">
-            <svg viewBox="0 0 100 100" fill="currentColor">
-              <path d="M50,95 Q48,60 52,10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
-              <path d="M52,10 Q65,0 72,15 Q65,25 51,18 Z" />
-              <path d="M48,22 Q30,15 25,30 Q35,38 49,27 Z" />
-              <path d="M52,35 Q75,30 80,45 Q70,55 53,42 Z" />
-              <path d="M48,48 Q25,45 20,60 Q32,68 49,54 Z" />
-              <path d="M52,62 Q80,62 82,77 Q70,85 53,68 Z" />
-              <path d="M48,75 Q28,75 25,90 Q38,95 49,80 Z" />
-            </svg>
-          </div>
-          <div className="bg-pattern pattern-left-2">
-            <svg viewBox="0 0 100 100" fill="currentColor">
-              <path d="M50,95 Q48,60 52,10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
-              <path d="M52,10 Q65,0 72,15 Q65,25 51,18 Z" />
-              <path d="M48,22 Q30,15 25,30 Q35,38 49,27 Z" />
-              <path d="M52,35 Q75,30 80,45 Q70,55 53,42 Z" />
-              <path d="M48,48 Q25,45 20,60 Q32,68 49,54 Z" />
-              <path d="M52,62 Q80,62 82,77 Q70,85 53,68 Z" />
-              <path d="M48,75 Q28,75 25,90 Q38,95 49,80 Z" />
-            </svg>
-          </div>
-          <div className="bg-pattern pattern-right-2">
-            <svg viewBox="0 0 100 100" fill="currentColor">
-              <path d="M50,95 Q48,60 52,10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
-              <path d="M52,10 Q65,0 72,15 Q65,25 51,18 Z" />
-              <path d="M48,22 Q30,15 25,30 Q35,38 49,27 Z" />
-              <path d="M52,35 Q75,30 80,45 Q70,55 53,42 Z" />
-              <path d="M48,48 Q25,45 20,60 Q32,68 49,54 Z" />
-              <path d="M52,62 Q80,62 82,77 Q70,85 53,68 Z" />
-              <path d="M48,75 Q28,75 25,90 Q38,95 49,80 Z" />
-            </svg>
-          </div>
-        </div>
-
-        {/* Hero Section */}
-        <section className="workshop-hero">
-          <div className="workshop-hero-content">
-            <span className="section-badge">OUR WORKSHOP</span>
-            <h1 className="hero-title">Crafted with Skill.<br />Built on Sustainability.</h1>
-            <p className="hero-desc">
+          <div className="hero-banner-content">
+            <span className="hero-banner-badge">OUR WORKSHOP</span>
+            <h1 className="hero-banner-title">Crafted with Skill.<br/>Built on Sustainability.</h1>
+            <p className="hero-banner-desc">
               At Ecowoodies, our workshop is where tradition meets innovation. From initial designs to responsible processes, every piece we create reflects our commitment to quality, people, and the planet.
             </p>
-
-            <div className="workshop-values-grid">
-              <div className="value-item">
-                <span className="value-icon"><FontAwesomeIcon icon={faUsers} /></span>
-                <span className="value-label">Skilled Artisans</span>
+            <div className="hero-banner-bullets">
+              <div className="bullet-item">
+                <span className="bullet-icon-wrapper">
+                  <FontAwesomeIcon icon={faUsers} className="bullet-icon" />
+                </span>
+                <span className="bullet-label">Skilled Artisans</span>
               </div>
-              <div className="value-item">
-                <span className="value-icon"><FontAwesomeIcon icon={faLeaf} /></span>
-                <span className="value-label">Sustainable Materials</span>
+              <div className="bullet-item">
+                <span className="bullet-icon-wrapper">
+                  <FontAwesomeIcon icon={faLeaf} className="bullet-icon" />
+                </span>
+                <span className="bullet-label">Sustainable Materials</span>
               </div>
-              <div className="value-item">
-                <span className="value-icon"><FontAwesomeIcon icon={faSync} /></span>
-                <span className="value-label">Ethical Production</span>
+              <div className="bullet-item">
+                <span className="bullet-icon-wrapper">
+                  <FontAwesomeIcon icon={faRecycle} className="bullet-icon" />
+                </span>
+                <span className="bullet-label">Ethical Production</span>
               </div>
-              <div className="value-item">
-                <span className="value-icon"><FontAwesomeIcon icon={faCheckCircle} /></span>
-                <span className="value-label">Quality Assured</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="workshop-hero-image-wrapper">
-            <div className="main-image-card">
-              <div className="factory-image-container">
-                <img src={workshopHero} alt="Ecowoodies Workshop Building" className="factory-image" />
-              </div>
-              <div className="inset-circle-image">
-                <img src={productionImg} alt="Artisan inside workshop" />
+              <div className="bullet-item">
+                <span className="bullet-icon-wrapper">
+                  <FontAwesomeIcon icon={faCheckCircle} className="bullet-icon" />
+                </span>
+                <span className="bullet-label">Quality Assured</span>
               </div>
             </div>
           </div>
-
-          {/* Wavy Section Divider */}
-          <div className="section-wave wave-green">
+          <div className="hero-banner-wave">
             <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-              <path d="M0,32 C240,70 480,90 720,70 C960,50 1200,70 1440,32 L1440,120 L0,120 Z" fill="#2d4c36" />
+              <path d="M0,32 C240,70 480,90 720,70 C960,50 1200,70 1440,32 L1440,120 L0,120 Z" fill="#1b3a1e" />
             </svg>
           </div>
         </section>
 
-        {/* Our Crafting Process Section */}
-        <section className="crafting-process-section">
-          <div className="section-header text-center">
-            <span className="subtitle-badge">OUR CRAFTING PROCESS</span>
-            <h2 className="section-title">From Raw Material to Remarkable Creations</h2>
-            <p className="section-subtitle">
-              A dedicated process that ensures every product is eco-friendly, durable, and beautifully handcrafted.
-            </p>
-          </div>
-
-          <div className="process-flow">
-            <div className="process-step">
-              <div className="step-number-badge">1</div>
-              <div className="step-icon-box">
-                <FontAwesomeIcon icon={faLeaf} />
-              </div>
-              <h4 className="step-name">Material Selection</h4>
-              <p className="step-desc">We carefully select premium rattan, cane, seagrass, bamboo, and other sustainable materials.</p>
-            </div>
-
-            <div className="flow-arrow">
-              <FontAwesomeIcon icon={faChevronRight} />
-            </div>
-
-            <div className="process-step">
-              <div className="step-number-badge">2</div>
-              <div className="step-icon-box">
-                <FontAwesomeIcon icon={faTools} />
-              </div>
-              <h4 className="step-name">Handcrafted by Artisans</h4>
-              <p className="step-desc">Our skilled artisans handcraft each product with precision and attention to detail.</p>
-            </div>
-
-            <div className="flow-arrow">
-              <FontAwesomeIcon icon={faChevronRight} />
-            </div>
-
-            <div className="process-step">
-              <div className="step-number-badge">3</div>
-              <div className="step-icon-box">
-                <FontAwesomeIcon icon={faCheckCircle} />
-              </div>
-              <h4 className="step-name">Quality Inspection</h4>
-              <p className="step-desc">Every piece undergoes strict quality checks to ensure durability and flawless finish.</p>
-            </div>
-
-            <div className="flow-arrow">
-              <FontAwesomeIcon icon={faChevronRight} />
-            </div>
-
-            <div className="process-step">
-              <div className="step-number-badge">4</div>
-              <div className="step-icon-box">
-                <FontAwesomeIcon icon={faCogs} />
-              </div>
-              <h4 className="step-name">Finishing & Polishing</h4>
-              <p className="step-desc">Products are finished with care to enhance natural beauty and ensure long-lasting use.</p>
-            </div>
-
-            <div className="flow-arrow">
-              <FontAwesomeIcon icon={faChevronRight} />
-            </div>
-
-            <div className="process-step">
-              <div className="step-number-badge">5</div>
-              <div className="step-icon-box">
-                <FontAwesomeIcon icon={faAward} />
-              </div>
-              <h4 className="step-name">Ready for You</h4>
-              <p className="step-desc">Sustainable, stylish, and functional pieces, ready to be a part of your space.</p>
-            </div>
-          </div>
-          {/* Wavy Section Divider */}
-          <div className="section-wave wave-green">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-              <path d="M0,32 C240,70 480,90 720,70 C960,50 1200,70 1440,32 L1440,120 L0,120 Z" fill="#2d4c36" />
-            </svg>
+        {/* HERO FULL IMAGE SECTION */}
+        <section className="workshop-hero-full-image-section">
+          <div className="full-image-container">
+            <img src={workshopMainFull} alt="Our Workshop Full View" className="workshop-full-view-img" />
           </div>
         </section>
 
-        {/* Inside Our Workshop Section */}
-        <section className="inside-workshop-section">
-          <div className="section-header text-center">
-            <h2 className="section-title">Inside Our Workshop</h2>
-          </div>
-
-          <div className="workshop-gallery">
-            <div className="gallery-item">
-              <div className="gallery-image-box">
-                <img src={craftsmanshipImg} alt="Handcrafting with Heritage" />
-              </div>
-              <h5 className="gallery-caption">
-                <FontAwesomeIcon icon={faLeaf} className="gallery-caption-icon" /> Handcrafting with Heritage
-              </h5>
-            </div>
-
-            <div className="gallery-item">
-              <div className="gallery-image-box">
-                <img src={whoweareImg} alt="Skilled Hands, Timeless Craft" />
-              </div>
-              <h5 className="gallery-caption">
-                <FontAwesomeIcon icon={faLeaf} className="gallery-caption-icon" /> Skilled Hands, Timeless Craft
-              </h5>
-            </div>
-
-            <div className="gallery-item">
-              <div className="gallery-image-box">
-                <img src={ourstoryImg} alt="Crafting Quality at Every Step" />
-              </div>
-              <h5 className="gallery-caption">
-                <FontAwesomeIcon icon={faLeaf} className="gallery-caption-icon" /> Crafting Quality at Every Step
-              </h5>
-            </div>
-
-            <div className="gallery-item">
-              <div className="gallery-image-box">
-                <img src={ecofriendlyImg} alt="Diverse Designs, Endless Possibilities" />
-              </div>
-              <h5 className="gallery-caption">
-                <FontAwesomeIcon icon={faLeaf} className="gallery-caption-icon" /> Diverse Designs, Endless Possibilities
-              </h5>
-            </div>
-          </div>
-          {/* Woven rattan divider */}
-          <div className="section-wave wave-rattan" />
-        </section>
-
-        {/* Packaging & Delivery Section */}
-        <section className="packaging-delivery-section">
-          <div className="section-header text-center">
-            <span className="subtitle-badge">PACKAGING & DELIVERY</span>
-            <h2 className="section-title">Carefully Packed. Delivered Safely.</h2>
-            <p className="section-subtitle">We ensure every order reaches you in perfect condition, on time, every time.</p>
-          </div>
-
-          <div className="delivery-cards-grid">
-            <div className="delivery-card">
-              <span className="delivery-icon"><FontAwesomeIcon icon={faBoxes} /></span>
-              <h4 className="delivery-card-title">Secure Packaging</h4>
-              <p className="delivery-card-desc">Eco-friendly packaging in poly bags and durable cardboard boxes.</p>
-              <div className="delivery-illustration">
-                <svg viewBox="0 0 100 100">
-                  <path d="M20,35 L50,20 L80,35 L50,50 Z" fill="#e3b47c" stroke="#b07d3a" strokeWidth="1.5" />
-                  <path d="M20,35 L20,70 L50,85 L50,50 Z" fill="#d19c5c" stroke="#b07d3a" strokeWidth="1.5" />
-                  <path d="M80,35 L80,70 L50,85 L50,50 Z" fill="#be8a4b" stroke="#b07d3a" strokeWidth="1.5" />
-                  <path d="M50,50 L50,85" stroke="#b07d3a" strokeWidth="1.5" />
+        {/* 1. IMPACT STATS SECTION */}
+        <section className="impact-section">
+          <div className="impact-container">
+            <div className="impact-left">
+              <div className="impact-title-group">
+                <svg className="leaf-outline-svg" viewBox="0 0 100 100">
+                  <path d="M10,90 Q40,40 85,15" stroke="#dfc08a" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+                  <path d="M85,15 Q75,35 60,35 Q40,30 50,15 Z" fill="#dfc08a" opacity="0.8" />
+                  <path d="M50,15 Q35,40 25,40 Q15,35 25,15 Z" fill="#dfc08a" opacity="0.6" />
+                  <path d="M65,40 Q55,60 45,60 Q35,50 45,30 Z" fill="#dfc08a" opacity="0.7" />
                 </svg>
+                <h2 className="impact-heading">OUR IMPACT<br/><span>IN NUMBERS</span></h2>
               </div>
             </div>
-
-            <div className="delivery-card">
-              <span className="delivery-icon"><FontAwesomeIcon icon={faShieldAlt} /></span>
-              <h4 className="delivery-card-title">Strong & Safe Boxes</h4>
-              <p className="delivery-card-desc">High-quality corrugated boxes to protect products during transit.</p>
-              <div className="delivery-illustration stacked-boxes">
-                <svg viewBox="0 0 100 100">
-                  <path d="M35,40 L60,28 L85,40 L60,52 Z" fill="#be8a4b" stroke="#906028" strokeWidth="1.5" opacity="0.8" />
-                  <path d="M35,40 L35,68 L60,80 L60,52 Z" fill="#ab7a3c" stroke="#906028" strokeWidth="1.5" opacity="0.8" />
-                  <path d="M85,40 L85,68 L60,80 L60,52 Z" fill="#9a692d" stroke="#906028" strokeWidth="1.5" opacity="0.8" />
-                  <path d="M15,50 L45,35 L75,50 L45,65 Z" fill="#e3b47c" stroke="#b07d3a" strokeWidth="1.5" />
-                  <path d="M15,50 L15,80 L45,95 L45,65 Z" fill="#d19c5c" stroke="#b07d3a" strokeWidth="1.5" />
-                  <path d="M75,50 L75,80 L45,95 L45,65 Z" fill="#be8a4b" stroke="#b07d3a" strokeWidth="1.5" />
-                  <path d="M45,65 L45,95" stroke="#b07d3a" strokeWidth="1.5" />
-                </svg>
+            <div className="impact-right">
+              <div className="stat-card">
+                <div className="stat-icon-wrapper">
+                  <FontAwesomeIcon icon={faRecycle} className="stat-icon" />
+                </div>
+                <h3 className="stat-number">5,200+</h3>
+                <p className="stat-label">KG OF FIRE HOSES<br/>UPCYCLED</p>
+              </div>
+              <div className="stat-divider"></div>
+              <div className="stat-card">
+                <div className="stat-icon-wrapper">
+                  <FontAwesomeIcon icon={faUsers} className="stat-icon" />
+                </div>
+                <h3 className="stat-number">120+</h3>
+                <p className="stat-label">ARTISANS & WORKERS<br/>EMPOWERED</p>
+              </div>
+              <div className="stat-divider"></div>
+              <div className="stat-card">
+                <div className="stat-icon-wrapper">
+                  <FontAwesomeIcon icon={faLeaf} className="stat-icon" />
+                </div>
+                <h3 className="stat-number">30+</h3>
+                <p className="stat-label">RURAL COMMUNITIES<br/>SUPPORTED</p>
+              </div>
+              <div className="stat-divider"></div>
+              <div className="stat-card">
+                <div className="stat-icon-wrapper">
+                  <FontAwesomeIcon icon={faBriefcase} className="stat-icon" />
+                </div>
+                <h3 className="stat-number">10,000+</h3>
+                <p className="stat-label">PRODUCTS<br/>CREATED</p>
               </div>
             </div>
-
-            <div className="delivery-card delivery-partners-card">
-              <span className="delivery-icon"><FontAwesomeIcon icon={faTruck} /></span>
-              <h4 className="delivery-card-title">Delivery Partners</h4>
-              <p className="delivery-card-desc">We partner with trusted courier services for timely and safe delivery.</p>
-              <div className="partners-logos-grid">
-                <span>TNT</span>
-                <span>UPS</span>
-                <span>SF Express</span>
-                <span>FedEx</span>
-                <span>EMS</span>
-                <span>DHL</span>
-              </div>
-            </div>
-
-            <div className="delivery-card">
-              <span className="delivery-icon"><FontAwesomeIcon icon={faCogs} /></span>
-              <h4 className="delivery-card-title">Careful Loading</h4>
-              <p className="delivery-card-desc">Products are handled with care and loaded securely for safe transport.</p>
-              <div className="delivery-illustration">
-                <svg viewBox="0 0 100 100">
-                  <path d="M30,15 L30,75 L75,75 M30,55 L55,55 M30,35 L55,35" fill="none" stroke="#777" strokeWidth="2.5" strokeLinecap="round" />
-                  <circle cx="38" cy="82" r="7" fill="#444" />
-                  <circle cx="68" cy="82" r="7" fill="#444" />
-                  <rect x="36" y="25" width="28" height="48" rx="2" fill="#d19c5c" stroke="#b07d3a" strokeWidth="1.5" />
-                  <line x1="36" y1="49" x2="64" y2="49" stroke="#b07d3a" strokeWidth="1.5" />
-                </svg>
-              </div>
-            </div>
-
-            <div className="delivery-card">
-              <span className="delivery-icon"><FontAwesomeIcon icon={faClock} /></span>
-              <h4 className="delivery-card-title">On-Time, Every Time</h4>
-              <p className="delivery-card-desc">Fast delivery and 100% quality assurance for complete peace of mind.</p>
-              <div className="delivery-illustration image-illustration">
-                <img src={stoolImg} alt="Cane stool" />
-              </div>
-            </div>
-          </div>
-          {/* Wavy Section Divider */}
-          <div className="section-wave wave-green">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-              <path d="M0,32 C240,70 480,90 720,70 C960,50 1200,70 1440,32 L1440,120 L0,120 Z" fill="#2d4c36" />
-            </svg>
           </div>
         </section>
 
-        {/* CTA Banner Section */}
-        <section className="workshop-cta-banner">
-          <div className="cta-left">
-            <h2 className="cta-title">Let's Create Something Beautiful</h2>
-            <p className="cta-subtitle text-left">
-              Premium quality, sustainable, handcrafted products that make a difference.
-            </p>
-            <Link to="/contactus" className="cta-btn-green">
-              Get in Touch <FontAwesomeIcon icon={faChevronRight} className="btn-arrow" />
-            </Link>
-
-            <div className="cta-features">
-              <div className="cta-feature-item">
-                <span className="feat-icon"><FontAwesomeIcon icon={faCogs} /></span>
-                <div className="feat-text">
-                  <h6>Custom Solutions</h6>
-                  <p>Tailored designs for your unique needs</p>
-                </div>
+        {/* 2. PROCESS GRID (4 COLUMNS) */}
+        <section className="features-grid-section">
+          <div className="features-grid-container">
+            <div className="feature-grid-card">
+              <div className="feature-card-img-wrapper">
+                <img src={workshop1} alt="Raw Material Selection" />
               </div>
-
-              <div className="cta-feature-item">
-                <span className="feat-icon"><FontAwesomeIcon icon={faLeaf} /></span>
-                <div className="feat-text">
-                  <h6>Sustainable Choice</h6>
-                  <p>Eco-friendly materials only</p>
+              <div className="feature-card-content">
+                <div className="feature-card-title-group">
+                  <span className="feature-title-icon-wrapper">
+                    <FontAwesomeIcon icon={faRecycle} className="feature-title-icon" />
+                  </span>
+                  <h4>Raw Material Selection</h4>
                 </div>
+                <p>We source discarded fire-hoses that have completed their service life.</p>
               </div>
-
-              <div className="cta-feature-item">
-                <span className="feat-icon"><FontAwesomeIcon icon={faGlobe} /></span>
-                <div className="feat-text">
-                  <h6>Trusted by Many</h6>
-                  <p>Join thousands of happy customers</p>
+            </div>
+            <div className="feature-grid-card">
+              <div className="feature-card-img-wrapper">
+                <img src={workshop2} alt="Hand-Weaving" />
+              </div>
+              <div className="feature-card-content">
+                <div className="feature-card-title-group">
+                  <span className="feature-title-icon-wrapper">
+                    <FontAwesomeIcon icon={faTools} className="feature-title-icon" />
+                  </span>
+                  <h4>Hand-Weaving</h4>
                 </div>
+                <p>Our artisans hand-weave every piece using traditional techniques.</p>
+              </div>
+            </div>
+            <div className="feature-grid-card">
+              <div className="feature-card-img-wrapper">
+                <img src={workshop3} alt="Quality Inspection" />
+              </div>
+              <div className="feature-card-content">
+                <div className="feature-card-title-group">
+                  <span className="feature-title-icon-wrapper">
+                    <FontAwesomeIcon icon={faCheckCircle} className="feature-title-icon" />
+                  </span>
+                  <h4>Quality Inspection</h4>
+                </div>
+                <p>Each product is carefully inspected to ensure durability and flawless finishing.</p>
+              </div>
+            </div>
+            <div className="feature-grid-card">
+              <div className="feature-card-img-wrapper">
+                <img src={workshop4} alt="Expert Packing" />
+              </div>
+              <div className="feature-card-content">
+                <div className="feature-card-title-group">
+                  <span className="feature-title-icon-wrapper">
+                    <FontAwesomeIcon icon={faBoxes} className="feature-title-icon" />
+                  </span>
+                  <h4>Expert Packing</h4>
+                </div>
+                <p>Products are packed with care for safe delivery around the world.</p>
               </div>
             </div>
           </div>
+        </section>
 
-          <div className="cta-right">
-            <img src={basketImg} alt="Crafted baskets and plant" className="cta-basket-img" />
+        {/* 3. SPLIT WORKSHOP SECTION */}
+        <section className="workshop-details-section">
+          <div className="workshop-details-container">
+            <div className="workshop-details-left">
+              <div className="details-image-card">
+                <img src={workshop5} alt="Our Workshop" className="workshop-main-img" />
+              </div>
+            </div>
+            <div className="workshop-details-right">
+              <span className="details-badge">OUR WORKSHOP?</span>
+              <h2 className="details-title">Crafted with care,<br/>made to last.</h2>
+              <p className="details-desc">
+                From skilled hands to sustainable practices, every step in our workshop reflects our commitment to people and the planet.
+              </p>
+              <ul className="details-checklist">
+                <li>
+                  <span className="checklist-circle-icon">✓</span>
+                  <span>Ethical & fair working environment</span>
+                </li>
+                <li>
+                  <span className="checklist-circle-icon">✓</span>
+                  <span>Traditional craftsmanship</span>
+                </li>
+                <li>
+                  <span className="checklist-circle-icon">✓</span>
+                  <span>Sustainable & eco-friendly production</span>
+                </li>
+              </ul>
+              <div className="details-leaf-decoration">
+                <svg className="decorative-leaf-svg" viewBox="0 0 100 100">
+                  <path d="M10,90 Q40,40 85,15" stroke="#688b58" strokeWidth="1" fill="none" opacity="0.2" />
+                  <path d="M85,15 Q75,35 60,35 Q40,30 50,15 Z" fill="#688b58" opacity="0.15" />
+                  <path d="M50,15 Q35,40 25,40 Q15,35 25,15 Z" fill="#688b58" opacity="0.1" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 4. LOGISTICS & WAREHOUSING ROW */}
+        <section className="logistics-section">
+          <div className="logistics-container">
+            <div className="logistics-card">
+              <div className="logistics-img-wrapper">
+                <img src={workshop6} alt="Ready for Shipment" />
+              </div>
+              <div className="logistics-label">Ready for Shipment</div>
+            </div>
+            <div className="logistics-card">
+              <div className="logistics-img-wrapper">
+                <img src={workshop7} alt="Warehousing" />
+              </div>
+              <div className="logistics-label">Warehousing</div>
+            </div>
+            <div className="logistics-card">
+              <div className="logistics-img-wrapper">
+                <img src={workshop8} alt="Loading Container" />
+              </div>
+              <div className="logistics-label">Loading Container</div>
+            </div>
+            <div className="logistics-card">
+              <div className="logistics-img-wrapper">
+                <img src={workshop9} alt="Grid Packaging" />
+              </div>
+              <div className="logistics-label">Each product pack in poly bags & card box</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 5. ENVIRONMENTAL IMPACT DETAILS BANNER */}
+        <section className="environmental-pack-section">
+          <div className="environmental-container">
+            <div className="env-info-card">
+              <div className="env-recycle-icon-wrapper">
+                <FontAwesomeIcon icon={faRecycle} className="env-recycle-icon" />
+              </div>
+              <p className="env-info-text">
+                Every product is thoughtfully packed in poly bags and card boxes to ensure safe delivery and minimal environmental impact.
+              </p>
+              <div className="env-leaf-watermark">
+                <svg viewBox="0 0 100 100" className="watermark-leaf">
+                  <path d="M10,90 Q40,40 85,15" stroke="rgba(255,255,255,0.08)" strokeWidth="2" fill="none" />
+                </svg>
+              </div>
+            </div>
+            <div className="env-detail-image-card">
+              <img src={workshop10} alt="Rolled Fire Hoses" />
+            </div>
+            <div className="env-detail-image-card">
+              <img src={workshop11} alt="Sewing Hose" />
+            </div>
+            <div className="env-detail-image-card">
+              <img src={workshop12} alt="Riveting Hose" />
+            </div>
+            <div className="env-detail-image-card">
+              <img src={workshop21} alt="Finished Packages" />
+            </div>
+          </div>
+        </section>
+
+        {/* 6. OUR PROCESS TIMELINE */}
+        <section className="process-timeline-section">
+          <div className="timeline-header">
+            <h2 className="timeline-title">OUR PROCESS</h2>
+            <div className="timeline-header-underline">
+              <svg viewBox="0 0 50 10" className="leaf-arrow-svg">
+                <path d="M0,5 Q25,2 50,5 M42,1 L50,5 L42,9" stroke="#1b3a1e" strokeWidth="1.5" fill="none" />
+              </svg>
+            </div>
+          </div>
+          <div className="timeline-container">
+            <div className="timeline-step">
+              <div className="step-image-rect">
+                <img src={workshop13} alt="Collect" />
+              </div>
+              <div className="step-content">
+                <h3 className="step-num-title">01 <span>COLLECT</span></h3>
+                <p>We collect used fire hoses that have completed their service life.</p>
+              </div>
+              <div className="step-arrow">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" fill="#688b58" />
+                </svg>
+              </div>
+            </div>
+            <div className="timeline-step">
+              <div className="step-image-rect">
+                <img src={workshop14} alt="Clean" />
+              </div>
+              <div className="step-content">
+                <h3 className="step-num-title">02 <span>CLEAN</span></h3>
+                <p>Thoroughly cleaned and sanitized for safety.</p>
+              </div>
+              <div className="step-arrow">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" fill="#688b58" />
+                </svg>
+              </div>
+            </div>
+            <div className="timeline-step">
+              <div className="step-image-rect">
+                <img src={workshop15} alt="Cut & Prepare" />
+              </div>
+              <div className="step-content">
+                <h3 className="step-num-title">03 <span>CUT & PREPARE</span></h3>
+                <p>Carefully cut, measured and prepared for crafting.</p>
+              </div>
+              <div className="step-arrow">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" fill="#688b58" />
+                </svg>
+              </div>
+            </div>
+            <div className="timeline-step">
+              <div className="step-image-rect">
+                <img src={workshop16} alt="Craft" />
+              </div>
+              <div className="step-content">
+                <h3 className="step-num-title">04 <span>CRAFT</span></h3>
+                <p>Skilled artisans handcraft each piece with precision and care.</p>
+              </div>
+              <div className="step-arrow">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" fill="#688b58" />
+                </svg>
+              </div>
+            </div>
+            <div className="timeline-step">
+              <div className="step-image-rect">
+                <img src={workshop17} alt="Quality Check" />
+              </div>
+              <div className="step-content">
+                <h3 className="step-num-title">05 <span>QUALITY CHECK</span></h3>
+                <p>Every piece is inspected to ensure durability and flawless finishing.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 7. TESTIMONIAL & CONTACT BANNER */}
+        <section className="testimonial-cta-section">
+          <div className="testimonial-cta-container">
+            <div className="testimonial-card-wrapper">
+              <div className="testimonial-avatar">
+                <img src={workshop18} alt="Sunita Devi" />
+              </div>
+              <div className="testimonial-content">
+                <div className="quote-mark">“</div>
+                <p className="testimonial-quote">
+                  This work gives me pride and purpose. I love turning something that was discarded into something beautiful and useful.
+                </p>
+                <div className="testimonial-author">
+                  <strong className="author-name">— Sunita Devi</strong>
+                  <span className="author-role">Artisan for 8 years</span>
+                </div>
+              </div>
+              <div className="testimonial-leaf-watermark">
+                <svg viewBox="0 0 100 100" className="watermark-leaf">
+                  <path d="M10,90 Q40,40 85,15" stroke="rgba(27,58,30,0.05)" strokeWidth="1.5" fill="none" />
+                </svg>
+              </div>
+            </div>
+            
+            <div className="cta-get-in-touch-card">
+              <div className="cta-content">
+                <span className="cta-label">GET IN TOUCH</span>
+                <h3 className="cta-heading">Want to work with us or learn more about our process? Let's connect.</h3>
+                <Link to="/contactus" className="cta-contact-button">
+                  <span>CONTACT US</span>
+                  <FontAwesomeIcon icon={faArrowRight} className="btn-arrow" />
+                </Link>
+              </div>
+              <div className="cta-bag-illustration">
+                <img src={workshop19} alt="Firehose Bag Illustration" />
+              </div>
+            </div>
           </div>
         </section>
       </div>
